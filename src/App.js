@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
+import HomePage from "./HomePage";
+import NavBar from "./NavBar";
+import Inventory from "./Features/Inventory";
+const theme = extendTheme({
+  config: {
+    initialColorMode: "light", // Ensure this is properly set
+    useSystemColorMode: false,
+  },
+});
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ChakraProvider theme={theme}>
+      <Router>
+        <div>
+          <Routes>
+            <Route path="/" element={<Navigate to="/home" />} />
+            {/* Render other routes */}
+            <Route path="/home" element={<HomePage />} />
+            <Route path="/inventory" element={<Inventory />} />
+            {/* <Route path="/career-voyage" element={<CareerVoyage />} />
+            <Route path="/gen-ex" element={<GenerationalEngagement />} />
+            <Route path="/learning" element={<LearningDashboard />} /> */}
+          </Routes>
+        </div>
+      </Router>
+    </ChakraProvider>
   );
 }
 
