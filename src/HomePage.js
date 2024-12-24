@@ -32,13 +32,13 @@ const features = [
     icon: <FiAward size={40} />,
   },
   {
-    title: "Career Voyage",
+    title: "WorkSync", // Add the Manpower feature
     description:
-      "Simulate various career paths and visualize potential career outcomes based on skills.",
-    image: "career.webp", // Image path in the public folder
-    buttonLabel: "View Career Paths",
-    buttonRoute: "/career-voyage",
-    icon: <FiTrendingUp size={40} />,
+      "Track and manage workforce data effectively with real-time analytics and reports.",
+    image: "manpower.png", // Placeholder image in the public folder
+    buttonLabel: "Manage Workforce",
+    buttonRoute: "/manpower", // Route to Manpower page
+    icon: <FiUsers size={40} />,
   },
   {
     title: "Development Dashboard",
