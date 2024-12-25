@@ -41,9 +41,9 @@ const NavBar = () => {
             href="#"
             _hover={{ textDecoration: "underline" }}
             fontFamily="Poppins"
-            onClick={() => handleNavigation("/career-voyage")}
+            onClick={() => handleNavigation("/manpower")}
           >
-            Preventify
+            WorkSync
             {/* PM Scheduling */}
           </Link>
           <Link

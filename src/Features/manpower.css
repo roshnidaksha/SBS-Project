@@ -1,0 +1,273 @@
+/* General styles */
+.manpower-container {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+/* Employee Dashboard Section */
+.employee-dashboard {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+.employee-dashboard h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #34495e;
+}
+
+/* Employee Categories */
+.employee-categories {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.employee-categories button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+.employee-categories button:hover {
+  background-color: #45a049;
+}
+
+/* Employee List */
+.employee-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.employee-id {
+  padding: 12px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #34495e;
+  font-size: 1.1em;
+  border: 1px solid #ccc;
+}
+
+.employee-id:hover {
+  background-color: #f9f9f9;
+}
+
+/* Employee Details */
+.employee-details {
+  margin-top: 20px;
+}
+
+.employee-details div {
+  margin-bottom: 10px;
+}
+
+.employee-details label {
+  font-weight: bold;
+}
+
+.employee-details input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 1em;
+}
+
+/* Calendar Section */
+.calendar-container {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.calendar-container .react-calendar {
+  max-width: 500px;
+  margin: 0 auto;
+  font-size: 1.2em;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Attendance Section */
+.attendance-table {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 900px;
+  padding: 20px;
+}
+
+.attendance-table h2 {
+  text-align: center;
+  font-size: 2em;
+  color: #34495e;
+}
+
+.attendance-table table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.attendance-table th, .attendance-table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.attendance-table input {
+  width: 60px;
+  padding: 8px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.attendance-table input:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+.submit-button {
+  display: block;
+  width: 200px;
+  padding: 12px;
+  margin: 20px auto;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+/* Shortages Section */
+.shortages-section {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.shortages-section h3 {
+  text-align: center;
+  font-size: 2em;
+  color: #34495e;
+}
+
+.shortages-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.shortages-section li {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .manpower-container {
+    padding: 10px;
+  }
+
+  .employee-dashboard {
+    padding: 15px;
+  }
+
+  .attendance-table, .shortages-section {
+    padding: 15px;
+  }
+
+  .employee-categories {
+    flex-direction: column;
+  }
+
+  .employee-categories button {
+    margin-bottom: 10px;
+  }
+
+  .attendance-table input {
+    width: 100%;
+  }
+}
+/* Shortages Section Styling */
+.shortages-section {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 90%;
+  border-radius: 8px;
+}
+
+/* Table Styling */
+.shortages-section table {
+  width: 100%;
+  border-collapse: collapse; /* Ensures borders are collapsed into one */
+  border: 1px solid #ccc; /* Light border around the table */
+}
+
+/* Header Styling */
+.shortages-section th,
+.shortages-section td {
+  padding: 12px;
+  text-align: center; /* Centers text inside the cells */
+  border: 1px solid #ccc; /* Light border around cells */
+  font-size: 16px; /* Bigger font size */
+  font-family: Arial, sans-serif; /* Clean, readable font */
+}
+
+/* Header Styling */
+.shortages-section th {
+  font-weight: bold;
+}
+
+/* Row Styling */
+.shortages-section tr:nth-child(even) {
+  background-color: #f9f9f9; /* Light background for alternating rows */
+}
+
+.shortages-section tr:nth-child(odd) {
+  background-color: #ffffff; /* White background for odd rows */
+}
+
+/* Hover Effect */
+.shortages-section tr:hover {
+  background-color: #f1f1f1; /* Light hover effect */
+}
+
+/* Input Field Styling */
+.shortages-section input[type="number"] {
+  width: 80px;
+  padding: 6px;
+  margin: 5px;
+  text-align: center;
+  font-size: 14px;
+  border: 1px solid #ccc; /* Border for input fields */
+  border-radius: 4px;
+}
