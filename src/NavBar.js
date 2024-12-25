@@ -61,7 +61,7 @@ const NavBar = () => {
             href="#"
             _hover={{ textDecoration: "underline" }}
             fontFamily="Poppins"
-            onClick={() => handleNavigation("/gen-ex")}
+            onClick={() => handleNavigation("/financialManagement")}
           >
             FinScope
             {/* Budget Forecasting */}

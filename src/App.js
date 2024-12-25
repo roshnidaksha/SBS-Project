@@ -8,6 +8,7 @@ import {
 import HomePage from "./HomePage";
 import NavBar from "./NavBar";
 import Inventory from "./Features/Inventory";
+import BudgetOptimizationChart from "./Features/FinancialManagement";
 const theme = extendTheme({
   config: {
     initialColorMode: "light", // Ensure this is properly set
@@ -25,6 +26,7 @@ function App() {
             {/* Render other routes */}
             <Route path="/home" element={<HomePage />} />
             <Route path="/inventory" element={<Inventory />} />
+            <Route path="/financialManagement" element={<BudgetOptimizationChart />} />
             {/* <Route path="/career-voyage" element={<CareerVoyage />} />
             <Route path="/gen-ex" element={<GenerationalEngagement />} />
             <Route path="/learning" element={<LearningDashboard />} /> */}
