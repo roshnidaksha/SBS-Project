@@ -1,0 +1,67 @@
+/* PM.css */
+.custom-tile {
+    width: 80px !important; /* Increased width of the individual calendar tiles */
+    height: 80px !important; /* Increased height of the individual calendar tiles */
+    font-size: 16px !important; /* Increased font size for better readability */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif; /* Modern, clean font */
+    border-radius: 8px; /* Soft rounded corners */
+  }
+  
+  /* Force the size of each tile */
+  .react-calendar__tile {
+    width: 80px !important; /* Make each tile wider */
+    height: 50px !important; /* Make each tile taller */
+    font-size: 16px !important; /* Adjust font size to fit inside the tile */
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    border: none ;
+    font-family: 'Roboto', sans-serif; /* Use a clean modern font */
+  border-radius: 80px; /* Soft rounded corners */
+
+  }
+  
+/* Hover effect for better interactivity */
+.react-calendar__tile:hover {
+    background-color: #e5e5e5 !important; /* Light gray background on hover */
+    cursor: pointer; /* Indicate that the tile is clickable */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important; /* Subtle shadow effect on hover */
+    transition: all 0.3s ease; /* Smooth transition */
+  }
+  
+/* Active tile styling */
+.react-calendar__tile--active {
+    background-color: #4a90e2 !important; /* Softer blue color for active tile */
+    color: white !important; /* White text on active tile */
+    font-weight: bold; /* Make text bold for better visibility */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15) !important; /* Soft shadow around active tile */
+  }
+  
+  /* Ensure the overall calendar fits nicely */
+  .react-calendar {
+    width: 100% !important; /* Ensure the calendar spans the full width */
+    max-width: none !important; /* Remove any width constraints */
+    border: none ;
+    background-color: #fff; /* Clean white background */
+    border-radius: 12px; /* Soft rounded corners for the entire calendar */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important; /* Soft shadow around the calendar */
+
+  }
+  
+/* Event indicator styles */
+.react-calendar__tile__event-indicator {
+    background-color: #ff6347 !important; /* Change event indicator color to a softer red */
+    width: 8px !important; /* Adjust event indicator size */
+    height: 8px !important;
+    border-radius: 50% !important; /* Round the indicator */
+    margin: 2px auto !important;
+  }
+  /* Optional: Weekday text styling */
+.react-calendar__month-view__weekdays {
+    font-size: 12px !important; /* Slightly smaller font for weekdays */
+    color: #777 !important; /* Lighter color for weekdays */
+    font-weight: 500; /* Slightly bolder text */
+  }
