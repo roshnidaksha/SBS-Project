@@ -9,7 +9,7 @@ import HomePage from "./HomePage";
 import NavBar from "./NavBar";
 import Inventory from "./Features/Inventory";
 import Manpower from "./Features/Manpower";
-import BudgetOptimizationChart from "./Features/FinancialManagement";
+import FinancialManagement from "./Features/FinancialManagement";
 const theme = extendTheme({
   config: {
     initialColorMode: "light", // Ensure this is properly set
@@ -28,7 +28,7 @@ function App() {
             <Route path="/home" element={<HomePage />} />
             <Route path="/inventory" element={<Inventory />} />
             <Route path="/manpower" element={<Manpower />} />
-            <Route path="/financialManagement" element={<BudgetOptimizationChart />} />
+            <Route path="/financialManagement" element={<FinancialManagement />} />
             {/* <Route path="/career-voyage" element={<CareerVoyage />} />
             <Route path="/gen-ex" element={<GenerationalEngagement />} />
             <Route path="/learning" element={<LearningDashboard />} /> */}
