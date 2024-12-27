@@ -1,24 +1,22 @@
 import NavBar from "../NavBar";
 import React, { useState } from "react";
-import { Line } from "react-chartjs-2";
+import { Bar } from "react-chartjs-2"; 
 import "./manpower.css";
 import {
   Chart as ChartJS,
   CategoryScale,
   LinearScale,
-  LineElement,
-  PointElement,
+  BarElement,
   Title,
   Tooltip,
   Legend,
 } from "chart.js";
-import Calendar from "react-calendar"; // You'll need to install this library: `npm install react-calendar`
+import Calendar from "react-calendar"; 
 
 ChartJS.register(
   CategoryScale,
   LinearScale,
-  LineElement,
-  PointElement,
+  BarElement,
   Title,
   Tooltip,
   Legend
@@ -26,26 +24,25 @@ ChartJS.register(
 
 const Manpower = () => {
   const initialAttendance = {
-    E1: { present: 0, required: 20 },
-    E2: { present: 0, required: 20 },
-    E3: { present: 0, required: 20 },
-    E4: { present: 0, required: 20 },
-    E5: { present: 0, required: 20 },
-    E6: { present: 0, required: 20 },
-    E7: { present: 0, required: 20 },
-    W1: { present: 0, required: 20 },
-    W2: { present: 0, required: 20 },
-    W3: { present: 0, required: 20 },
-    W4: { present: 0, required: 20 },
+    E1: { present: 0, required: 0 },
+    E2: { present: 0, required: 0 },
+    E3: { present: 0, required: 0 },
+    E4: { present: 0, required: 0 },
+    E5: { present: 0, required: 0 },
+    E6: { present: 0, required: 0 },
+    E7: { present: 0, required: 0 },
+    W1: { present: 0, required: 0 },
+    W2: { present: 0, required: 0 },
+    W3: { present: 0, required: 0 },
+    W4: { present: 0, required: 0 },
   };
 
   const initialEmployeeData = {
-    empId: "S7277272727",
+    empId: "id_1",
     firstName: "John",
     lastName: "Doe",
-    position: "Developer",
-    assignedTeam: "Team A",
-    assignedTrack: "Track 1",
+    position: "Lead",
+    category: "PM Team",
   };
 
   const [attendance, setAttendance] = useState(initialAttendance);
@@ -56,12 +53,18 @@ const Manpower = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
 
   const employees = [
-    { empId: "S7277272727", firstName: "John", lastName: "Doe", position: "Developer", assignedTeam: "Team A", assignedTrack: "Track 1", category: "Supervisor Support" },
-    { empId: "S8277272728", firstName: "Jane", lastName: "Smith", position: "Designer", assignedTeam: "Team B", assignedTrack: "Track 2", category: "Technical Support" },
-    { empId: "S9277272729", firstName: "Alice", lastName: "Johnson", position: "Manager", assignedTeam: "Team C", assignedTrack: "Track 3", category: "HR Support" },
-    { empId: "S1027272730", firstName: "Bob", lastName: "Brown", position: "Developer", assignedTeam: "Team A", assignedTrack: "Track 1", category: "Supervisor Support" },
-    { empId: "S2027272731", firstName: "Eve", lastName: "Davis", position: "Manager", assignedTeam: "Team B", assignedTrack: "Track 2", category: "Technical Support" },
-    { empId: "S3027272732", firstName: "Tom", lastName: "Wilson", position: "Designer", assignedTeam: "Team C", assignedTrack: "Track 3", category: "HR Support" },
+    { empId: "id_1", firstName: "John", lastName: "Doe", position: "Lead", category: "PM Team" },
+    { empId: "id_2", firstName: "Jane", lastName: "Smith", position: "Support", category: "PM Team" },
+    { empId: "id_5", firstName: "Alice", lastName: "Johnson", position: "Support", category: "PM Team" },
+    { empId: "id_9", firstName: "Bob", lastName: "Brown", position: "Lead", category: "PM Team" },
+    { empId: "id_3", firstName: "Eve", lastName: "Davis", position: "Manager", category: "PM Team" },
+    { empId: "id_6", firstName: "Tom", lastName: "Wilson", position: "Support", category: "PM Team" },
+    { empId: "id_4", firstName: "John", lastName: "Doe", position: "Lead", category: "OH Team" },
+    { empId: "id_10", firstName: "Jane", lastName: "Smith", position: "Support", category: "OH Team" },
+    { empId: "id_11", firstName: "Alice", lastName: "Johnson", position: "Support", category: "OH Team" },
+    { empId: "id_16", firstName: "Bob", lastName: "Brown", position: "Lead", category: "OH Team" },
+    { empId: "id_8", firstName: "Eve", lastName: "Davis", position: "Manager", category: "OH Team" },
+    { empId: "id_6", firstName: "Tom", lastName: "Wilson", position: "Support", category: "OH Team" },
   ];
 
   const handleAttendanceChange = (track, field, value) => {
@@ -119,152 +122,148 @@ const Manpower = () => {
     ? employees.filter((emp) => emp.category === selectedCategory)
     : [];
 
-  // Sample data for Progress Projections chart
+  // Dummy data for horizontal bar graph
   const progressProjectionData = {
-    labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5'], // X-axis labels
+    labels: ["E1", "E2", "E3", "E4", "E5", "E6", "E7", "W1", "W2", "W3", "W4"],
     datasets: [
       {
-        label: 'Projected Attendance',
-        data: [15, 18, 19, 20, 21], // Example data, should be replaced with actual projections
-        borderColor: 'rgb(75, 192, 192)',
-        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+        label: "Progress Percentage",
+        data: [53, 85, 88, 36, 12, 80, 50, 60, 78, 42, 85], 
+        borderColor: "rgb(75, 192, 192)",
+        backgroundColor: "rgba(75, 192, 192, 0.2)",
         fill: true,
+        borderWidth: 1,
       },
       {
-        label: 'Required Attendance',
-        data: [20, 20, 20, 20, 20], // Required attendance data
-        borderColor: 'rgb(255, 99, 132)',
-        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+        label: "Absence Percentage",
+        data: [5, 0, 3.33, 0, 6.66, 10.4, 2.5, 5, 0, 1, 0], 
+        borderColor: "rgb(255, 99, 132)",
+        backgroundColor: "rgba(255, 99, 132, 0.2)",
         fill: true,
+        borderWidth: 1,
       },
     ],
   };
 
   return (
     <>
-    <NavBar />
-    <div className="manpower-container">
-      
+      <NavBar />
+      <div className="manpower-container">
+        <div className="employee-dashboard">
+          <h2>Employee Dashboard</h2>
 
-      <div className="employee-dashboard">
-        <h2>Employee Dashboard</h2>
-        
-        <div className="employee-categories">
-          <button onClick={() => handleCategorySelect("Supervisor Support")}>Supervisor Support</button>
-          <button onClick={() => handleCategorySelect("Technical Support")}>Technical Support</button>
-          <button onClick={() => handleCategorySelect("HR Support")}>HR Support</button>
+          <div className="employee-categories">
+            <button onClick={() => handleCategorySelect("PM Team")}>PM Team</button>
+            <button onClick={() => handleCategorySelect("OH Team")}>OH Team</button>
+          </div>
+
+          <div className="employee-list">
+            {filteredEmployees.map((emp) => (
+              <div
+                key={emp.empId}
+                className="employee-id"
+                onClick={() => handleEmployeeClick(emp.empId)}
+              >
+                {emp.empId}
+              </div>
+            ))}
+          </div>
+
+          {selectedEmployee && (
+            <div className="employee-details">
+              <div>
+                <label>Employee ID:</label>
+                <input type="text" value={selectedEmployee.empId} readOnly />
+              </div>
+              <div>
+                <label>First Name:</label>
+                <input type="text" value={selectedEmployee.firstName} readOnly />
+              </div>
+              <div>
+                <label>Last Name:</label>
+                <input type="text" value={selectedEmployee.lastName} readOnly />
+              </div>
+              <div>
+                <label>Position:</label>
+                <input type="text" value={selectedEmployee.position} readOnly />
+              </div>
+            </div>
+          )}
         </div>
 
-        <div className="employee-list">
-          {filteredEmployees.map((emp) => (
-            <div
-              key={emp.empId}
-              className="employee-id"
-              onClick={() => handleEmployeeClick(emp.empId)}
-            >
-              {emp.empId} - {emp.firstName} {emp.lastName}
-            </div>
-          ))}
+        <div className="employee-dashboard">
+          <hr />
+          <br />
+          <h2>Attendance and Shortage</h2>
         </div>
 
-        {selectedEmployee && (
-          <div className="employee-details">
-            <div>
-              <label>Employee ID:</label>
-              <input type="text" value={selectedEmployee.empId} readOnly />
-            </div>
-            <div>
-              <label>First Name:</label>
-              <input type="text" value={selectedEmployee.firstName} readOnly />
-            </div>
-            <div>
-              <label>Last Name:</label>
-              <input type="text" value={selectedEmployee.lastName} readOnly />
-            </div>
-            <div>
-              <label>Position:</label>
-              <input type="text" value={selectedEmployee.position} readOnly />
-            </div>
-            <div>
-              <label>Assigned Team:</label>
-              <input type="text" value={selectedEmployee.assignedTeam} readOnly />
-            </div>
-            <div>
-              <label>Assigned Track:</label>
-              <input type="text" value={selectedEmployee.assignedTrack} readOnly />
-            </div>
+        <Calendar onChange={handleDateChange} value={new Date()} />
+
+        {selectedDate && (
+          <div className="shortages-section">
+            <h3>Manpower for {selectedDate}</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Track</th>
+                  <th>Present</th>
+                  <th>Required</th>
+                </tr>
+              </thead>
+              <tbody>
+                {Object.keys(attendance).map((track) => (
+                  <tr key={track}>
+                    <td>{track}</td>
+                    <td>
+                      <input
+                        type="number"
+                        value={attendance[track].present}
+                        onChange={(e) =>
+                          handleAttendanceChange(track, "present", e.target.value)
+                        }
+                      />
+                    </td>
+                    <td>
+                      <input
+                        type="number"
+                        value={attendance[track].required}
+                        onChange={(e) =>
+                          handleAttendanceChange(track, "required", e.target.value)
+                        }
+                      />
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+
+            <button className="submit-button" onClick={handleSubmit}>
+              Submit
+            </button>
           </div>
         )}
-      </div>
 
-      <div className="employee-dashboard">
-      <hr />
-      <br />
-        <h2>Attendance and Shortage</h2>
-        
-      </div>
-
-      
-        <Calendar onChange={handleDateChange} value={new Date()} />
-      
-      {selectedDate && (
-        <div className="shortages-section">
-          <h3>Manpower for {selectedDate}</h3>
-          <table>
-            <thead>
-              <tr>
-                <th>Track</th>
-                <th>Present</th>
-                <th>Required</th>
-              </tr>
-            </thead>
-            <tbody>
-              {Object.keys(attendance).map((track) => (
-                <tr key={track}>
-                  <td>{track}</td>
-                  <td>
-                    <input
-                      type="number"
-                      value={attendance[track].present}
-                      onChange={(e) =>
-                        handleAttendanceChange(track, "present", e.target.value)
-                      }
-                    />
-                  </td>
-                  <td>{attendance[track].required}</td>
-                </tr>
+        {selectedDate && shortages.length > 0 && (
+          <div className="shortages-section">
+            <h3>Shortages for {selectedDate}</h3>
+            <ul>
+              {shortages.map((shortage) => (
+                <li key={shortage.track}>
+                  {shortage.track}: {shortage.shortage} more required
+                </li>
               ))}
-            </tbody>
-          </table>
+            </ul>
+          </div>
+        )}
 
-          <button className="submit-button" onClick={handleSubmit}>
-            Submit
-          </button>
+        <div className="employee-dashboard">
+          <hr />
+          <br />
+          <h2>Progress Projections</h2>
+          
+          <Bar data={progressProjectionData} options={{ indexAxis: 'y' }} />
         </div>
-      )}
-
-      {selectedDate && shortages.length > 0 && (
-        <div className="shortages-section">
-          <h3>Shortages for {selectedDate}</h3>
-          <ul>
-            {shortages.map((shortage) => (
-              <li key={shortage.track}>
-                {shortage.track}: {shortage.shortage} more required
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
-
-      {/* Progress Projections Section */}
-      <div className="employee-dashboard">
-      <hr />
-      <br />
-        <h2>Progress Projections</h2>
-        
-        <Line data={progressProjectionData} />
       </div>
-    </div>
     </>
   );
 };
