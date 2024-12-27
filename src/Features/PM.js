@@ -11,50 +11,51 @@ import {
   ModalBody,
   ModalCloseButton,
   Button,
-} from "@chakra-ui/react"; // Import Chakra UI components
+} from "@chakra-ui/react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css"; // Default styles for react-calendar
-import eventsData from "../events.json"; // Importing JSON data from one level up
-import trainData from "../train_data.json"; // Importing train data from JSON
+import trainData from "../train_data.json"; // Importing train data from one level up
 import NavBar from "../NavBar";
-import "./PM.css"; // Import the custom CSS for tile styling
+import "./PM.css"; // Import custom CSS for tile styling
 
 const PM = () => {
   const [events, setEvents] = useState([]);
   const [selectedEvent, setSelectedEvent] = useState(null); // New state for selected event
   const [isModalOpen, setIsModalOpen] = useState(false); // Modal open/close state
+  const [trainNo, setTrainNo] = useState("PV01"); // Set default train No to PV01
 
   useEffect(() => {
-    // Load events from JSON
-    setEvents(eventsData.events);
-  }, []);
+    // Function to extract and format events for a specific train
+    const loadTrainEvents = (trainNo) => {
+      const train = trainData.trains.find((t) => t.trainNo === trainNo);
+      if (train) {
+        let events = [];
+        // Loop through all maintenance types (E1, E2, etc.)
+        for (const [maintenanceType, schedules] of Object.entries(
+          train.maintenanceSchedules
+        )) {
+          schedules.forEach((schedule) => {
+            events.push({
+              eventId: `${trainNo}-${maintenanceType}-${schedule.date}`,
+              eventName: `${maintenanceType} Maintenance`,
+              eventDescription: `Scheduled maintenance for ${maintenanceType}`,
+              dates: [schedule.date],
+              color: "#FF6347", // Color for event indicator (you can customize this)
+            });
+          });
+        }
+        setEvents(events); // Set the events in state
+      }
+    };
+    console.log(events);
+    // Load events for the selected train
+    loadTrainEvents(trainNo);
+  }, [trainNo]); // Re-run whenever trainNo changes
 
-  // Function to get event details for a date
+  // Function to get events for a date
   const getEventForDate = (date) => {
     const formattedDate = date.toISOString().split("T")[0];
     return events.filter((event) => event.dates.includes(formattedDate));
-  };
-
-  // Get the maintenance schedule for each event (E1, E2, etc.)
-  const getMaintenanceSchedule = (event) => {
-    const eventMaintSchedules = [];
-    trainData.trains.forEach((train) => {
-      // Loop through maintenance types (E1, E2, E3, MajOH, MinOH) and find corresponding schedule
-      Object.keys(train.maintenanceSchedules).forEach((scheduleType) => {
-        if (
-          train.maintenanceSchedules[scheduleType].some((date) =>
-            event.dates.includes(date)
-          )
-        ) {
-          eventMaintSchedules.push({
-            trainNo: train.trainNo,
-            scheduleType,
-            dates: train.maintenanceSchedules[scheduleType].join(", "),
-          });
-        }
-      });
-    });
-    return eventMaintSchedules;
   };
 
   // Custom tile content based on events
@@ -67,7 +68,7 @@ const PM = () => {
           className="event-indicator"
           style={{
             backgroundColor: event.color,
-            width: "8px", // Reduced size for the event indicator
+            width: "8px",
             height: "8px",
             borderRadius: "50%",
             margin: "2px auto",
@@ -98,13 +99,9 @@ const PM = () => {
       <Center minHeight="100vh">
         <Box width="98%" maxWidth="2000px" p={4}>
           <Heading as="h1" size="2xl" textAlign="center" mb={6}>
-            Year-Long Maintenance Calendar
+            Year-Long Maintenance Calendar for {trainNo}
           </Heading>
-          <Grid
-            templateColumns="repeat(4, 1fr)"
-            gap={4} // Adjust gap as needed
-            width="100%" // Ensure the grid takes full width
-          >
+          <Grid templateColumns="repeat(4, 1fr)" gap={4} width="100%">
             {months.map((monthStart, index) => (
               <Box
                 key={index}
@@ -130,7 +127,7 @@ const PM = () => {
                   minDate={new Date("2024-01-01")}
                   maxDate={new Date("2024-12-31")}
                   showNavigation={false}
-                  tileClassName="custom-tile" // Use the custom tile class for styling
+                  tileClassName="custom-tile"
                 />
               </Box>
             ))}
@@ -155,17 +152,6 @@ const PM = () => {
                   Date(s):
                 </Heading>
                 <p>{selectedEvent.dates.join(", ")}</p>
-                <Heading as="h4" size="md" mb={2}>
-                  Maintenance Schedules:
-                </Heading>
-                {getMaintenanceSchedule(selectedEvent).map(
-                  (schedule, index) => (
-                    <Box key={index} mb={2}>
-                      <strong>{schedule.trainNo}:</strong>{" "}
-                      {schedule.scheduleType} - {schedule.dates}
-                    </Box>
-                  )
-                )}
               </Box>
             </ModalBody>
           </ModalContent>

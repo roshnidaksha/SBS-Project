@@ -25,9 +25,9 @@ const features = [
   {
     title: "InvenTrack",
     description:
-      "Employees earn verified badges for new skills. Skill Wallet using blockchain for transparency.",
-    image: "skills.png", // Image path in the public folder
-    buttonLabel: "Access Skills",
+      "Inventrack helps businesses track and manage inventory in real-time, providing insights into stock levels, order quantities, and trends for smarter decision-making.",
+    image: "inventory.jpg", // Image path in the public folder
+    buttonLabel: "Explore Inventory",
     buttonRoute: "/inventory",
     icon: <FiAward size={40} />,
   },
