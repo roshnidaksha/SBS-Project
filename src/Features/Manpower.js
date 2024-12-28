@@ -1,7 +1,8 @@
 import NavBar from "../NavBar";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Bar } from "react-chartjs-2"; 
 import "./manpower.css";
+import manpowerData from "../manpower.json";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -51,6 +52,9 @@ const Manpower = () => {
   const [employeeData, setEmployeeData] = useState(initialEmployeeData);
   const [selectedEmployee, setSelectedEmployee] = useState(null);
   const [selectedCategory, setSelectedCategory] = useState(null);
+  const [manpowerInfo, setManpowerInfo] = useState(null);
+
+
 
   const employees = [
     { empId: "id_1", firstName: "John", lastName: "Doe", position: "Lead", category: "PM Team" },
@@ -66,6 +70,12 @@ const Manpower = () => {
     { empId: "id_8", firstName: "Eve", lastName: "Davis", position: "Manager", category: "OH Team" },
     { empId: "id_6", firstName: "Tom", lastName: "Wilson", position: "Support", category: "OH Team" },
   ];
+  useEffect(() => {
+    if (selectedDate) {
+      const formattedDate = new Date(selectedDate).toISOString().split("T")[0];
+      setManpowerInfo(manpowerData[formattedDate] || null);
+    }
+  }, [selectedDate]);
 
   const handleAttendanceChange = (track, field, value) => {
     const updatedAttendance = { ...attendance };
@@ -190,6 +200,7 @@ const Manpower = () => {
             </div>
           )}
         </div>
+ 
 
         <div className="employee-dashboard">
           <hr />
@@ -198,10 +209,38 @@ const Manpower = () => {
         </div>
 
         <Calendar onChange={handleDateChange} value={new Date()} />
+        {selectedDate && manpowerInfo && (
+          <div className="manpower-details">
+            <div className="employee-dashboard">
+            <h2>Manpower Details for {selectedDate}</h2>
+            </div>
+            <table>
+              <tbody>
+                <tr>
+                  <td><strong>Required:</strong></td>
+                  <td>{manpowerInfo.required}</td>
+                </tr>
+                <tr>
+                  <td><strong>Projected Present:</strong></td>
+                  <td>{manpowerInfo.projected_present.join(", ") || "None"}</td>
+                </tr>
+                <tr>
+                  <td><strong>Projected Absent:</strong></td>
+                  <td>{manpowerInfo.projected_absent.join(", ") || "None"}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        )}
 
+        {selectedDate && !manpowerInfo && (
+          <div className="employee-dashboard">
+            <h2>No data available for {selectedDate}</h2>
+          </div>
+        )}
         {selectedDate && (
           <div className="shortages-section">
-            <h3>Manpower for {selectedDate}</h3>
+            <h3>Manpower Record for {selectedDate}</h3>
             <table>
               <thead>
                 <tr>
@@ -255,7 +294,7 @@ const Manpower = () => {
             </ul>
           </div>
         )}
-
+ 
         <div className="employee-dashboard">
           <hr />
           <br />
