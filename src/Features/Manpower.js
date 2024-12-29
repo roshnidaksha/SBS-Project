@@ -113,7 +113,7 @@ const Manpower = () => {
   };
 
   const handleDateChange = (date) => {
-    setSelectedDate(date.toLocaleDateString());
+    setSelectedDate(date.toISOString().split("T")[0]);
     setAttendance(initialAttendance);
   };
 
