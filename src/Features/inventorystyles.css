@@ -1,0 +1,11 @@
+/* styles.css */
+.speedometer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .highlight-reorder {
+    background-color: rgba(51, 219, 93, 0.3); /* Highlight for low stock */
+  }
+  

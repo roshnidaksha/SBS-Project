@@ -1,0 +1,2690 @@
+[
+    {
+        "Activity Reason": "time",
+        "WBS No.": "02.04.05",
+        "Component": "Sliding Ledge of Cross Beam",
+        "Maintenance Done": [
+            "E5",
+            "MinOH"
+        ],
+        "Quantity": 1,
+        "category": "Carbody Fittings",
+        "subcategory": "Gangway",
+        "shortfall": 32,
+        "quantity_needed": 0,
+        "lead_time": 6,
+        "cost": 384.0,
+        "historical_data": {
+            "times_ordered": 19,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 27,
+                "2024-07-11": 46,
+                "2024-04-18": 26,
+                "2024-01-25": 39
+            }
+        },
+        "total_quantity_needed": 1,
+        "quantity_in_stock": 33
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "02.04.07",
+        "Component": "Sliding Ledges of Bridge Plate (Wagon Side)",
+        "Maintenance Done": [
+            "E5"
+        ],
+        "Quantity": 1,
+        "category": "Carbody Fittings",
+        "subcategory": "Gangway",
+        "shortfall": 3,
+        "quantity_needed": 0,
+        "lead_time": 21,
+        "cost": 61.06,
+        "historical_data": {
+            "times_ordered": 59,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 31,
+                "2024-07-11": 5,
+                "2024-04-18": 31,
+                "2024-01-25": 32
+            }
+        },
+        "total_quantity_needed": 0,
+        "quantity_in_stock": 3
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "02.05.02",
+        "Component": "Inductive Sensors",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 3,
+        "category": "Carbody Fittings",
+        "subcategory": "Obstacle Detector",
+        "shortfall": 15,
+        "quantity_needed": 0,
+        "lead_time": 14,
+        "cost": 529.92,
+        "historical_data": {
+            "times_ordered": 75,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 3,
+                "2024-07-11": 9,
+                "2024-04-18": 20,
+                "2024-01-25": 25
+            }
+        },
+        "total_quantity_needed": 6,
+        "quantity_in_stock": 21
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "02.06.04",
+        "Component": "Automatic Coupler",
+        "Maintenance Done": [
+            "E4",
+            "MinOH"
+        ],
+        "Quantity": 2,
+        "category": "Carbody Fittings",
+        "subcategory": "Coupler",
+        "shortfall": -175,
+        "quantity_needed": 0,
+        "lead_time": 14,
+        "cost": 76.62,
+        "historical_data": {
+            "times_ordered": 89,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 43,
+                "2024-07-11": 20,
+                "2024-04-18": 25,
+                "2024-01-25": 34
+            }
+        },
+        "total_quantity_needed": 186,
+        "quantity_in_stock": 11,
+        "recommended_reorder_date": "2024-12-12"
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "02.06.12",
+        "Component": "Magnet Valve (W01)",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 2,
+        "category": "Carbody Fittings",
+        "subcategory": "Coupler",
+        "shortfall": 20,
+        "quantity_needed": 0,
+        "lead_time": 1,
+        "cost": 145.04,
+        "historical_data": {
+            "times_ordered": 51,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 40,
+                "2024-07-11": 11,
+                "2024-04-18": 13,
+                "2024-01-25": 39
+            }
+        },
+        "total_quantity_needed": 4,
+        "quantity_in_stock": 24
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "02.06.14",
+        "Component": "Magnet Valve (W03)",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 2,
+        "category": "Carbody Fittings",
+        "subcategory": "Coupler",
+        "shortfall": 12,
+        "quantity_needed": 0,
+        "lead_time": 22,
+        "cost": 238.75,
+        "historical_data": {
+            "times_ordered": 40,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 30,
+                "2024-07-11": 42,
+                "2024-04-18": 29,
+                "2024-01-25": 2
+            }
+        },
+        "total_quantity_needed": 4,
+        "quantity_in_stock": 16
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "02.06.17",
+        "Component": "Air Flow Cut Off (W15)",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 4,
+        "category": "Carbody Fittings",
+        "subcategory": "Coupler",
+        "shortfall": -1,
+        "quantity_needed": 0,
+        "lead_time": 28,
+        "cost": 684.25,
+        "historical_data": {
+            "times_ordered": 94,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 6,
+                "2024-07-11": 18,
+                "2024-04-18": 19,
+                "2024-01-25": 12
+            }
+        },
+        "total_quantity_needed": 8,
+        "quantity_in_stock": 7,
+        "recommended_reorder_date": "2024-11-28"
+    },
+    {
+        "Activity Reason": "Mileage",
+        "WBS No.": "03.01.11",
+        "Component": "Vertical Link",
+        "Maintenance Done": [
+            "MajOH2"
+        ],
+        "Quantity": 12,
+        "category": "Bogies & Running Gear",
+        "subcategory": "Bogie Structure / Frame",
+        "shortfall": 15,
+        "quantity_needed": 0,
+        "lead_time": 25,
+        "cost": 345.99,
+        "historical_data": {
+            "times_ordered": 85,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 5,
+                "2024-07-11": 50,
+                "2024-04-18": 21,
+                "2024-01-25": 24
+            }
+        },
+        "total_quantity_needed": 0,
+        "quantity_in_stock": 15
+    },
+    {
+        "Activity Reason": "Mileage",
+        "WBS No.": "03.01.12",
+        "Component": "Rubber Bearing",
+        "Maintenance Done": [
+            "MajOH2"
+        ],
+        "Quantity": 12,
+        "category": "Bogies & Running Gear",
+        "subcategory": "Bogie Structure / Frame",
+        "shortfall": 4,
+        "quantity_needed": 0,
+        "lead_time": 7,
+        "cost": 711.96,
+        "historical_data": {
+            "times_ordered": 20,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 45,
+                "2024-07-11": 21,
+                "2024-04-18": 16,
+                "2024-01-25": 20
+            }
+        },
+        "total_quantity_needed": 0,
+        "quantity_in_stock": 4
+    },
+    {
+        "Activity Reason": "Mileage",
+        "WBS No.": "03.01.18",
+        "Component": "Brush of Axle End Earth Unit",
+        "Maintenance Done": [
+            "Ref"
+        ],
+        "Quantity": 30,
+        "category": "Bogies & Running Gear",
+        "subcategory": "Bogie Structure / Frame",
+        "shortfall": 12,
+        "quantity_needed": 0,
+        "lead_time": 15,
+        "cost": 315.32,
+        "historical_data": {
+            "times_ordered": 81,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 36,
+                "2024-07-11": 49,
+                "2024-04-18": 44,
+                "2024-01-25": 1
+            }
+        },
+        "total_quantity_needed": 0,
+        "quantity_in_stock": 12
+    },
+    {
+        "Activity Reason": "Mileage",
+        "WBS No.": "03.01.20",
+        "Component": "Traction Motor Trunnion",
+        "Maintenance Done": [
+            "MajOH2"
+        ],
+        "Quantity": 8,
+        "category": "Bogies & Running Gear",
+        "subcategory": "Bogie Structure / Frame",
+        "shortfall": 22,
+        "quantity_needed": 0,
+        "lead_time": 30,
+        "cost": 555.72,
+        "historical_data": {
+            "times_ordered": 54,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 49,
+                "2024-07-11": 21,
+                "2024-04-18": 17,
+                "2024-01-25": 11
+            }
+        },
+        "total_quantity_needed": 0,
+        "quantity_in_stock": 22
+    },
+    {
+        "Activity Reason": "Mileage",
+        "WBS No.": "03.02.03",
+        "Component": "Primary Spring",
+        "Maintenance Done": [
+            "MajOH2"
+        ],
+        "Quantity": 48,
+        "category": "Bogies & Running Gear",
+        "subcategory": "Primary Suspension",
+        "shortfall": 1,
+        "quantity_needed": 0,
+        "lead_time": 17,
+        "cost": 378.16,
+        "historical_data": {
+            "times_ordered": 72,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 23,
+                "2024-07-11": 15,
+                "2024-04-18": 23,
+                "2024-01-25": 46
+            }
+        },
+        "total_quantity_needed": 0,
+        "quantity_in_stock": 1
+    },
+    {
+        "Activity Reason": "Mileage",
+        "WBS No.": "03.03.03",
+        "Component": "Airspring",
+        "Maintenance Done": [
+            "MajOH2"
+        ],
+        "Quantity": 12,
+        "category": "Bogies & Running Gear",
+        "subcategory": "Secondary Suspension",
+        "shortfall": 25,
+        "quantity_needed": 0,
+        "lead_time": 16,
+        "cost": 277.09,
+        "historical_data": {
+            "times_ordered": 60,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 33,
+                "2024-07-11": 27,
+                "2024-04-18": 22,
+                "2024-01-25": 20
+            }
+        },
+        "total_quantity_needed": 0,
+        "quantity_in_stock": 25
+    },
+    {
+        "Activity Reason": "Mileage",
+        "WBS No.": "03.03.06",
+        "Component": "Secondary Vertical Damper",
+        "Maintenance Done": [
+            "MajOH2"
+        ],
+        "Quantity": 12,
+        "category": "Bogies & Running Gear",
+        "subcategory": "Secondary Suspension",
+        "shortfall": 21,
+        "quantity_needed": 0,
+        "lead_time": 15,
+        "cost": 554.32,
+        "historical_data": {
+            "times_ordered": 95,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 9,
+                "2024-07-11": 17,
+                "2024-04-18": 47,
+                "2024-01-25": 4
+            }
+        },
+        "total_quantity_needed": 0,
+        "quantity_in_stock": 21
+    },
+    {
+        "Activity Reason": "Mileage",
+        "WBS No.": "03.03.08",
+        "Component": "Levelling Control Link",
+        "Maintenance Done": [
+            "MajOH2"
+        ],
+        "Quantity": 12,
+        "category": "Bogies & Running Gear",
+        "subcategory": "Secondary Suspension",
+        "shortfall": 1,
+        "quantity_needed": 0,
+        "lead_time": 5,
+        "cost": 581.43,
+        "historical_data": {
+            "times_ordered": 96,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 36,
+                "2024-07-11": 21,
+                "2024-04-18": 46,
+                "2024-01-25": 44
+            }
+        },
+        "total_quantity_needed": 0,
+        "quantity_in_stock": 1
+    },
+    {
+        "Activity Reason": "Mileage",
+        "WBS No.": "03.03.09",
+        "Component": "Secondary Lateral Damper",
+        "Maintenance Done": [
+            "MajOH2"
+        ],
+        "Quantity": 6,
+        "category": "Bogies & Running Gear",
+        "subcategory": "Secondary Suspension",
+        "shortfall": 25,
+        "quantity_needed": 0,
+        "lead_time": 19,
+        "cost": 965.29,
+        "historical_data": {
+            "times_ordered": 83,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 22,
+                "2024-07-11": 11,
+                "2024-04-18": 44,
+                "2024-01-25": 6
+            }
+        },
+        "total_quantity_needed": 0,
+        "quantity_in_stock": 25
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "03.03.11",
+        "Component": "Levelling Valve (L07.1)",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 6,
+        "category": "Bogies & Running Gear",
+        "subcategory": "Secondary Suspension",
+        "shortfall": 14,
+        "quantity_needed": 0,
+        "lead_time": 24,
+        "cost": 463.64,
+        "historical_data": {
+            "times_ordered": 25,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 36,
+                "2024-07-11": 10,
+                "2024-04-18": 29,
+                "2024-01-25": 22
+            }
+        },
+        "total_quantity_needed": 12,
+        "quantity_in_stock": 26
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "03.03.13",
+        "Component": "Levelling Valve (L07.2)",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 6,
+        "category": "Bogies & Running Gear",
+        "subcategory": "Secondary Suspension",
+        "shortfall": -3,
+        "quantity_needed": 0,
+        "lead_time": 12,
+        "cost": 442.58,
+        "historical_data": {
+            "times_ordered": 21,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 15,
+                "2024-07-11": 29,
+                "2024-04-18": 45,
+                "2024-01-25": 22
+            }
+        },
+        "total_quantity_needed": 12,
+        "quantity_in_stock": 9,
+        "recommended_reorder_date": "2024-12-14"
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "03.03.15",
+        "Component": "Overflow Valve (L08)",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 6,
+        "category": "Bogies & Running Gear",
+        "subcategory": "Secondary Suspension",
+        "shortfall": 27,
+        "quantity_needed": 0,
+        "lead_time": 13,
+        "cost": 128.3,
+        "historical_data": {
+            "times_ordered": 89,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 8,
+                "2024-07-11": 6,
+                "2024-04-18": 31,
+                "2024-01-25": 6
+            }
+        },
+        "total_quantity_needed": 12,
+        "quantity_in_stock": 39
+    },
+    {
+        "Activity Reason": "Mileage",
+        "WBS No.": "03.05.04",
+        "Component": "Traction Link Brushes",
+        "Maintenance Done": [
+            "MajOH2"
+        ],
+        "Quantity": 6,
+        "category": "Bogies & Running Gear",
+        "subcategory": "Traction Connection / Links",
+        "shortfall": 36,
+        "quantity_needed": 0,
+        "lead_time": 6,
+        "cost": 432.79,
+        "historical_data": {
+            "times_ordered": 91,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 43,
+                "2024-07-11": 11,
+                "2024-04-18": 28,
+                "2024-01-25": 48
+            }
+        },
+        "total_quantity_needed": 0,
+        "quantity_in_stock": 36
+    },
+    {
+        "Activity Reason": "Mileage",
+        "WBS No.": "03.06.04",
+        "Component": "Tubing System",
+        "Maintenance Done": [
+            "MinOH"
+        ],
+        "Quantity": 1,
+        "category": "Bogies & Running Gear",
+        "subcategory": "Bogie Fittings",
+        "shortfall": 22,
+        "quantity_needed": 0,
+        "lead_time": 3,
+        "cost": 517.3,
+        "historical_data": {
+            "times_ordered": 81,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 4,
+                "2024-07-11": 2,
+                "2024-04-18": 28,
+                "2024-01-25": 8
+            }
+        },
+        "total_quantity_needed": 1,
+        "quantity_in_stock": 23
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "04.01.16",
+        "Component": "LV Box Gasket",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 2,
+        "category": "Power Supply",
+        "subcategory": "Line Voltage System",
+        "shortfall": 32,
+        "quantity_needed": 0,
+        "lead_time": 24,
+        "cost": 260.0,
+        "historical_data": {
+            "times_ordered": 30,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 30,
+                "2024-07-11": 11,
+                "2024-04-18": 27,
+                "2024-01-25": 5
+            }
+        },
+        "total_quantity_needed": 4,
+        "quantity_in_stock": 36
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "04.04.06",
+        "Component": "Battery",
+        "Maintenance Done": [
+            "MinOH"
+        ],
+        "Quantity": 2,
+        "category": "Power Supply",
+        "subcategory": "Battery Systems",
+        "shortfall": 1,
+        "quantity_needed": 0,
+        "lead_time": 22,
+        "cost": 869.17,
+        "historical_data": {
+            "times_ordered": 20,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 12,
+                "2024-07-11": 20,
+                "2024-04-18": 12,
+                "2024-01-25": 38
+            }
+        },
+        "total_quantity_needed": 2,
+        "quantity_in_stock": 3
+    },
+    {
+        "Activity Reason": "Mileage",
+        "WBS No.": "05.01.03",
+        "Component": "Traction Motor",
+        "Maintenance Done": [
+            "MinOH",
+            "MajOH"
+        ],
+        "Quantity": 8,
+        "category": "Propulsion",
+        "subcategory": "Drive System",
+        "shortfall": 11,
+        "quantity_needed": 0,
+        "lead_time": 7,
+        "cost": 981.31,
+        "historical_data": {
+            "times_ordered": 90,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 6,
+                "2024-07-11": 31,
+                "2024-04-18": 38,
+                "2024-01-25": 21
+            }
+        },
+        "total_quantity_needed": 24,
+        "quantity_in_stock": 35
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "05.02.04",
+        "Component": "Propulsion Drive Gasket",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 2,
+        "category": "Propulsion",
+        "subcategory": "Traction Converter",
+        "shortfall": 33,
+        "quantity_needed": 0,
+        "lead_time": 11,
+        "cost": 49.42,
+        "historical_data": {
+            "times_ordered": 78,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 42,
+                "2024-07-11": 20,
+                "2024-04-18": 11,
+                "2024-01-25": 2
+            }
+        },
+        "total_quantity_needed": 4,
+        "quantity_in_stock": 37
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "05.04.01",
+        "Component": "Propulsion Cooling System Bearing",
+        "Maintenance Done": [
+            "MinOH"
+        ],
+        "Quantity": 2,
+        "category": "Propulsion",
+        "subcategory": "Propulsion Cooling System",
+        "shortfall": 4,
+        "quantity_needed": 0,
+        "lead_time": 21,
+        "cost": 26.63,
+        "historical_data": {
+            "times_ordered": 46,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 4,
+                "2024-07-11": 44,
+                "2024-04-18": 43,
+                "2024-01-25": 24
+            }
+        },
+        "total_quantity_needed": 2,
+        "quantity_in_stock": 6
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "05.04.03",
+        "Component": "Internal Fan",
+        "Maintenance Done": [
+            "MinOH"
+        ],
+        "Quantity": 2,
+        "category": "Propulsion",
+        "subcategory": "Propulsion Cooling System",
+        "shortfall": 20,
+        "quantity_needed": 0,
+        "lead_time": 27,
+        "cost": 161.48,
+        "historical_data": {
+            "times_ordered": 40,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 38,
+                "2024-07-11": 47,
+                "2024-04-18": 1,
+                "2024-01-25": 18
+            }
+        },
+        "total_quantity_needed": 2,
+        "quantity_in_stock": 22
+    },
+    {
+        "Activity Reason": "Mileage",
+        "WBS No.": "05.05.03",
+        "Component": "Gearbox",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 8,
+        "category": "Propulsion",
+        "subcategory": "Gearbox and Coupling",
+        "shortfall": 3,
+        "quantity_needed": 0,
+        "lead_time": 25,
+        "cost": 40.04,
+        "historical_data": {
+            "times_ordered": 16,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 28,
+                "2024-07-11": 50,
+                "2024-04-18": 7,
+                "2024-01-25": 23
+            }
+        },
+        "total_quantity_needed": 16,
+        "quantity_in_stock": 19
+    },
+    {
+        "Activity Reason": "Mileage",
+        "WBS No.": "05.05.04",
+        "Component": "Gearbox and Coupling Bearings",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 8,
+        "category": "Propulsion",
+        "subcategory": "Gearbox and Coupling",
+        "shortfall": -15,
+        "quantity_needed": 0,
+        "lead_time": 14,
+        "cost": 654.91,
+        "historical_data": {
+            "times_ordered": 48,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 18,
+                "2024-07-11": 18,
+                "2024-04-18": 21,
+                "2024-01-25": 20
+            }
+        },
+        "total_quantity_needed": 16,
+        "quantity_in_stock": 1,
+        "recommended_reorder_date": "2024-12-12"
+    },
+    {
+        "Activity Reason": "Mileage",
+        "WBS No.": "05.05.10",
+        "Component": "Reaction Rod",
+        "Maintenance Done": [
+            "MinOH"
+        ],
+        "Quantity": 8,
+        "category": "Propulsion",
+        "subcategory": "Gearbox and Coupling",
+        "shortfall": -3,
+        "quantity_needed": 0,
+        "lead_time": 12,
+        "cost": 930.05,
+        "historical_data": {
+            "times_ordered": 36,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 18,
+                "2024-07-11": 46,
+                "2024-04-18": 16,
+                "2024-01-25": 11
+            }
+        },
+        "total_quantity_needed": 8,
+        "quantity_in_stock": 5,
+        "recommended_reorder_date": "2024-12-14"
+    },
+    {
+        "Activity Reason": "Mileage",
+        "WBS No.": "05.05.13",
+        "Component": "Gear Coupling",
+        "Maintenance Done": [
+            "MinOH"
+        ],
+        "Quantity": 8,
+        "category": "Propulsion",
+        "subcategory": "Gearbox and Coupling",
+        "shortfall": 14,
+        "quantity_needed": 0,
+        "lead_time": 18,
+        "cost": 837.65,
+        "historical_data": {
+            "times_ordered": 17,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 47,
+                "2024-07-11": 33,
+                "2024-04-18": 5,
+                "2024-01-25": 42
+            }
+        },
+        "total_quantity_needed": 8,
+        "quantity_in_stock": 22
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "06.01.01",
+        "Component": "Air Supply Unit",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 2,
+        "category": "Auxiliaries",
+        "subcategory": "Air Supply System",
+        "shortfall": 24,
+        "quantity_needed": 0,
+        "lead_time": 20,
+        "cost": 305.3,
+        "historical_data": {
+            "times_ordered": 93,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 21,
+                "2024-07-11": 18,
+                "2024-04-18": 48,
+                "2024-01-25": 49
+            }
+        },
+        "total_quantity_needed": 4,
+        "quantity_in_stock": 28
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "06.01.05",
+        "Component": "Motor Compressor Set - Air Filter Elements",
+        "Maintenance Done": [
+            "E4",
+            "MinOH"
+        ],
+        "Quantity": 2,
+        "category": "Auxiliaries",
+        "subcategory": "Air Supply System",
+        "shortfall": -165,
+        "quantity_needed": 0,
+        "lead_time": 14,
+        "cost": 840.11,
+        "historical_data": {
+            "times_ordered": 2,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 37,
+                "2024-07-11": 21,
+                "2024-04-18": 20,
+                "2024-01-25": 41
+            }
+        },
+        "total_quantity_needed": 186,
+        "quantity_in_stock": 21,
+        "recommended_reorder_date": "2024-12-12"
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "06.01.07",
+        "Component": "Motor Compressor Set",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 2,
+        "category": "Auxiliaries",
+        "subcategory": "Air Supply System",
+        "shortfall": 0,
+        "quantity_needed": 0,
+        "lead_time": 8,
+        "cost": 586.12,
+        "historical_data": {
+            "times_ordered": 99,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 12,
+                "2024-07-11": 24,
+                "2024-04-18": 29,
+                "2024-01-25": 33
+            }
+        },
+        "total_quantity_needed": 4,
+        "quantity_in_stock": 4
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "06.01.10",
+        "Component": "Hose Pipe [A01.02]",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 2,
+        "category": "Auxiliaries",
+        "subcategory": "Air Supply System",
+        "shortfall": 14,
+        "quantity_needed": 0,
+        "lead_time": 20,
+        "cost": 678.33,
+        "historical_data": {
+            "times_ordered": 70,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 26,
+                "2024-07-11": 38,
+                "2024-04-18": 28,
+                "2024-01-25": 22
+            }
+        },
+        "total_quantity_needed": 4,
+        "quantity_in_stock": 18
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "06.01.14",
+        "Component": "Air Dryer Unit - Desicant",
+        "Maintenance Done": [
+            "E5",
+            "MinOH"
+        ],
+        "Quantity": 2,
+        "category": "Auxiliaries",
+        "subcategory": "Air Supply System",
+        "shortfall": 26,
+        "quantity_needed": 0,
+        "lead_time": 24,
+        "cost": 568.98,
+        "historical_data": {
+            "times_ordered": 92,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 2,
+                "2024-07-11": 35,
+                "2024-04-18": 15,
+                "2024-01-25": 17
+            }
+        },
+        "total_quantity_needed": 2,
+        "quantity_in_stock": 28
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "06.01.15",
+        "Component": "Air Dryer Unit",
+        "Maintenance Done": [
+            "E5",
+            "MajOH"
+        ],
+        "Quantity": 2,
+        "category": "Auxiliaries",
+        "subcategory": "Air Supply System",
+        "shortfall": 9,
+        "quantity_needed": 0,
+        "lead_time": 8,
+        "cost": 975.05,
+        "historical_data": {
+            "times_ordered": 35,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 22,
+                "2024-07-11": 48,
+                "2024-04-18": 36,
+                "2024-01-25": 23
+            }
+        },
+        "total_quantity_needed": 4,
+        "quantity_in_stock": 13
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "06.01.17",
+        "Component": "Silencer",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 2,
+        "category": "Auxiliaries",
+        "subcategory": "Air Supply System",
+        "shortfall": 27,
+        "quantity_needed": 0,
+        "lead_time": 30,
+        "cost": 540.73,
+        "historical_data": {
+            "times_ordered": 71,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 25,
+                "2024-07-11": 50,
+                "2024-04-18": 8,
+                "2024-01-25": 47
+            }
+        },
+        "total_quantity_needed": 4,
+        "quantity_in_stock": 31
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "06.01.19",
+        "Component": "Test Fitting [A01.07]",
+        "Maintenance Done": [
+            "Ref"
+        ],
+        "Quantity": 4,
+        "category": "Auxiliaries",
+        "subcategory": "Air Supply System",
+        "shortfall": 13,
+        "quantity_needed": 0,
+        "lead_time": 10,
+        "cost": 592.71,
+        "historical_data": {
+            "times_ordered": 39,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 15,
+                "2024-07-11": 35,
+                "2024-04-18": 9,
+                "2024-01-25": 25
+            }
+        },
+        "total_quantity_needed": 0,
+        "quantity_in_stock": 13
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "06.03.14",
+        "Component": "Radial Fan",
+        "Maintenance Done": [
+            "MinOH",
+            "Ref"
+        ],
+        "Quantity": 2,
+        "category": "Auxiliaries",
+        "subcategory": "Auxiliary Electrical Supply",
+        "shortfall": 36,
+        "quantity_needed": 0,
+        "lead_time": 18,
+        "cost": 774.96,
+        "historical_data": {
+            "times_ordered": 26,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 31,
+                "2024-07-11": 35,
+                "2024-04-18": 15,
+                "2024-01-25": 12
+            }
+        },
+        "total_quantity_needed": 2,
+        "quantity_in_stock": 38
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "06.03.15",
+        "Component": "Axial Fan",
+        "Maintenance Done": [
+            "MinOH",
+            "Ref"
+        ],
+        "Quantity": 2,
+        "category": "Auxiliaries",
+        "subcategory": "Auxiliary Electrical Supply",
+        "shortfall": 15,
+        "quantity_needed": 0,
+        "lead_time": 6,
+        "cost": 59.02,
+        "historical_data": {
+            "times_ordered": 55,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 16,
+                "2024-07-11": 26,
+                "2024-04-18": 18,
+                "2024-01-25": 6
+            }
+        },
+        "total_quantity_needed": 2,
+        "quantity_in_stock": 17
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "06.03.16",
+        "Component": "Electrolytic Capacitors",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 2,
+        "category": "Auxiliaries",
+        "subcategory": "Auxiliary Electrical Supply",
+        "shortfall": 4,
+        "quantity_needed": 0,
+        "lead_time": 24,
+        "cost": 83.73,
+        "historical_data": {
+            "times_ordered": 33,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 35,
+                "2024-07-11": 15,
+                "2024-04-18": 24,
+                "2024-01-25": 42
+            }
+        },
+        "total_quantity_needed": 4,
+        "quantity_in_stock": 8
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "07.01.08",
+        "Component": "Air Reservoir Module [B01]",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 3,
+        "category": "Pneumatic Braking System",
+        "subcategory": "Brake Control",
+        "shortfall": 10,
+        "quantity_needed": 0,
+        "lead_time": 11,
+        "cost": 186.77,
+        "historical_data": {
+            "times_ordered": 2,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 5,
+                "2024-07-11": 44,
+                "2024-04-18": 10,
+                "2024-01-25": 5
+            }
+        },
+        "total_quantity_needed": 6,
+        "quantity_in_stock": 16
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "07.01.19",
+        "Component": "Auxillary Control Unit [B01Z01]",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 3,
+        "category": "Pneumatic Braking System",
+        "subcategory": "Brake Control",
+        "shortfall": 31,
+        "quantity_needed": 0,
+        "lead_time": 6,
+        "cost": 866.4,
+        "historical_data": {
+            "times_ordered": 48,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 32,
+                "2024-07-11": 30,
+                "2024-04-18": 24,
+                "2024-01-25": 28
+            }
+        },
+        "total_quantity_needed": 6,
+        "quantity_in_stock": 37
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "07.01.34",
+        "Component": "Test Fitting [B01Z01.14]",
+        "Maintenance Done": [
+            "Ref"
+        ],
+        "Quantity": 3,
+        "category": "Pneumatic Braking System",
+        "subcategory": "Brake Control",
+        "shortfall": 35,
+        "quantity_needed": 0,
+        "lead_time": 17,
+        "cost": 354.69,
+        "historical_data": {
+            "times_ordered": 11,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 42,
+                "2024-07-11": 32,
+                "2024-04-18": 22,
+                "2024-01-25": 50
+            }
+        },
+        "total_quantity_needed": 0,
+        "quantity_in_stock": 35
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "07.01.35",
+        "Component": "Test Fitting [B01Z01.15]",
+        "Maintenance Done": [
+            "Ref"
+        ],
+        "Quantity": 3,
+        "category": "Pneumatic Braking System",
+        "subcategory": "Brake Control",
+        "shortfall": 38,
+        "quantity_needed": 0,
+        "lead_time": 26,
+        "cost": 576.06,
+        "historical_data": {
+            "times_ordered": 86,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 17,
+                "2024-07-11": 36,
+                "2024-04-18": 28,
+                "2024-01-25": 19
+            }
+        },
+        "total_quantity_needed": 0,
+        "quantity_in_stock": 38
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "07.01.39",
+        "Component": "Gateway Valve [B06]",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 2,
+        "category": "Pneumatic Braking System",
+        "subcategory": "Brake Control",
+        "shortfall": 3,
+        "quantity_needed": 0,
+        "lead_time": 14,
+        "cost": 501.91,
+        "historical_data": {
+            "times_ordered": 7,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 13,
+                "2024-07-11": 3,
+                "2024-04-18": 4,
+                "2024-01-25": 28
+            }
+        },
+        "total_quantity_needed": 4,
+        "quantity_in_stock": 7
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "07.01.41",
+        "Component": "Smart Valve [B07]",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 3,
+        "category": "Pneumatic Braking System",
+        "subcategory": "Brake Control",
+        "shortfall": 12,
+        "quantity_needed": 0,
+        "lead_time": 7,
+        "cost": 839.14,
+        "historical_data": {
+            "times_ordered": 9,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 4,
+                "2024-07-11": 35,
+                "2024-04-18": 25,
+                "2024-01-25": 50
+            }
+        },
+        "total_quantity_needed": 6,
+        "quantity_in_stock": 18
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "07.01.43",
+        "Component": "Gateway Valve [B08]",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 1,
+        "category": "Pneumatic Braking System",
+        "subcategory": "Brake Control",
+        "shortfall": 37,
+        "quantity_needed": 0,
+        "lead_time": 18,
+        "cost": 637.12,
+        "historical_data": {
+            "times_ordered": 75,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 2,
+                "2024-07-11": 30,
+                "2024-04-18": 40,
+                "2024-01-25": 7
+            }
+        },
+        "total_quantity_needed": 2,
+        "quantity_in_stock": 39
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "07.01.50",
+        "Component": "House Pipes [B31]",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 4,
+        "category": "Pneumatic Braking System",
+        "subcategory": "Brake Control",
+        "shortfall": -3,
+        "quantity_needed": 0,
+        "lead_time": 4,
+        "cost": 95.07,
+        "historical_data": {
+            "times_ordered": 86,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 30,
+                "2024-07-11": 44,
+                "2024-04-18": 27,
+                "2024-01-25": 21
+            }
+        },
+        "total_quantity_needed": 8,
+        "quantity_in_stock": 5,
+        "recommended_reorder_date": "2024-12-22"
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "07.01.39",
+        "Component": "Magnet Valve [BP03]",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 2,
+        "category": "Pneumatic Braking System",
+        "subcategory": "Brake Control",
+        "shortfall": 13,
+        "quantity_needed": 0,
+        "lead_time": 3,
+        "cost": 811.98,
+        "historical_data": {
+            "times_ordered": 19,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 38,
+                "2024-07-11": 12,
+                "2024-04-18": 33,
+                "2024-01-25": 25
+            }
+        },
+        "total_quantity_needed": 4,
+        "quantity_in_stock": 17
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "07.02.03",
+        "Component": "Tread Brake Units [C01, C03]",
+        "Maintenance Done": [
+            "MinOH"
+        ],
+        "Quantity": 24,
+        "category": "Pneumatic Braking System",
+        "subcategory": "Friction Brake System",
+        "shortfall": 9,
+        "quantity_needed": 0,
+        "lead_time": 24,
+        "cost": 287.47,
+        "historical_data": {
+            "times_ordered": 98,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 29,
+                "2024-07-11": 24,
+                "2024-04-18": 23,
+                "2024-01-25": 35
+            }
+        },
+        "total_quantity_needed": 24,
+        "quantity_in_stock": 33
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "07.02.06",
+        "Component": "House Pipes [C09]",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 6,
+        "category": "Pneumatic Braking System",
+        "subcategory": "Friction Brake System",
+        "shortfall": 5,
+        "quantity_needed": 0,
+        "lead_time": 29,
+        "cost": 389.39,
+        "historical_data": {
+            "times_ordered": 49,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 15,
+                "2024-07-11": 19,
+                "2024-04-18": 49,
+                "2024-01-25": 36
+            }
+        },
+        "total_quantity_needed": 12,
+        "quantity_in_stock": 17
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "07.02.08",
+        "Component": "House Pipes [C10]",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 12,
+        "category": "Pneumatic Braking System",
+        "subcategory": "Friction Brake System",
+        "shortfall": -5,
+        "quantity_needed": 0,
+        "lead_time": 25,
+        "cost": 703.66,
+        "historical_data": {
+            "times_ordered": 100,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 17,
+                "2024-07-11": 16,
+                "2024-04-18": 22,
+                "2024-01-25": 33
+            }
+        },
+        "total_quantity_needed": 24,
+        "quantity_in_stock": 19,
+        "recommended_reorder_date": "2024-12-01"
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "07.02.10",
+        "Component": "House Pipes [W02]",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 4,
+        "category": "Pneumatic Braking System",
+        "subcategory": "Friction Brake System",
+        "shortfall": -7,
+        "quantity_needed": 0,
+        "lead_time": 10,
+        "cost": 728.95,
+        "historical_data": {
+            "times_ordered": 64,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 18,
+                "2024-07-11": 29,
+                "2024-04-18": 5,
+                "2024-01-25": 35
+            }
+        },
+        "total_quantity_needed": 8,
+        "quantity_in_stock": 1,
+        "recommended_reorder_date": "2024-12-16"
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "07.02.12",
+        "Component": "House Pipes [W25]",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 10,
+        "category": "Pneumatic Braking System",
+        "subcategory": "Friction Brake System",
+        "shortfall": -3,
+        "quantity_needed": 0,
+        "lead_time": 7,
+        "cost": 181.2,
+        "historical_data": {
+            "times_ordered": 42,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 14,
+                "2024-07-11": 16,
+                "2024-04-18": 20,
+                "2024-01-25": 12
+            }
+        },
+        "total_quantity_needed": 20,
+        "quantity_in_stock": 17,
+        "recommended_reorder_date": "2024-12-19"
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "12.02.05.03",
+        "Component": "Buffer Stop",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 48,
+        "category": "Exterior Door Systems",
+        "subcategory": "Passenger Door Systems",
+        "shortfall": -73,
+        "quantity_needed": 0,
+        "lead_time": 11,
+        "cost": 366.4,
+        "historical_data": {
+            "times_ordered": 51,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 1,
+                "2024-07-11": 6,
+                "2024-04-18": 10,
+                "2024-01-25": 12
+            }
+        },
+        "total_quantity_needed": 96,
+        "quantity_in_stock": 23,
+        "recommended_reorder_date": "2024-12-15"
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "12.02.05.04",
+        "Component": "Door Closed Switch (Right)",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 24,
+        "category": "Exterior Door Systems",
+        "subcategory": "Passenger Door Systems",
+        "shortfall": -21,
+        "quantity_needed": 0,
+        "lead_time": 25,
+        "cost": 286.9,
+        "historical_data": {
+            "times_ordered": 76,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 1,
+                "2024-07-11": 14,
+                "2024-04-18": 17,
+                "2024-01-25": 32
+            }
+        },
+        "total_quantity_needed": 48,
+        "quantity_in_stock": 27,
+        "recommended_reorder_date": "2024-12-01"
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "12.02.05.05",
+        "Component": "Door Closed Switch (Left)",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 24,
+        "category": "Exterior Door Systems",
+        "subcategory": "Passenger Door Systems",
+        "shortfall": -44,
+        "quantity_needed": 0,
+        "lead_time": 21,
+        "cost": 543.21,
+        "historical_data": {
+            "times_ordered": 63,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 31,
+                "2024-07-11": 21,
+                "2024-04-18": 17,
+                "2024-01-25": 2
+            }
+        },
+        "total_quantity_needed": 48,
+        "quantity_in_stock": 4,
+        "recommended_reorder_date": "2024-12-05"
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "12.02.05.06",
+        "Component": "Door Locked Switch (Right)",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 24,
+        "category": "Exterior Door Systems",
+        "subcategory": "Passenger Door Systems",
+        "shortfall": -28,
+        "quantity_needed": 0,
+        "lead_time": 3,
+        "cost": 18.4,
+        "historical_data": {
+            "times_ordered": 3,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 38,
+                "2024-07-11": 31,
+                "2024-04-18": 48,
+                "2024-01-25": 25
+            }
+        },
+        "total_quantity_needed": 48,
+        "quantity_in_stock": 20,
+        "recommended_reorder_date": "2024-12-23"
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "12.02.05.07",
+        "Component": "Door Locked Switch (Left)",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 24,
+        "category": "Exterior Door Systems",
+        "subcategory": "Passenger Door Systems",
+        "shortfall": -20,
+        "quantity_needed": 0,
+        "lead_time": 19,
+        "cost": 721.6,
+        "historical_data": {
+            "times_ordered": 80,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 21,
+                "2024-07-11": 50,
+                "2024-04-18": 23,
+                "2024-01-25": 45
+            }
+        },
+        "total_quantity_needed": 48,
+        "quantity_in_stock": 28,
+        "recommended_reorder_date": "2024-12-07"
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "12.02.05.08",
+        "Component": "Drive Screw Assembly",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 24,
+        "category": "Exterior Door Systems",
+        "subcategory": "Passenger Door Systems",
+        "shortfall": -47,
+        "quantity_needed": 0,
+        "lead_time": 15,
+        "cost": 656.09,
+        "historical_data": {
+            "times_ordered": 27,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 47,
+                "2024-07-11": 11,
+                "2024-04-18": 36,
+                "2024-01-25": 13
+            }
+        },
+        "total_quantity_needed": 48,
+        "quantity_in_stock": 1,
+        "recommended_reorder_date": "2024-12-11"
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "12.02.05.09",
+        "Component": "Coupling",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 24,
+        "category": "Exterior Door Systems",
+        "subcategory": "Passenger Door Systems",
+        "shortfall": -8,
+        "quantity_needed": 0,
+        "lead_time": 1,
+        "cost": 717.72,
+        "historical_data": {
+            "times_ordered": 74,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 48,
+                "2024-07-11": 50,
+                "2024-04-18": 42,
+                "2024-01-25": 49
+            }
+        },
+        "total_quantity_needed": 48,
+        "quantity_in_stock": 40,
+        "recommended_reorder_date": "2024-12-25"
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "12.02.05.10",
+        "Component": "Bearing",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 24,
+        "category": "Exterior Door Systems",
+        "subcategory": "Passenger Door Systems",
+        "shortfall": -32,
+        "quantity_needed": 0,
+        "lead_time": 29,
+        "cost": 903.18,
+        "historical_data": {
+            "times_ordered": 17,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 39,
+                "2024-07-11": 4,
+                "2024-04-18": 38,
+                "2024-01-25": 6
+            }
+        },
+        "total_quantity_needed": 48,
+        "quantity_in_stock": 16,
+        "recommended_reorder_date": "2024-11-27"
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "12.02.06.01",
+        "Component": "Driving Arm (Right)",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 24,
+        "category": "Exterior Door Systems",
+        "subcategory": "Passenger Door Systems",
+        "shortfall": -24,
+        "quantity_needed": 0,
+        "lead_time": 19,
+        "cost": 631.88,
+        "historical_data": {
+            "times_ordered": 25,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 5,
+                "2024-07-11": 44,
+                "2024-04-18": 15,
+                "2024-01-25": 29
+            }
+        },
+        "total_quantity_needed": 48,
+        "quantity_in_stock": 24,
+        "recommended_reorder_date": "2024-12-07"
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "12.02.06.02",
+        "Component": "Fork Assembly (Right)",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 24,
+        "category": "Exterior Door Systems",
+        "subcategory": "Passenger Door Systems",
+        "shortfall": -19,
+        "quantity_needed": 0,
+        "lead_time": 21,
+        "cost": 143.39,
+        "historical_data": {
+            "times_ordered": 50,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 40,
+                "2024-07-11": 6,
+                "2024-04-18": 47,
+                "2024-01-25": 50
+            }
+        },
+        "total_quantity_needed": 48,
+        "quantity_in_stock": 29,
+        "recommended_reorder_date": "2024-12-05"
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "12.02.06.03",
+        "Component": "Driving Arm (Left)",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 24,
+        "category": "Exterior Door Systems",
+        "subcategory": "Passenger Door Systems",
+        "shortfall": -12,
+        "quantity_needed": 0,
+        "lead_time": 6,
+        "cost": 64.05,
+        "historical_data": {
+            "times_ordered": 53,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 10,
+                "2024-07-11": 14,
+                "2024-04-18": 39,
+                "2024-01-25": 44
+            }
+        },
+        "total_quantity_needed": 48,
+        "quantity_in_stock": 36,
+        "recommended_reorder_date": "2024-12-20"
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "12.02.06.04",
+        "Component": "Fork Assembly (Left)",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 24,
+        "category": "Exterior Door Systems",
+        "subcategory": "Passenger Door Systems",
+        "shortfall": -43,
+        "quantity_needed": 0,
+        "lead_time": 7,
+        "cost": 743.86,
+        "historical_data": {
+            "times_ordered": 69,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 7,
+                "2024-07-11": 25,
+                "2024-04-18": 39,
+                "2024-01-25": 40
+            }
+        },
+        "total_quantity_needed": 48,
+        "quantity_in_stock": 5,
+        "recommended_reorder_date": "2024-12-19"
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "12.02.07.01",
+        "Component": "Hanging Device",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 24,
+        "category": "Exterior Door Systems",
+        "subcategory": "Passenger Door Systems",
+        "shortfall": -33,
+        "quantity_needed": 0,
+        "lead_time": 9,
+        "cost": 782.4,
+        "historical_data": {
+            "times_ordered": 13,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 27,
+                "2024-07-11": 46,
+                "2024-04-18": 19,
+                "2024-01-25": 11
+            }
+        },
+        "total_quantity_needed": 48,
+        "quantity_in_stock": 15,
+        "recommended_reorder_date": "2024-12-17"
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "12.02.08.01",
+        "Component": "Door Leaf (Right)",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 24,
+        "category": "Exterior Door Systems",
+        "subcategory": "Passenger Door Systems",
+        "shortfall": -27,
+        "quantity_needed": 0,
+        "lead_time": 26,
+        "cost": 443.07,
+        "historical_data": {
+            "times_ordered": 75,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 18,
+                "2024-07-11": 21,
+                "2024-04-18": 14,
+                "2024-01-25": 4
+            }
+        },
+        "total_quantity_needed": 48,
+        "quantity_in_stock": 21,
+        "recommended_reorder_date": "2024-11-30"
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "12.02.08.03",
+        "Component": "Female Front Seal",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 24,
+        "category": "Exterior Door Systems",
+        "subcategory": "Passenger Door Systems",
+        "shortfall": -23,
+        "quantity_needed": 0,
+        "lead_time": 30,
+        "cost": 964.18,
+        "historical_data": {
+            "times_ordered": 16,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 28,
+                "2024-07-11": 33,
+                "2024-04-18": 35,
+                "2024-01-25": 10
+            }
+        },
+        "total_quantity_needed": 48,
+        "quantity_in_stock": 25,
+        "recommended_reorder_date": "2024-11-26"
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "12.02.08.04",
+        "Component": "Rear Seal (Right)",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 24,
+        "category": "Exterior Door Systems",
+        "subcategory": "Passenger Door Systems",
+        "shortfall": -11,
+        "quantity_needed": 0,
+        "lead_time": 7,
+        "cost": 44.77,
+        "historical_data": {
+            "times_ordered": 41,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 34,
+                "2024-07-11": 22,
+                "2024-04-18": 35,
+                "2024-01-25": 12
+            }
+        },
+        "total_quantity_needed": 48,
+        "quantity_in_stock": 37,
+        "recommended_reorder_date": "2024-12-19"
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "12.02.08.05",
+        "Component": "Upper Acoustic Seal (Right)",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 24,
+        "category": "Exterior Door Systems",
+        "subcategory": "Passenger Door Systems",
+        "shortfall": -23,
+        "quantity_needed": 0,
+        "lead_time": 22,
+        "cost": 796.87,
+        "historical_data": {
+            "times_ordered": 18,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 45,
+                "2024-07-11": 25,
+                "2024-04-18": 37,
+                "2024-01-25": 14
+            }
+        },
+        "total_quantity_needed": 48,
+        "quantity_in_stock": 25,
+        "recommended_reorder_date": "2024-12-04"
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "12.02.08.07",
+        "Component": "Door Leaf (Left)",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 24,
+        "category": "Exterior Door Systems",
+        "subcategory": "Passenger Door Systems",
+        "shortfall": -45,
+        "quantity_needed": 0,
+        "lead_time": 29,
+        "cost": 241.91,
+        "historical_data": {
+            "times_ordered": 45,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 40,
+                "2024-07-11": 47,
+                "2024-04-18": 3,
+                "2024-01-25": 30
+            }
+        },
+        "total_quantity_needed": 48,
+        "quantity_in_stock": 3,
+        "recommended_reorder_date": "2024-11-27"
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "12.02.08.09",
+        "Component": "Male Front Seal",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 24,
+        "category": "Exterior Door Systems",
+        "subcategory": "Passenger Door Systems",
+        "shortfall": -36,
+        "quantity_needed": 0,
+        "lead_time": 16,
+        "cost": 131.23,
+        "historical_data": {
+            "times_ordered": 58,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 7,
+                "2024-07-11": 45,
+                "2024-04-18": 30,
+                "2024-01-25": 22
+            }
+        },
+        "total_quantity_needed": 48,
+        "quantity_in_stock": 12,
+        "recommended_reorder_date": "2024-12-10"
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "12.02.08.10",
+        "Component": "Rear Seal (Left)",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 24,
+        "category": "Exterior Door Systems",
+        "subcategory": "Passenger Door Systems",
+        "shortfall": -31,
+        "quantity_needed": 0,
+        "lead_time": 25,
+        "cost": 992.74,
+        "historical_data": {
+            "times_ordered": 9,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 32,
+                "2024-07-11": 27,
+                "2024-04-18": 30,
+                "2024-01-25": 49
+            }
+        },
+        "total_quantity_needed": 48,
+        "quantity_in_stock": 17,
+        "recommended_reorder_date": "2024-12-01"
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "12.02.08.11",
+        "Component": "Upper Acoustic Seal (Left)",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 24,
+        "category": "Exterior Door Systems",
+        "subcategory": "Passenger Door Systems",
+        "shortfall": -41,
+        "quantity_needed": 0,
+        "lead_time": 9,
+        "cost": 609.63,
+        "historical_data": {
+            "times_ordered": 28,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 4,
+                "2024-07-11": 38,
+                "2024-04-18": 19,
+                "2024-01-25": 37
+            }
+        },
+        "total_quantity_needed": 48,
+        "quantity_in_stock": 7,
+        "recommended_reorder_date": "2024-12-17"
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "12.02.08.12",
+        "Component": "Lower Acoustic Seal",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 24,
+        "category": "Exterior Door Systems",
+        "subcategory": "Passenger Door Systems",
+        "shortfall": -12,
+        "quantity_needed": 0,
+        "lead_time": 4,
+        "cost": 357.93,
+        "historical_data": {
+            "times_ordered": 9,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 24,
+                "2024-07-11": 25,
+                "2024-04-18": 2,
+                "2024-01-25": 2
+            }
+        },
+        "total_quantity_needed": 48,
+        "quantity_in_stock": 36,
+        "recommended_reorder_date": "2024-12-22"
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "12.02.09.02",
+        "Component": "Peripheral Seal (EAD)",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 6,
+        "category": "Exterior Door Systems",
+        "subcategory": "Passenger Door Systems",
+        "shortfall": -10,
+        "quantity_needed": 0,
+        "lead_time": 9,
+        "cost": 909.48,
+        "historical_data": {
+            "times_ordered": 96,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 14,
+                "2024-07-11": 38,
+                "2024-04-18": 11,
+                "2024-01-25": 14
+            }
+        },
+        "total_quantity_needed": 12,
+        "quantity_in_stock": 2,
+        "recommended_reorder_date": "2024-12-17"
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "12.02.09.03",
+        "Component": "Switch (EAD)",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 6,
+        "category": "Exterior Door Systems",
+        "subcategory": "Passenger Door Systems",
+        "shortfall": 13,
+        "quantity_needed": 0,
+        "lead_time": 30,
+        "cost": 862.64,
+        "historical_data": {
+            "times_ordered": 22,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 27,
+                "2024-07-11": 19,
+                "2024-04-18": 45,
+                "2024-01-25": 18
+            }
+        },
+        "total_quantity_needed": 12,
+        "quantity_in_stock": 25
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "12.02.09.04",
+        "Component": "Bowden Cable (EAD)",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 6,
+        "category": "Exterior Door Systems",
+        "subcategory": "Passenger Door Systems",
+        "shortfall": -7,
+        "quantity_needed": 0,
+        "lead_time": 7,
+        "cost": 156.75,
+        "historical_data": {
+            "times_ordered": 57,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 28,
+                "2024-07-11": 46,
+                "2024-04-18": 31,
+                "2024-01-25": 50
+            }
+        },
+        "total_quantity_needed": 12,
+        "quantity_in_stock": 5,
+        "recommended_reorder_date": "2024-12-19"
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "12.02.10.01",
+        "Component": "Switch (EED)",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 24,
+        "category": "Exterior Door Systems",
+        "subcategory": "Passenger Door Systems",
+        "shortfall": -44,
+        "quantity_needed": 0,
+        "lead_time": 12,
+        "cost": 954.87,
+        "historical_data": {
+            "times_ordered": 93,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 12,
+                "2024-07-11": 18,
+                "2024-04-18": 14,
+                "2024-01-25": 37
+            }
+        },
+        "total_quantity_needed": 48,
+        "quantity_in_stock": 4,
+        "recommended_reorder_date": "2024-12-14"
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "12.02.10.02",
+        "Component": "Bowden Cable (EED)",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 24,
+        "category": "Exterior Door Systems",
+        "subcategory": "Passenger Door Systems",
+        "shortfall": -39,
+        "quantity_needed": 0,
+        "lead_time": 21,
+        "cost": 349.29,
+        "historical_data": {
+            "times_ordered": 22,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 1,
+                "2024-07-11": 42,
+                "2024-04-18": 10,
+                "2024-01-25": 35
+            }
+        },
+        "total_quantity_needed": 48,
+        "quantity_in_stock": 9,
+        "recommended_reorder_date": "2024-12-05"
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "12.02.11.01",
+        "Component": "Threshold Kit",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 24,
+        "category": "Exterior Door Systems",
+        "subcategory": "Passenger Door Systems",
+        "shortfall": -35,
+        "quantity_needed": 0,
+        "lead_time": 23,
+        "cost": 884.73,
+        "historical_data": {
+            "times_ordered": 3,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 42,
+                "2024-07-11": 9,
+                "2024-04-18": 28,
+                "2024-01-25": 22
+            }
+        },
+        "total_quantity_needed": 48,
+        "quantity_in_stock": 13,
+        "recommended_reorder_date": "2024-12-03"
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "12.02.11.03",
+        "Component": "Threshold Rubber",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 48,
+        "category": "Exterior Door Systems",
+        "subcategory": "Passenger Door Systems",
+        "shortfall": -76,
+        "quantity_needed": 0,
+        "lead_time": 17,
+        "cost": 684.74,
+        "historical_data": {
+            "times_ordered": 40,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 18,
+                "2024-07-11": 12,
+                "2024-04-18": 32,
+                "2024-01-25": 12
+            }
+        },
+        "total_quantity_needed": 96,
+        "quantity_in_stock": 20,
+        "recommended_reorder_date": "2024-12-09"
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "12.06.04",
+        "Component": "Pair of Regulation Gas",
+        "Maintenance Done": [
+            "MinOH"
+        ],
+        "Quantity": 2,
+        "category": "Exterior Door Systems",
+        "shortfall": 16,
+        "quantity_needed": 0,
+        "lead_time": 1,
+        "cost": 859.23,
+        "historical_data": {
+            "times_ordered": 55,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 47,
+                "2024-07-11": 46,
+                "2024-04-18": 21,
+                "2024-01-25": 22
+            }
+        },
+        "total_quantity_needed": 2,
+        "quantity_in_stock": 18
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "12.06.06",
+        "Component": "Pair of Door Leaf Gas Springs",
+        "Maintenance Done": [
+            "MinOH"
+        ],
+        "Quantity": 2,
+        "category": "Exterior Door Systems",
+        "shortfall": 0,
+        "quantity_needed": 0,
+        "lead_time": 25,
+        "cost": 91.87,
+        "historical_data": {
+            "times_ordered": 8,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 16,
+                "2024-07-11": 10,
+                "2024-04-18": 41,
+                "2024-01-25": 48
+            }
+        },
+        "total_quantity_needed": 2,
+        "quantity_in_stock": 2
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "12.06.09",
+        "Component": "Pair of Ejector Gas Spring",
+        "Maintenance Done": [
+            "MinOH"
+        ],
+        "Quantity": 2,
+        "category": "Exterior Door Systems",
+        "shortfall": 18,
+        "quantity_needed": 0,
+        "lead_time": 3,
+        "cost": 245.22,
+        "historical_data": {
+            "times_ordered": 18,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 36,
+                "2024-07-11": 11,
+                "2024-04-18": 33,
+                "2024-01-25": 20
+            }
+        },
+        "total_quantity_needed": 2,
+        "quantity_in_stock": 20
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "12.06.10",
+        "Component": "Plumb (Reducer)",
+        "Maintenance Done": [
+            "E3",
+            "E4",
+            "MinOH"
+        ],
+        "Quantity": 2,
+        "category": "Exterior Door Systems",
+        "shortfall": -736,
+        "quantity_needed": 0,
+        "lead_time": 20,
+        "cost": 187.65,
+        "historical_data": {
+            "times_ordered": 15,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 31,
+                "2024-07-11": 50,
+                "2024-04-18": 6,
+                "2024-01-25": 4
+            }
+        },
+        "total_quantity_needed": 738,
+        "quantity_in_stock": 2,
+        "recommended_reorder_date": "2024-12-06"
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "12.06.13",
+        "Component": "Pair of Roll-up Axle Slings",
+        "Maintenance Done": [
+            "MinOH"
+        ],
+        "Quantity": 2,
+        "category": "Exterior Door Systems",
+        "shortfall": 12,
+        "quantity_needed": 0,
+        "lead_time": 25,
+        "cost": 365.43,
+        "historical_data": {
+            "times_ordered": 73,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 13,
+                "2024-07-11": 17,
+                "2024-04-18": 21,
+                "2024-01-25": 12
+            }
+        },
+        "total_quantity_needed": 2,
+        "quantity_in_stock": 14
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "12.06.15",
+        "Component": "Pair of Ramp Cable",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 2,
+        "category": "Exterior Door Systems",
+        "shortfall": 4,
+        "quantity_needed": 0,
+        "lead_time": 13,
+        "cost": 579.86,
+        "historical_data": {
+            "times_ordered": 90,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 37,
+                "2024-07-11": 13,
+                "2024-04-18": 15,
+                "2024-01-25": 45
+            }
+        },
+        "total_quantity_needed": 4,
+        "quantity_in_stock": 8
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "12.06.17",
+        "Component": "Pair of Textile Floor Cable",
+        "Maintenance Done": [
+            "MinOH"
+        ],
+        "Quantity": 2,
+        "category": "Exterior Door Systems",
+        "shortfall": 20,
+        "quantity_needed": 0,
+        "lead_time": 19,
+        "cost": 781.87,
+        "historical_data": {
+            "times_ordered": 62,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 50,
+                "2024-07-11": 32,
+                "2024-04-18": 41,
+                "2024-01-25": 4
+            }
+        },
+        "total_quantity_needed": 2,
+        "quantity_in_stock": 22
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "12.06.18",
+        "Component": "Photoluminescent Band",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 2,
+        "category": "Exterior Door Systems",
+        "shortfall": 1,
+        "quantity_needed": 0,
+        "lead_time": 29,
+        "cost": 718.51,
+        "historical_data": {
+            "times_ordered": 44,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 25,
+                "2024-07-11": 22,
+                "2024-04-18": 35,
+                "2024-01-25": 49
+            }
+        },
+        "total_quantity_needed": 4,
+        "quantity_in_stock": 5
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "12.06.20",
+        "Component": "Pair of Ramp Sling",
+        "Maintenance Done": [
+            "MinOH"
+        ],
+        "Quantity": 2,
+        "category": "Exterior Door Systems",
+        "shortfall": 24,
+        "quantity_needed": 0,
+        "lead_time": 11,
+        "cost": 118.83,
+        "historical_data": {
+            "times_ordered": 78,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 46,
+                "2024-07-11": 33,
+                "2024-04-18": 6,
+                "2024-01-25": 4
+            }
+        },
+        "total_quantity_needed": 2,
+        "quantity_in_stock": 26
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "12.06.22",
+        "Component": "External Seal",
+        "Maintenance Done": [
+            "MinOH"
+        ],
+        "Quantity": 2,
+        "category": "Exterior Door Systems",
+        "shortfall": 27,
+        "quantity_needed": 0,
+        "lead_time": 5,
+        "cost": 471.13,
+        "historical_data": {
+            "times_ordered": 30,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 14,
+                "2024-07-11": 8,
+                "2024-04-18": 46,
+                "2024-01-25": 9
+            }
+        },
+        "total_quantity_needed": 2,
+        "quantity_in_stock": 29
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "12.06.24",
+        "Component": "Cable of Detrainment Door",
+        "Maintenance Done": [
+            "MinOH"
+        ],
+        "Quantity": 2,
+        "category": "Exterior Door Systems",
+        "shortfall": 15,
+        "quantity_needed": 0,
+        "lead_time": 1,
+        "cost": 721.61,
+        "historical_data": {
+            "times_ordered": 93,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 48,
+                "2024-07-11": 45,
+                "2024-04-18": 20,
+                "2024-01-25": 1
+            }
+        },
+        "total_quantity_needed": 2,
+        "quantity_in_stock": 17
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "12.06.26",
+        "Component": "Electromagnet",
+        "Maintenance Done": [
+            "MajOH"
+        ],
+        "Quantity": 2,
+        "category": "Exterior Door Systems",
+        "shortfall": 28,
+        "quantity_needed": 0,
+        "lead_time": 27,
+        "cost": 66.61,
+        "historical_data": {
+            "times_ordered": 79,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 1,
+                "2024-07-11": 8,
+                "2024-04-18": 47,
+                "2024-01-25": 5
+            }
+        },
+        "total_quantity_needed": 4,
+        "quantity_in_stock": 32
+    },
+    {
+        "Activity Reason": "time",
+        "WBS No.": "13.02.12",
+        "Component": "Air Filter",
+        "Maintenance Done": [
+            "E1",
+            "E2",
+            "E3",
+            "E4",
+            "MinOH"
+        ],
+        "Quantity": 12,
+        "category": "ACV System",
+        "subcategory": "ACV Saloon",
+        "shortfall": -4340,
+        "quantity_needed": 0,
+        "lead_time": 1,
+        "cost": 500.61,
+        "historical_data": {
+            "times_ordered": 11,
+            "last_order_date": "2024-12-26",
+            "last_4_quarters_order_quantity": {
+                "2024-10-03": 30,
+                "2024-07-11": 37,
+                "2024-04-18": 30,
+                "2024-01-25": 21
+            }
+        },
+        "total_quantity_needed": 35340,
+        "quantity_in_stock": 31000,
+        "recommended_reorder_date": "2024-12-25"
+    }
+]
