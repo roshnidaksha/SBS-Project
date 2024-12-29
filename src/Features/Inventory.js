@@ -46,7 +46,7 @@ import {
 import Calendar from "react-calendar"; // Assuming you have a library for calendar
 import "react-calendar/dist/Calendar.css";
 import "./inventorystyles.css"; // Custom CSS for the half-circle dials
-import sparePartsData from "../spare_parts_data.json"; // Assuming your data is in this file
+import sparePartsData from "../data/spare_parts_data.json"; // Assuming your data is in this file
 import { FaArrowDown, FaArrowUp } from "react-icons/fa";
 import { width } from "@mui/system";
 

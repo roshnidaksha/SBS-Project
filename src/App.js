@@ -7,6 +7,8 @@ import {
 } from "react-router-dom";
 import HomePage from "./HomePage";
 import NavBar from "./NavBar";
+import Inventory from "./Features/Inventory";
+import PM from "./Features/PM";
 import Manpower from "./Features/Manpower";
 import FinancialManagement from "./Features/FinancialManagement";
 const theme = extendTheme({
@@ -25,6 +27,8 @@ function App() {
             <Route path="/" element={<Navigate to="/home" />} />
             {/* Render other routes */}
             <Route path="/home" element={<HomePage />} />
+            <Route path="/inventory" element={<Inventory />} />
+            <Route path="/pm" element={<PM />} />
             <Route path="/manpower" element={<Manpower />} />
             <Route path="/financialManagement" element={<FinancialManagement />} />
             {/* <Route path="/career-voyage" element={<CareerVoyage />} />

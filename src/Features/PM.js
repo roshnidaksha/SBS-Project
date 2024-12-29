@@ -14,7 +14,7 @@ import {
 } from "@chakra-ui/react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css"; // Default styles for react-calendar
-import trainData from "../train_data.json"; // Importing train data from one level up
+import trainData from "../data/train_data.json"; // Importing train data from one level up
 import NavBar from "../NavBar";
 import "./PM.css"; // Import custom CSS for tile styling
 

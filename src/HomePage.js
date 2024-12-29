@@ -35,7 +35,7 @@ const features = [
     title: "Preventify",
     description:
       "View maintenance tasks forecasted for the entire year",
-    image: "development.png", // Image path in the public folder
+    image: "schedule.webp", // Image path in the public folder
     buttonLabel: "schedule",
     buttonRoute: "/learning",
     icon: <FiBookOpen size={40} />,
@@ -44,7 +44,7 @@ const features = [
     title: "WorkSync", // Add the Manpower feature
     description:
       "Track and manage workforce data effectively with real-time analytics and reports.",
-    image: "manpower.png", // Placeholder image in the public folder
+    image: "manpower.jpg", // Placeholder image in the public folder
     buttonLabel: "Manage Workforce",
     buttonRoute: "/manpower", // Route to Manpower page
     icon: <FiUsers size={40} />,
@@ -53,7 +53,7 @@ const features = [
     title: "Fin Scope",
     description:
       "Monitor budget for manpower and spare parts through comprehensive insights",
-    image: "mentor.jpg", // Image path in the public folder
+    image: "finScope.png", // Image path in the public folder
     buttonLabel: "Check Status",
     buttonRoute: "/financialManagement",
     icon: <FiUsers size={40} />,
@@ -99,7 +99,7 @@ const HomePage = () => {
 
         {/* Welcome message positioned lower */}
         <Heading as="h4" textAlign="center" mt={12} mb={4}>
-          Welcome, Nancy Drew!
+          Welcome!
         </Heading>
 
         <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={6} mt={8}>
