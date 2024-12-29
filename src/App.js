@@ -7,8 +7,8 @@ import {
 } from "react-router-dom";
 import HomePage from "./HomePage";
 import NavBar from "./NavBar";
-import Inventory from "./Features/Inventory";
-import PM from "./Features/PM";
+import FinancialManagement from "./Features/FinancialManagement";
+
 const theme = extendTheme({
   config: {
     initialColorMode: "light", // Ensure this is properly set
@@ -25,10 +25,7 @@ function App() {
             <Route path="/" element={<Navigate to="/home" />} />
             {/* Render other routes */}
             <Route path="/home" element={<HomePage />} />
-            <Route path="/inventory" element={<Inventory />} />
-            <Route path="/pm" element={<PM />} />
-            {/* <Route path="/gen-ex" element={<GenerationalEngagement />} />
-            <Route path="/learning" element={<LearningDashboard />} /> */}
+            <Route path="/financialManagement" element={<FinancialManagement />} />
           </Routes>
         </div>
       </Router>
