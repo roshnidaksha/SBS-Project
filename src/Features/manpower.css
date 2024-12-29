@@ -271,3 +271,93 @@ h1 {
   border: 1px solid #ccc; /* Border for input fields */
   border-radius: 4px;
 }
+
+
+/* General styles */
+.manpower-container {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+/* Manpower Details Section */
+.manpower-details {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.manpower-details h3 {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+.manpower-details table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.manpower-details th,
+.manpower-details td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ccc;
+  font-size: 1.1em;
+  font-family: Arial, sans-serif;
+}
+
+.manpower-details th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.manpower-details tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.manpower-details tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.manpower-details tr:hover {
+  background-color: #f1f1f1;
+}
+
+.manpower-details td {
+  padding-left: 20px;
+}
+
+.manpower-details .no-data {
+  text-align: center;
+  font-size: 1.5em;
+  color: #e74c3c;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .manpower-details h3 {
+    font-size: 2em;
+  }
+
+  .manpower-details table {
+    font-size: 1em;
+  }
+
+  .manpower-details th, .manpower-details td {
+    padding: 10px;
+  }
+}
