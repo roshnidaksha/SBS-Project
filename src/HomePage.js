@@ -50,12 +50,12 @@ const features = [
     icon: <FiBookOpen size={40} />,
   },
   {
-    title: "Mentorship Hub",
+    title: "Fin Scope",
     description:
       "Resources for younger interns and feedback tools for managers, fostering skill-sharing across generations.",
     image: "mentor.jpg", // Image path in the public folder
     buttonLabel: "Engage Now",
-    buttonRoute: "/gen-ex",
+    buttonRoute: "/financialManagement",
     icon: <FiUsers size={40} />,
   },
 ];

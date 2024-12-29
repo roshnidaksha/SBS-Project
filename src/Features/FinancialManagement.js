@@ -1,7 +1,17 @@
 import NavBar from "../NavBar";
 import React, { useState, useEffect } from 'react';
 import {
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalBody,
+  ModalFooter,
+  ModalHeader,
+  ModalCloseButton,
+  SimpleGrid,
+  useDisclosure,
   Table,
+  Text,
   Thead,
   Tbody,
   Tr,
@@ -15,9 +25,12 @@ import {
   Select,
   ChakraProvider,
 } from "@chakra-ui/react";
-import { Line } from 'react-chartjs-2';
+import { Bar, Line } from 'react-chartjs-2';
 import Chart from 'chart.js/auto';
 import "./FinancialManagement.css"
+
+import train_data_forecast from '../data/train_data_forecast.json'
+import sparePartsData from '../data/spare_parts_data.json'
 
 const maintenancePackages = [
   { name: 'E1', kilometers: 10800, manhours_required: 10 },
@@ -29,58 +42,26 @@ const maintenancePackages = [
   { name: 'MajOH', kilometers: 975000, manhours_required: 2400 },
 ];
 
-const maintenanceSchedule = [
-  { train: 'PV01', activity: 'E1', track: 'E5', date: '25-12-2024' },
-  { train: 'PV01', activity: 'E2', track: 'E2', date: '26-12-2024' }, // Rule: If E2 happens, E1 happens.
-  { train: 'PV02', activity: 'E1', track: 'E3', date: '28-12-2024' },
-  { train: 'PV02', activity: 'E2', track: 'E6', date: '29-12-2024' },
-  { train: 'PV02', activity: 'E3', track: 'W2', date: '30-12-2024' }, // Rule: If E3 happens, E1 and E2 happen.
-  { train: 'PV03', activity: 'E1', track: 'E4', date: '05-01-2025' },
-  { train: 'PV03', activity: 'E2', track: 'E1', date: '06-01-2025' },
-  { train: 'PV03', activity: 'E3', track: 'W3', date: '07-01-2025' },
-  { train: 'PV03', activity: 'E4', track: 'W2', date: '08-01-2025' }, // Rule: If E4 happens, E1, E2, and E3 happen.
-  { train: 'PV04', activity: 'minOH', track: 'W1', date: '15-01-2025' }, // Rule: MinOH in W1-W4 only.
-  { train: 'PV05', activity: 'majOH', track: 'W3', date: '22-01-2025' }, // Rule: MajOH in W1-W4 only.
-  { train: 'PV06', activity: 'E1', track: 'E3', date: '01-02-2025' },
-  { train: 'PV06', activity: 'E2', track: 'E6', date: '02-02-2025' },
-  { train: 'PV06', activity: 'E3', track: 'E1', date: '03-02-2025' },
-  { train: 'PV07', activity: 'E5', track: 'W4', date: '10-02-2025' }, // Less frequent for E5.
-  { train: 'PV08', activity: 'E1', track: 'E2', date: '20-02-2025' },
-  { train: 'PV08', activity: 'E2', track: 'E4', date: '21-02-2025' },
-  { train: 'PV09', activity: 'E1', track: 'E5', date: '01-03-2025' },
-  { train: 'PV09', activity: 'E2', track: 'E3', date: '02-03-2025' },
-  { train: 'PV10', activity: 'E1', track: 'E4', date: '10-03-2025' },
-  { train: 'PV10', activity: 'E2', track: 'E2', date: '11-03-2025' },
-  { train: 'PV10', activity: 'E3', track: 'E7', date: '12-03-2025' },
-  { train: 'PV10', activity: 'E4', track: 'W1', date: '13-03-2025' },
-  { train: 'PV11', activity: 'minOH', track: 'W2', date: '20-03-2025' },
-  { train: 'PV12', activity: 'majOH', track: 'W4', date: '28-03-2025' }
-];
-
-const sparePartsData = [
-  { id: 1, name: "Brake Pads", cost: 25.5, forecast: 70 },
-  { id: 2, name: "Oil Filters", cost: 12.3, forecast: 50 },
-  { id: 3, name: "Tires", cost: 50.0, forecast: 40 },
-  { id: 4, name: "Air Filters", cost: 18.5, forecast: 60 },
-  { id: 5, name: "Fuel Pumps", cost: 120.7, forecast: 45 },
-  { id: 6, name: "Radiators", cost: 200.0, forecast: 80 },
-  { id: 7, name: "Headlights", cost: 35.0, forecast: 35 },
-  { id: 8, name: "Shock Absorbers", cost: 75.0, forecast: 70 },
-  { id: 9, name: "Exhaust Pipes", cost: 40.0, forecast: 30 },
-  { id: 10, name: "Brake Fluid", cost: 10.2, forecast: 55 },
-];
-
 const FinancialManagement = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const [data, setData] = useState(maintenancePackages);
   const [editIndex, setEditIndex] = useState(null);
   const [tempData, setTempData] = useState({});
-  const [data, setData] = useState(maintenancePackages);
-  // const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [budgetMetrics, setBudgetMetrics] = useState([]);
+
   const [timePeriod, setTimePeriod] = useState('weekly');
   const [totalManHours, setTotalManHours] = useState(0);
+  const [totalCost, setTotalCost] = useState(0);
 
-  const [spareParts, setSpareParts] = useState(sparePartsData);
-  const [editPartIndex, setEditPartIndex] = useState(null);
-  const [tempPartData, setTempPartData] = useState({});
+  const [cumulativeCostData, setCumulativeCostData] = useState({
+    labels: [],
+    datasets: [{
+      label: 'Spare Parts Costs',
+      data: [],
+      borderColor: 'rgba(75,192,192,1)',
+      fill: false,
+    }]
+  });
 
   const [chartData, setChartData] = useState({
     labels: [],
@@ -92,41 +73,69 @@ const FinancialManagement = () => {
     }]
   });
 
-  const handlePartEditClick = (index) => {
-    setEditPartIndex(index);
-    setTempPartData({ ...spareParts[index] });
+  const [historicalDataChart, setHistoricalDataChart] = useState({
+    labels: [],
+    datasets: [{
+      label: 'Order Quantity',
+      data: [],
+      backgroundColor: 'rgba(75,192,192,0.6)',
+      borderColor: 'rgba(75,192,192,1)',
+      borderWidth: 1,
+    }],
+  })
+
+  const [selectedMetric, setSelectedMetric] = useState(null);
+  const handleCardClick = (metric) => {
+    setSelectedMetric(metric);
+    onOpen();
+    aggregateHistoricalData(metric);
   };
 
-  const handleEditClick = (index) => {
-    setEditIndex(index);
-    setTempData({ ...data[index] });
+  const aggregateHistoricalData = (metric) => {
+    const historicalData = metric.last_4_quarters_order_quantity;
+    if (historicalData) {
+      // console.log('historical data:', historicalData);
+      const sortedDates = Object.keys(historicalData).sort((a, b) => new Date(a) - new Date(b));
+      const orderQuantities = sortedDates.map((date) => historicalData[date]);
+
+      setHistoricalDataChart({
+        labels: sortedDates.map((date) => new Date(date).toLocaleDateString()),
+        datasets: [{
+          label: 'Order Quantity',
+          data: orderQuantities,
+          backgroundColor: 'rgba(75,192,192,0.6)',
+          borderColor: 'rgba(75,192,192,1)',
+          borderWidth: 1,
+        }],
+      });
+    }
   };
 
-  const handlePartInputChange = (field, value) => {
-    setTempPartData({ ...tempPartData, [field]: value });
+  const handleEditClick = (type, index) => {
+    if (type === "package") {
+      setEditIndex(index);
+      setTempData({ ...data[index] });
+    }
   };
 
-  const handleInputChange = (field, value) => {
-    setTempData({ ...tempData, [field]: value });
+  const handleInputChange = (type, field, value) => {
+    if (type === "package") {
+      setTempData({ ...tempData, [field]: value });
+    }
   };
 
-  const handlePartUpdateClick = () => {
-    const updatedParts = [...spareParts];
-    updatedParts[editPartIndex] = { ...tempPartData };
-    setSpareParts(updatedParts);
-    setEditPartIndex(null);
-  };
-
-  const handleUpdateClick = () => {
-    const updatedData = [...data];
-    updatedData[editIndex] = { ...tempData };
-    setData(updatedData);
-    setEditIndex(null);
+  const handleUpdateClick = (type) => {
+    if (type === "package") {
+      const updatedData = [...data];
+      updatedData[editIndex] = { ...tempData };
+      setData(updatedData);
+      setEditIndex(null);
+    }
   };
 
   const convertToDate = (dateStr) => {
     const parts = dateStr.split('-');
-    return new Date(`${parts[2]}-${parts[1]}-${parts[0]}`);
+    return new Date(`${parts[0]}-${parts[1]}-${parts[2]}`);
   };
 
   const formatDate = (date, format) => {
@@ -158,19 +167,23 @@ const FinancialManagement = () => {
       const periodMap = {};
       const allDates = [];
       let totalManHours = 0;
-      schedule.forEach(item => {
-        const formattedDate = formatDate(item.date, period);
-        const manhours = manhoursMap[item.activity] || 0;
-        totalManHours += manhours;
+      schedule.forEach(train => {
+        Object.entries(train.maintenanceSchedules).forEach(([activity, schedules]) => {
+          schedules.forEach(scheduleItem => {
+            const formattedDate = formatDate(scheduleItem.date, period);
+            const manhours = manhoursMap[activity] || 0;
+            totalManHours += manhours;
 
-        if (!periodMap[formattedDate]) {
-          periodMap[formattedDate] = 0;
-        }
-        periodMap[formattedDate] += manhours;
+            if (!periodMap[formattedDate]) {
+              periodMap[formattedDate] = 0;
+            }
+            periodMap[formattedDate] += manhours;
 
-        if (!allDates.includes(formattedDate)) {
-          allDates.push(formattedDate);
-        }
+            if (!allDates.includes(formattedDate)) {
+              allDates.push(formattedDate);
+            }
+          });
+        });
       });
 
       setTotalManHours(totalManHours);
@@ -198,27 +211,134 @@ const FinancialManagement = () => {
         }
       });
 
-      return { periodMap, labels: generatedDates };
+      return { manhourPeriodMap: periodMap, manhourLabels: generatedDates };
     };
 
-    const { periodMap, labels } = calculateTotalManhours(maintenanceSchedule, timePeriod);
+    const calculateTotalCost = (sparePartsData, period) => {
+      const periodMap = {};
+      const allDates = [];
+      let totalCost = 0;
 
-    const data = labels.map(label => {
-      const totalManhours = periodMap[label] || 0; // Get the value from the period map or 0 if not found
-      console.log(`Label: ${label}, Total Manhours: ${totalManhours}`);
-      return totalManhours;
-    });
+      sparePartsData.forEach(part => {
+        const { historical_data, cost } = part;
 
-    setChartData({
-      labels: labels,
-      datasets: [{
-        label: 'Total Manhours',
-        data: data,
-        borderColor: 'rgba(75,192,192,1)',
-        fill: false,
-      }]
+        if (historical_data && historical_data.last_4_quarters_order_quantity) {
+          const historicalData = historical_data.last_4_quarters_order_quantity;
+
+          Object.entries(historicalData).forEach(([date, quantity]) => {
+            const formattedDate = formatDate(date, period);
+            const partCost = quantity * cost;
+
+            totalCost += partCost;
+
+            if (!periodMap[formattedDate]) {
+              periodMap[formattedDate] = 0;
+            }
+
+            periodMap[formattedDate] += partCost;
+
+            if (!allDates.includes(formattedDate)) {
+              allDates.push(formattedDate);
+            }
+          });
+        } else {
+          console.warn(`No historical data or missing last_4_quarters_order_quantity for part: ${part.name}`);
+        }
+      });
+      setTotalCost(totalCost);
+
+      const sortedDates = allDates.sort((a, b) => new Date(a) - new Date(b));
+
+      const generatedDates = [];
+      const startDate = new Date(sortedDates[0]);
+      const endDate = new Date(sortedDates[sortedDates.length - 1]);
+
+      for (let d = new Date(startDate); d <= endDate;) {
+        const formattedDate = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+        generatedDates.push(formattedDate);
+
+        // Adjust date based on selected period
+        if (period === 'weekly') {
+          d.setDate(d.getDate() + 7); // Increment by 1 week
+        } else if (period === 'monthly') {
+          d.setMonth(d.getMonth() + 1); // Increment by 1 month
+        } else if (period === 'yearly') {
+          d.setFullYear(d.getFullYear() + 1); // Increment by 1 year
+        }
+      }
+
+      generatedDates.forEach(date => {
+        if (!periodMap[date]) {
+          periodMap[date] = 0; // If no cost data, set cost to 0
+        }
+      });
+
+      return { sparePartsPeriodMap: periodMap, sparePartsLabels: generatedDates };
+    };
+
+    // Manhour Chart
+    if (train_data_forecast && Array.isArray(train_data_forecast.trains)) {
+      const { manhourPeriodMap, manhourLabels } = calculateTotalManhours(train_data_forecast.trains, timePeriod);
+      // console.log('manhourLabels:', manhourLabels);
+      const manhourData = manhourLabels.map(label => {
+        const totalManhours = manhourPeriodMap[label] || 0;
+        // console.log(`Label: ${label}, Total Manhours: ${totalManhours}`);
+        return totalManhours;
+      });
+
+      setChartData({
+        labels: manhourLabels,
+        datasets: [{
+          label: 'Total Manhours',
+          data: manhourData,
+          borderColor: 'rgba(75,192,192,1)',
+          fill: false,
+        }]
+      });
+    }
+
+    // Spare Parts Chart
+    if (Array.isArray(sparePartsData)) {
+      const { sparePartsPeriodMap, sparePartsLabels } = calculateTotalCost(sparePartsData, timePeriod);
+      const sparePartsDataArray = sparePartsLabels.map(label => {
+        const totalCost = sparePartsPeriodMap[label] || 0;
+        // console.log(`Label: ${label}, Total Cost: ${totalCost}`);
+        return totalCost;
+      });
+
+      setCumulativeCostData({
+        labels: sparePartsLabels,
+        datasets: [{
+          label: 'Total Spare Parts Cost ($)',
+          data: sparePartsDataArray,
+          borderColor: 'rgba(75,192,192,1)',
+          fill: false,
+        }],
+      });
+    }
+
+    const metrics = sparePartsData.map(part => {
+      const { cost, shortfall, total_quantity_needed, quantity_in_stock } = part;
+      const shortfallCost = shortfall > 0 ? shortfall * cost : 0;
+      const stockValue = quantity_in_stock * cost;
+      const projectedCost = total_quantity_needed * cost;
+
+      return {
+        name: part.Component,
+        shortfall: part.shortfall,
+        shortfallCost: shortfallCost.toFixed(2),
+        quantity_in_stock: part.quantity_in_stock,
+        stockValue: stockValue.toFixed(2),
+        total_quantity_needed: part.total_quantity_needed,
+        projectedCost: projectedCost.toFixed(2),
+        cost: part.cost,
+        leadTime: part.lead_time,
+        last_4_quarters_order_quantity: part.historical_data.last_4_quarters_order_quantity,
+      };
     });
-  }, [maintenanceSchedule, maintenancePackages, timePeriod]);
+    setBudgetMetrics(metrics);
+
+  }, [train_data_forecast, maintenancePackages, timePeriod, sparePartsData]);
 
   return (
     <>
@@ -254,7 +374,7 @@ const FinancialManagement = () => {
                           className="table-input"
                           value={tempData.name}
                           onChange={(e) =>
-                            handleInputChange("name", e.target.value)
+                            handleInputChange("package", "name", e.target.value)
                           }
                         />
                       ) : (
@@ -269,7 +389,7 @@ const FinancialManagement = () => {
                           type="number"
                           value={tempData.kilometers}
                           onChange={(e) =>
-                            handleInputChange("kilometers", e.target.value)
+                            handleInputChange("package", "kilometers", e.target.value)
                           }
                         />
                       ) : (
@@ -284,7 +404,7 @@ const FinancialManagement = () => {
                           type="number"
                           value={tempData.manhours_required}
                           onChange={(e) =>
-                            handleInputChange("manhours_required", e.target.value)
+                            handleInputChange("package", "manhours_required", e.target.value)
                           }
                         />
                       ) : (
@@ -298,7 +418,7 @@ const FinancialManagement = () => {
                           <Button
                             colorScheme="blue"
                             size="sm"
-                            onClick={handleUpdateClick}
+                            onClick={() => handleUpdateClick("package")}
                             mr={2}
                           >
                             Update
@@ -308,7 +428,7 @@ const FinancialManagement = () => {
                         <Button
                           colorScheme="teal"
                           size="sm"
-                          onClick={() => handleEditClick(index)}
+                          onClick={() => handleEditClick("package", index)}
                         >
                           Edit
                         </Button>
@@ -326,9 +446,21 @@ const FinancialManagement = () => {
               Manhour Chart
             </Heading>
 
-            <Box className="total-manhours-box" mb={6}>
-              <Heading color='#34495e' fontSize='1em' textAlign='center'>
-                Total Manhours: {totalManHours}
+            <Box
+              bgGradient="linear(to-r, teal.400, blue.500)"
+              p={4}
+              borderRadius="md"
+              shadow="md"
+              textAlign="center"
+              mb={6}
+              marginTop={6}
+            >
+              <Heading
+                color="white"
+                fontSize="1.5em"
+                fontWeight="bold"
+              >
+                Total Manhours: {Math.ceil(totalManHours)} hours
               </Heading>
             </Box>
 
@@ -357,10 +489,86 @@ const FinancialManagement = () => {
               Spare Parts Management
             </Heading>
 
-            <Box className="total-manhours-box" mb={6}>
-              <Heading color='#34495e' fontSize='1em' textAlign='center'>
-                Total Cost Required for Spare Parts: {totalManHours}
+            <Box
+              bgGradient="linear(to-r, teal.400, blue.500)"
+              p={4}
+              borderRadius="md"
+              shadow="md"
+              textAlign="center"
+              mb={6}
+              marginTop={6}
+            >
+              <Heading
+                color="white"
+                fontSize="1.5em"
+                fontWeight="bold"
+              >
+                Total Cost Required for Spare Parts: ${Math.ceil(totalCost)}
               </Heading>
+            </Box>
+
+            {/* Display Budget Metrics */}
+            <Box className="subtitle-container">
+              <Text color='#34495e' fontSize='1.2em' fontWeight='bold' mb={6}>Budget Metrics</Text>
+              <Box overflowY="auto" maxHeight="50vh">
+                <SimpleGrid
+                  columns={{ base: 1, sm: 2, md: 3, lg: 4 }}  // Adjust number of columns based on screen size
+                  spacing={4}
+                >
+                  {budgetMetrics.map((metric, index) => (
+                    <Box
+                      key={index}
+                      p={5}
+                      bg="white"
+                      borderRadius="md"
+                      shadow="md"
+                      border="1px solid #e2e8f0"
+                      _hover={{ bg: "gray.100", cursor: "pointer" }}
+                      onClick={() => handleCardClick(metric)}
+                    >
+                      <Text fontSize="xl" fontWeight="semibold" mb={2}>{metric.name}</Text>
+                      <Text color="gray.600">Shortfall Cost: <Text as="span" color="red.500">${metric.shortfallCost}</Text></Text>
+                      <Text color="gray.600">Total Stock Value: <Text as="span" color="green.500">${metric.stockValue}</Text></Text>
+                      <Text color="gray.600">Projected Cost: <Text as="span" color="blue.500">${metric.projectedCost}</Text></Text>
+                    </Box>
+                  ))}
+                </SimpleGrid>
+              </Box>
+
+              {/* Modal to show more details on click */}
+              <Modal isOpen={isOpen} onClose={onClose}>
+                <ModalOverlay />
+                <ModalContent>
+                  <ModalHeader>Budget Metrics Details:</ModalHeader>
+                  <ModalCloseButton />
+                  <ModalBody>
+                    {selectedMetric ? (
+                      <Box>
+                        <Text fontSize="xl" fontWeight="semibold">{selectedMetric.name}</Text>
+
+                        <Text mt={2}><strong>Cost per Unit:</strong> ${selectedMetric.cost}</Text>
+                        <Text mt={2}><strong>Quantity in Stock:</strong> {selectedMetric.quantity_in_stock}</Text>
+                        <Text mt={2}><strong>Total Quantity Needed:</strong> {selectedMetric.total_quantity_needed}</Text>
+                        <Text mt={2}><strong>Shortfall Quantity:</strong> {selectedMetric.shortfall}</Text>
+                        <Text mt={2}><strong>Stock Value:</strong> ${selectedMetric.stockValue}</Text>
+                        <Text mt={2}><strong>Projected Cost:</strong> ${selectedMetric.projectedCost}</Text>
+                        <Text mt={2}><strong>Shortfall Cost:</strong> ${selectedMetric.shortfallCost}</Text>
+                        <Text mt={2}><strong>Lead Time:</strong> {selectedMetric.leadTime} days</Text>
+
+                        <Box mt={4}>
+                          <Text fontWeight="bold">Order History:</Text>
+                          <Bar data={historicalDataChart} />
+                        </Box>
+                      </Box>
+                    ) : (
+                      <Text>No metric selected.</Text>
+                    )}
+                  </ModalBody>
+                  <ModalFooter>
+                    <Button colorScheme="blue" onClick={onClose}>Close</Button>
+                  </ModalFooter>
+                </ModalContent>
+              </Modal>
             </Box>
 
             <FormLabel>Select Time Period: </FormLabel>
@@ -384,72 +592,16 @@ const FinancialManagement = () => {
                       <Th>ID</Th>
                       <Th>Name</Th>
                       <Th>Cost</Th>
-                      <Th>Forecast</Th>
-                      <Th>Actions</Th>
+                      <Th>Stock Quantity</Th>
                     </Tr>
                   </Thead>
                   <Tbody>
-                    {spareParts.map((part, index) => (
+                    {sparePartsData.map((part, index) => (
                       <Tr key={index}>
-                        <Td>{part.id}</Td>
-                        <Td>
-                          {editPartIndex === index ? (
-                            <Input
-                              value={tempPartData.name}
-                              onChange={(e) =>
-                                handlePartInputChange("name", e.target.value)
-                              }
-                            />
-                          ) : (
-                            part.name
-                          )}
-                        </Td>
-                        <Td>
-                          {editPartIndex === index ? (
-                            <Input
-                              type="number"
-                              value={tempPartData.cost}
-                              onChange={(e) =>
-                                handlePartInputChange("cost", e.target.value)
-                              }
-                            />
-                          ) : (
-                            part.cost
-                          )}
-                        </Td>
-                        <Td>
-                          {editPartIndex === index ? (
-                            <Input
-                              type="number"
-                              value={tempPartData.forecast}
-                              onChange={(e) =>
-                                handlePartInputChange("forecast", e.target.value)
-                              }
-                            />
-                          ) : (
-                            part.forecast
-                          )}
-                        </Td>
-                        <Td>
-                          {editPartIndex === index ? (
-                            <Button
-                              colorScheme="blue"
-                              size="sm"
-                              onClick={handlePartUpdateClick}
-                              mr={2}
-                            >
-                              Update
-                            </Button>
-                          ) : (
-                            <Button
-                              colorScheme="teal"
-                              size="sm"
-                              onClick={() => handlePartEditClick(index)}
-                            >
-                              Edit
-                            </Button>
-                          )}
-                        </Td>
+                        <Td>{part["WBS No."]}</Td>
+                        <Td>{part.Component}</Td>
+                        <Td>{part.cost}</Td>
+                        <Td>{part.quantity_in_stock}</Td>
                       </Tr>
                     ))}
                   </Tbody>
@@ -458,7 +610,7 @@ const FinancialManagement = () => {
 
               {/* Line Chart for Total Manhours */}
               <Box className="chart-container">
-                <Line data={chartData} />
+                <Line data={cumulativeCostData} />
               </Box>
             </Box>
           </Box>

@@ -41,9 +41,9 @@ const NavBar = () => {
             href="#"
             _hover={{ textDecoration: "underline" }}
             fontFamily="Poppins"
-            onClick={() => handleNavigation("/manpower")}
+            onClick={() => handleNavigation("/pm")}
           >
-            WorkSync
+            Preventify
             {/* PM Scheduling */}
           </Link>
           <Link
@@ -51,10 +51,10 @@ const NavBar = () => {
             href="#"
             _hover={{ textDecoration: "underline" }}
             fontFamily="Poppins"
-            onClick={() => handleNavigation("/learning")}
+            onClick={() => handleNavigation("/manpower")}
           >
             {/* Manpower Adjustment */}
-            WorkforceAlign
+            WorkSync
           </Link>
           <Link
             mx={6}
