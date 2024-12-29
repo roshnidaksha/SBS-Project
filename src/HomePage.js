@@ -32,6 +32,15 @@ const features = [
     icon: <FiAward size={40} />,
   },
   {
+    title: "Preventify",
+    description:
+      "View maintenance tasks forecasted for the entire year",
+    image: "development.png", // Image path in the public folder
+    buttonLabel: "schedule",
+    buttonRoute: "/learning",
+    icon: <FiBookOpen size={40} />,
+  },
+  {
     title: "WorkSync", // Add the Manpower feature
     description:
       "Track and manage workforce data effectively with real-time analytics and reports.",
@@ -41,20 +50,11 @@ const features = [
     icon: <FiUsers size={40} />,
   },
   {
-    title: "Development Dashboard",
-    description:
-      "Managers track engagement across generations and skill levels. AI recommends formats based on preferences.",
-    image: "development.png", // Image path in the public folder
-    buttonLabel: "Explore Courses",
-    buttonRoute: "/learning",
-    icon: <FiBookOpen size={40} />,
-  },
-  {
     title: "Fin Scope",
     description:
-      "Resources for younger interns and feedback tools for managers, fostering skill-sharing across generations.",
+      "Monitor budget for manpower and spare parts through comprehensive insights",
     image: "mentor.jpg", // Image path in the public folder
-    buttonLabel: "Engage Now",
+    buttonLabel: "Check Status",
     buttonRoute: "/financialManagement",
     icon: <FiUsers size={40} />,
   },
