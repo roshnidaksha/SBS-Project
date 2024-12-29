@@ -2,7 +2,7 @@ import NavBar from "../NavBar";
 import React, { useState, useEffect } from "react";
 import { Bar } from "react-chartjs-2"; 
 import "./manpower.css";
-import manpowerData from "../manpower.json";
+import manpowerData from "../data/manpower.json";
 import {
   Chart as ChartJS,
   CategoryScale,
