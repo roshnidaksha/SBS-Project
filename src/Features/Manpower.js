@@ -160,7 +160,7 @@ const Manpower = () => {
       <NavBar />
       <div className="manpower-container">
         <div className="employee-dashboard">
-          <h2>Employee Dashboard</h2>
+          <h3>Employee Dashboard</h3>
 
           <div className="employee-categories">
             <button onClick={() => handleCategorySelect("PM Team")}>PM Team</button>
@@ -205,14 +205,15 @@ const Manpower = () => {
         <div className="employee-dashboard">
           <hr />
           <br />
-          <h2>Attendance and Shortage</h2>
+          <h3>Attendance and Shortage</h3>
         </div>
 
         <Calendar onChange={handleDateChange} value={new Date()} />
+        
         {selectedDate && manpowerInfo && (
           <div className="manpower-details">
             <div className="employee-dashboard">
-            <h2>Manpower Details for {selectedDate}</h2>
+              <h4>Manpower Details for {selectedDate}</h4>
             </div>
             <table>
               <tbody>
@@ -235,12 +236,12 @@ const Manpower = () => {
 
         {selectedDate && !manpowerInfo && (
           <div className="employee-dashboard">
-            <h2>No data available for {selectedDate}</h2>
+            <h4>No data available for {selectedDate}</h4>
           </div>
         )}
         {selectedDate && (
           <div className="shortages-section">
-            <h3>Manpower Record for {selectedDate}</h3>
+            <h4>Manpower Record for {selectedDate}</h4>
             <table>
               <thead>
                 <tr>
@@ -284,7 +285,7 @@ const Manpower = () => {
 
         {selectedDate && shortages.length > 0 && (
           <div className="shortages-section">
-            <h3>Shortages for {selectedDate}</h3>
+            <h4>Shortages for {selectedDate}</h4>
             <ul>
               {shortages.map((shortage) => (
                 <li key={shortage.track}>
@@ -298,7 +299,7 @@ const Manpower = () => {
         <div className="employee-dashboard">
           <hr />
           <br />
-          <h2>Progress Projections</h2>
+          <h3>Progress Projections</h3>
           
           <Bar data={progressProjectionData} options={{ indexAxis: 'y' }} />
         </div>
