@@ -1,6 +1,6 @@
 /* General styles */
 .manpower-container {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Changed font to match Inventory.js */
   margin: 20px;
   padding: 20px;
   display: flex;
@@ -23,11 +23,12 @@ h1 {
   margin-bottom: 40px;
 }
 
-.employee-dashboard h2 {
+.employee-dashboard h3 {
   text-align: center;
   margin-bottom: 20px;
-  font-size: 2em;
+  font-size: 2.5em; /* Increased font size */
   color: #34495e;
+  font-weight: bold; /* Bold font style */
 }
 
 /* Employee Categories */
@@ -120,8 +121,9 @@ h1 {
 
 .attendance-table h2 {
   text-align: center;
-  font-size: 2em;
+  font-size: 3em; /* Increased font size */
   color: #34495e;
+  font-weight: bold; /* Bold font style */
 }
 
 .attendance-table table {
@@ -175,15 +177,22 @@ h1 {
   padding: 20px;
 }
 
-.shortages-section h3 {
+.shortages-section h4 {
   text-align: center;
-  font-size: 2em;
+  font-size: 2em; /* Increased font size */
   color: #34495e;
+  
 }
-
-.shortages-section ul {
-  list-style-type: none;
-  padding: 0;
+.shortages-section h4 {
+  text-align: center;
+  font-size: 2em; /* Increased font size */
+  color: #34495e;
+  
+}
+.employee-dashboard h4 {
+  text-align: center;
+  font-size: 2em; /* Increased font size */
+  color: #34495e;
 }
 
 .shortages-section li {
@@ -217,6 +226,7 @@ h1 {
     width: 100%;
   }
 }
+
 /* Shortages Section Styling */
 .shortages-section {
   margin: 20px auto;
@@ -239,7 +249,7 @@ h1 {
   text-align: center; /* Centers text inside the cells */
   border: 1px solid #ccc; /* Light border around cells */
   font-size: 16px; /* Bigger font size */
-  font-family: Arial, sans-serif; /* Clean, readable font */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Matching font family */
 }
 
 /* Header Styling */
@@ -272,23 +282,6 @@ h1 {
   border-radius: 4px;
 }
 
-
-/* General styles */
-.manpower-container {
-  font-family: Arial, sans-serif;
-  margin: 20px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-h1 {
-  text-align: center;
-  font-size: 2.5em;
-  margin-bottom: 20px;
-}
-
 /* Manpower Details Section */
 .manpower-details {
   width: 100%;
@@ -300,8 +293,8 @@ h1 {
 
 .manpower-details h3 {
   text-align: center;
-  font-size: 2.5em;
-  font-weight: bold;
+  font-size: 3em; /* Increased font size */
+  font-weight: bold; /* Bold font style */
   color: #34495e;
   margin-bottom: 20px;
 }
@@ -317,7 +310,7 @@ h1 {
   text-align: left;
   border: 1px solid #ccc;
   font-size: 1.1em;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Updated to match font */
 }
 
 .manpower-details th {
