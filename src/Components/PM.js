@@ -7,6 +7,7 @@ import {
   Button,
   Text,
   useToast,
+  CloseButton,
 } from "@chakra-ui/react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css"; // Default styles for react-calendar
@@ -51,8 +52,10 @@ const PM = () => {
 
   // Get events for a specific date
   const getEventsForDate = (date) => {
-    const formattedDate = date.toISOString().split("T")[0]; // this is in yyyy-mm-dd
-    return events.filter((event) => event.date === formattedDate);
+    const formattedDate = date.toLocaleDateString('en-CA'); // this is in yyyy-mm-dd
+    return events.filter((event) => {
+      return event.date === formattedDate;
+    });
   };
 
   // Simplified tileContent to only show red dots for events
@@ -83,7 +86,8 @@ const PM = () => {
 
   // Handle clicking on a date
   const handleDateClick = (date) => {
-    const dayEvents = getEventsForDate(date);
+    const normalizedDate = new Date(date.getFullYear(), date.getMonth(), date.getDate())
+    const dayEvents = getEventsForDate(normalizedDate);
     setSelectedDate(dayEvents.length > 0 ? date : null);
     //console.log(`Now Selected Date:, ${selectedDate}`)
     if (dayEvents.length > 0) {
@@ -104,19 +108,26 @@ const PM = () => {
             p={6}
             borderRadius="lg"
             shadow="md"
-            textAlign="center" 
+            textAlign="center"
+            bg="white"
           >
+            <CloseButton
+              position="absolute"
+              top="8px"
+              right="8px"
+              onClick={() => toast.closeAll()} // Close the toast or implement custom close logic
+            />
             <Text fontWeight="bold">Maintenance Options</Text>
             <Button
               colorScheme="green"
-              onClick={() => handleKeepSchedule(dayEvents)}
+              onClick={() => handleKeepSchedule(date, dayEvents)}
               mr={2}
             >
               Keep Schedule
             </Button>
             <Button
               colorScheme="red"
-              onClick={() => handleReschedule(dayEvents)}
+              onClick={() => handleReschedule(date, dayEvents)}
             >
               Reschedule
             </Button>
@@ -127,7 +138,7 @@ const PM = () => {
   };
 
   // Handle keeping the original schedule
-  const handleKeepSchedule = (events) => {
+  const handleKeepSchedule = (date, events) => {
     if (!events || events.length === 0) {
       console.error("No events found for the selected date.");
       return;
@@ -136,7 +147,7 @@ const PM = () => {
     toast.closeAll();
     toast({
       title: "Original Schedule Kept",
-      description: `Schedule for ${selectedDate} remains unchanged.`, /*To change this */
+      description: `Schedule for ${date} remains unchanged.`, /*To change this */
       status: "success",
       duration: 3000,
       isClosable: true,
@@ -144,7 +155,7 @@ const PM = () => {
   };
 
   // Handle rescheduling
-  const handleReschedule = (events) => {
+  const handleReschedule = (date, events) => {
     if (!events || events.length === 0) {
       console.error("No events found for the selected date.");
       return;
@@ -158,7 +169,8 @@ const PM = () => {
       duration: 3000,
       isClosable: true,
     });
-    navigate(`/Maintenance/${selectedDate}`, { state: { events } });
+    console.log(events);
+    navigate(`/Maintenance/${date}`, { state: { events } });
   };
 
   // Generate an array of months for the year

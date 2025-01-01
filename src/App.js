@@ -24,11 +24,7 @@ function App() {
       <Router>
         <div>
           <Routes>
-<<<<<<< Updated upstream
             <Route path="/" element={<Navigate to="/PM" />} />
-=======
-            <Route path="/" element={<Navigate to="/maintenance" />} />
->>>>>>> Stashed changes
             {/* Render other routes */}
             <Route path="/home" element={<HomePage />} />
             <Route path="/inventory" element={<Inventory />} />

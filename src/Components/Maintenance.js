@@ -28,7 +28,7 @@ const MaintenanceScheduler = () => {
   const location = useLocation(); // Access additional state if needed
 
   const selectedDate = date; // Use this date in your scheduling logic
-  console.log('Selected Date:', selectedDate);
+  // console.log('Selected Date:', selectedDate);
   
   const [pmTeams, setPmTeams] = useState([ 
     { id: 'Team 1', men: '' }, 
