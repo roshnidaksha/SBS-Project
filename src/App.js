@@ -11,6 +11,7 @@ import Inventory from "./Features/Inventory";
 import Manpower from "./Features/Manpower";
 import PM from "./Components/PM";
 import Maintenance from "./Components/Maintenance";
+import TaskAllocator from "./Components/Allocation";
 const theme = extendTheme({
   config: {
     initialColorMode: "light", // Ensure this is properly set
@@ -24,17 +25,15 @@ function App() {
       <Router>
         <div>
           <Routes>
-<<<<<<< Updated upstream
-            <Route path="/" element={<Navigate to="/PM" />} />
-=======
-            <Route path="/" element={<Navigate to="/maintenance" />} />
->>>>>>> Stashed changes
+            <Route path="/" element={<Navigate to="/TaskAllocator" />} />
+            {/*<Route path="/" element={<Navigate to="/maintenance" />} /> */}
             {/* Render other routes */}
             <Route path="/home" element={<HomePage />} />
             <Route path="/inventory" element={<Inventory />} />
             <Route path="/manpower" element={<Manpower />} /> 
             <Route path="/maintenance/:date" element={<Maintenance />} />
             <Route path="/PM" element={<PM />} /> 
+            <Route path="/TaskAllocator" element={<TaskAllocator />} /> 
           </Routes>
         </div>
       </Router>

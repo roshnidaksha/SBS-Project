@@ -21,11 +21,15 @@ import {
 } from '@chakra-ui/react'; 
 import { useParams, useLocation } from 'react-router-dom';
 import maintenanceData from '../DataFiles/maintenance_schedule.json';
+import { useNavigate } from 'react-router-dom';
+
  
+
 const MaintenanceScheduler = () => { 
   // State for PM Teams 
   const { date } = useParams(); // Retrieve date from the URL
   const location = useLocation(); // Access additional state if needed
+  const navigate = useNavigate();
 
   const selectedDate = date; // Use this date in your scheduling logic
   console.log('Selected Date:', selectedDate);
@@ -48,6 +52,9 @@ const MaintenanceScheduler = () => {
  
   // State for schedule screen 
   const [scheduleLoaded, setScheduleLoaded] = useState(false); 
+
+   // State to store the total number of men
+   const [totalMen, setTotalMen] = useState(0);
  
   const handlePmInputChange = (index, value) => { 
     if (/^\d*$/.test(value)) { 
@@ -76,13 +83,18 @@ const MaintenanceScheduler = () => {
     } 
  
     setWarning(''); 
+
+    let totalPmMen = pmTeams.reduce((sum, team) => sum + parseInt(team.men, 10), 0);
+    setTotalMen(totalPmMen);
     setIsLoading(true); 
  
     // Simulate a loading process 
     setTimeout(() => { 
       setIsLoading(false); 
-      setScheduleLoaded(true); 
-    }, 3000); 
+      //setScheduleLoaded(true); 
+      navigate("/TaskAllocator, {state: {totalMen, date: selectedDate} }");
+
+    }, 2000); 
   }; 
  
   // Sample schedules for PM Tracks and Overhaul Tracks 
