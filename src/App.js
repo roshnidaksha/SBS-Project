@@ -25,8 +25,7 @@ function App() {
       <Router>
         <div>
           <Routes>
-            <Route path="/" element={<Navigate to="/TaskAllocator" />} />
-            {/*<Route path="/" element={<Navigate to="/maintenance" />} /> */}
+            <Route path="/" element={<Navigate to="/PM" />} />
             {/* Render other routes */}
             <Route path="/home" element={<HomePage />} />
             <Route path="/inventory" element={<Inventory />} />

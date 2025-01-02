@@ -32,7 +32,7 @@ const MaintenanceScheduler = () => {
   const navigate = useNavigate();
 
   const selectedDate = date; // Use this date in your scheduling logic
-  console.log('Selected Date:', selectedDate);
+  // console.log('Selected Date:', selectedDate);
   
   const [pmTeams, setPmTeams] = useState([ 
     { id: 'Team 1', men: '' }, 
@@ -92,6 +92,7 @@ const MaintenanceScheduler = () => {
     setTimeout(() => { 
       setIsLoading(false); 
       //setScheduleLoaded(true); 
+      
       navigate("/TaskAllocator, {state: {totalMen, date: selectedDate} }");
 
     }, 2000); 
