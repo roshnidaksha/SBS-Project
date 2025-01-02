@@ -149,7 +149,7 @@ const MaintenanceScheduler = () => {
       <Center height="100vh" bgGradient="linear(to-r, teal.400, blue.500)"> 
         <Spinner size="xl" color="white" /> 
         <Text ml={4} fontSize="lg" color="white"> 
-          Creating Schedule... 
+          Loading... 
         </Text> 
       </Center> 
     ); 
