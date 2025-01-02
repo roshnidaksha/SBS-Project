@@ -20,7 +20,7 @@ ChartJS.register(
   BarElement,
   Title,
   Tooltip,
-  Legend
+  Legd
 );
 
 const Manpower = () => {
@@ -113,7 +113,8 @@ const Manpower = () => {
   };
 
   const handleDateChange = (date) => {
-    setSelectedDate(date.toISOString().split("T")[0]);
+    const formattedDate = date.toLocaleDateString("en-CA");
+    setSelectedDate(formattedDate);
     setAttendance(initialAttendance);
   };
 
