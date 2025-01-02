@@ -2,37 +2,53 @@ import React, { useState, useEffect } from "react";
 // Import the JSON data
 import scheduleData from "../DataFiles/maintenance_schedule.json";
 import { useLocation } from "react-router-dom";
-import { Box, Heading, Text, Button, List, ListItem, Flex } from "@chakra-ui/react";
-
+import {
+  Box,
+  Heading,
+  Text,
+  Button,
+  List,
+  ListItem,
+  Flex,
+} from "@chakra-ui/react";
 
 function TaskAllocator() {
   const location = useLocation();
-  const {totalMen, date} = location.state || {};
+  const { totalMen, date } = location.state || {};
 
   const [tasks, setTasks] = useState([]); // key is dates
   const [manpower, setManpower] = useState(0);
   const [allocation, setAllocation] = useState([]);
   const specificDate = date; // this date will be passed by params later
 
-  useEffect(() => { 
-    const dataMap = new Map(scheduleData.map((item)=> [item.date, item.tasks]));
+  useEffect(() => {
+    const dataMap = new Map(
+      scheduleData.map((item) => [item.date, item.tasks])
+    );
     const tasks = dataMap.get(specificDate);
     console.log(tasks);
     setTasks(tasks);
     setManpower(totalMen);
   }, [totalMen]); //not sure if i need to remove totalMen
 
-
   const allocateManpower = () => {
+    console.log("tasks", tasks);
+
     let startHeap = [...tasks].sort((a, b) => a.startTime - b.startTime);
     const endHeap = [];
-    console.log("STARTTTT HEAP:", startHeap);
+    //console.log("STARTTTT HEAP:", startHeap[0]);
+    console.table(startHeap);
+    console.table(endHeap);
+
     let currentManpower = manpower;
     const allocations = [];
 
     while (startHeap.length > 0 || endHeap.length > 0) {
-      console.log("Start Heap: ", startHeap)
-      console.log("End heap: ", endHeap)
+      console.log("Start Heap: ", startHeap);
+      //console.table(endHeap);
+      console.table(startHeap);
+
+      console.log("End heap: ", endHeap);
       // Move tasks from startHeap to endHeap based on startTime
       while (
         startHeap.length > 0 &&
@@ -106,8 +122,6 @@ function TaskAllocator() {
         ))}
       </List>
     </Box>
-   
-    
   );
 }
 

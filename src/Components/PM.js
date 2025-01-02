@@ -6,6 +6,8 @@ import {
   Center,
   Button,
   Text,
+  VStack,
+  HStack,
   useToast,
   CloseButton,
 } from "@chakra-ui/react";
@@ -52,7 +54,7 @@ const PM = () => {
 
   // Get events for a specific date
   const getEventsForDate = (date) => {
-    const formattedDate = date.toLocaleDateString('en-CA'); // this is in yyyy-mm-dd
+    const formattedDate = date.toLocaleDateString("en-CA"); // this is in yyyy-mm-dd
     return events.filter((event) => {
       return event.date === formattedDate;
     });
@@ -86,7 +88,11 @@ const PM = () => {
 
   // Handle clicking on a date
   const handleDateClick = (date) => {
-    const normalizedDate = new Date(date.getFullYear(), date.getMonth(), date.getDate())
+    const normalizedDate = new Date(
+      date.getFullYear(),
+      date.getMonth(),
+      date.getDate()
+    );
     const dayEvents = getEventsForDate(normalizedDate);
     setSelectedDate(dayEvents.length > 0 ? date : null);
     //console.log(`Now Selected Date:, ${selectedDate}`)
@@ -99,39 +105,85 @@ const PM = () => {
         isClosable: true,
         position: "top",
         render: () => (
-          <Box
-            position="fixed" // Ensure the box is positioned relative to the entire webpage
-            top="50%" // Center vertically
-            left="50%" // Center horizontally
-            transform="translate(-50%, -50%)" // Adjust positioning to account for box dimensions
-            width="400px"
-            p={6}
-            borderRadius="lg"
-            shadow="md"
-            textAlign="center"
-            bg="white"
-          >
-            <CloseButton
-              position="absolute"
-              top="8px"
-              right="8px"
-              onClick={() => toast.closeAll()} // Close the toast or implement custom close logic
+          <>
+            {/* Backdrop */}
+            <Box
+              position="fixed"
+              top="0"
+              left="0"
+              right="0"
+              bottom="0"
+              bg="rgba(0, 0, 0, 0.7)" // Grey shadow behind the box
+              zIndex="999" // Ensures the backdrop appears behind the content
             />
-            <Text fontWeight="bold">Maintenance Options</Text>
-            <Button
-              colorScheme="green"
-              onClick={() => handleKeepSchedule(date, dayEvents)}
-              mr={2}
+
+            {/* Main Box (Toast Content) */}
+            <Box
+              position="fixed" // Ensure the box is positioned relative to the entire webpage
+              top="50%" // Center vertically
+              left="50%" // Center horizontally
+              transform="translate(-50%, -50%)" // Adjust positioning to account for box dimensions
+              width="90vw"
+              p={6}
+              borderRadius="lg"
+              shadow="md"
+              textAlign="center"
+              bg="white"
+              zIndex="1000" // Ensures the box appears above other content
             >
-              Keep Schedule
-            </Button>
-            <Button
-              colorScheme="red"
-              onClick={() => handleReschedule(date, dayEvents)}
-            >
-              Reschedule
-            </Button>
-          </Box>
+              {dayEvents && dayEvents.length > 0 ? (
+                dayEvents.map((event, index) => (
+                  <Box
+                    key={index}
+                    p={4}
+                    borderBottom="1px"
+                    borderColor="gray.200"
+                  >
+                    <VStack align="start" spacing={2}>
+                      <Text fontWeight="bold">Event ID: {event.eventId}</Text>
+                      <HStack spacing={2}>
+                        <Text fontWeight="medium">Train No:</Text>
+                        <Text>{event.trainNo}</Text>
+                      </HStack>
+                      <HStack spacing={2}>
+                        <Text fontWeight="medium">Event Name:</Text>
+                        <Text>{event.eventName}</Text>
+                      </HStack>
+                      <HStack spacing={2}>
+                        <Text fontWeight="medium">Date:</Text>
+                        <Text>{event.date}</Text>
+                      </HStack>
+                    </VStack>
+                  </Box>
+                ))
+              ) : (
+                <Text>No events found</Text>
+              )}
+              <CloseButton
+                position="absolute"
+                top="8px"
+                right="8px"
+                onClick={() => toast.closeAll()} // Close the toast or implement custom close logic
+              />
+              <Text fontWeight="bold">Maintenance Options</Text>
+              <Button
+                bgGradient="linear(to-r, purple.400, purple.600)" // Purple gradient for Keep Schedule
+                color="white" // Ensures text color is white on gradient
+                onClick={() => handleKeepSchedule(date, dayEvents)}
+                mr={2}
+              >
+                Keep Schedule
+              </Button>
+
+              <Button
+                bgGradient="linear(to-r, red.400, red.600)" // Red gradient for Reschedule
+                color="white" // Ensures text color is white on gradient
+                onClick={() => handleReschedule(date, dayEvents)}
+              >
+                Reschedule
+              </Button>
+            </Box>
+          </>
         ),
       });
     }
@@ -147,7 +199,7 @@ const PM = () => {
     toast.closeAll();
     toast({
       title: "Original Schedule Kept",
-      description: `Schedule for ${date} remains unchanged.`, /*To change this */
+      description: `Schedule for ${date} remains unchanged.` /*To change this */,
       status: "success",
       duration: 3000,
       isClosable: true,
