@@ -73,11 +73,11 @@ const MaintenanceScheduler = () => {
  
   const handleCreateSchedule = () => { 
     // Check if any field is empty 
-    const isPmIncomplete = pmTeams.some((team) => team.men === '' || team.men === '0'); 
-    const isOhIncomplete = ohTeam.men === '' || ohTeam.men === '0'; 
+    const isPmIncomplete = pmTeams.some((team) => team.men === ''); 
+    const isOhIncomplete = ohTeam.men === ''; 
  
     if (isPmIncomplete || isOhIncomplete) { 
-      setWarning('All fields must be filled with a value greater than 0.'); 
+      setWarning('All fields must be filled with a non-empty value.'); 
       return; 
     } 
  
@@ -149,7 +149,7 @@ const MaintenanceScheduler = () => {
       <Center height="100vh" bgGradient="linear(to-r, teal.400, blue.500)"> 
         <Spinner size="xl" color="white" /> 
         <Text ml={4} fontSize="lg" color="white"> 
-          Loading... 
+          Creating Schedule... 
         </Text> 
       </Center> 
     ); 

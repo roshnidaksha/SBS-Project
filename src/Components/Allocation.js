@@ -14,7 +14,6 @@ function TaskAllocator() {
   const [allocation, setAllocation] = useState([]);
   const specificDate = date; // this date will be passed by params later
   
-
   useEffect(() => {
     const dataMap = new Map(scheduleData.map((item) => [item.date, item.tasks]));
     const tasks = dataMap.get(specificDate);
@@ -81,7 +80,7 @@ function TaskAllocator() {
 
       if (endHeap.length > 0) {
         const currentTask = endHeap.shift();
-        currentManpower += currentTask.maxPeople;
+        currentManpower += currentTask.allocated;
       }
     }
 
