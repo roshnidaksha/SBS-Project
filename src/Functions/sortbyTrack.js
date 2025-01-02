@@ -2,7 +2,7 @@ const fs = require("fs");
 
 const filePath = '../DataFiles/maintenance_schedule/';
 
-function getTasksByDate(date, filePath ) {
+function getOptimizedScheduleByTrack(date, filePath) {
   // Read the JSON file
   const data = JSON.parse(fs.readFileSync(filePath, "utf8"));
 
@@ -30,7 +30,38 @@ function getTasksByDate(date, filePath ) {
     });
   });
 
-  return tasksByTrack;
+  // Apply greedy algorithm to each track
+  const optimizedSchedule = {};
+  for (const track in tasksByTrack) {
+    const tasks = tasksByTrack[track];
+
+    // Sort tasks by endTime (convert decimal time to minutes for sorting)
+    tasks.sort((a, b) => {
+      const endA = convertDecimalToMinutes(a.endTime);
+      const endB = convertDecimalToMinutes(b.endTime);
+      return endA - endB;
+    });
+
+    // Greedily select tasks
+    const selectedTasks = [];
+    let lastEndTime = 0; // Keep track of the end time of the last selected task in minutes
+    tasks.forEach((task) => {
+      const taskStartTime = convertDecimalToMinutes(task.startTime);
+      if (taskStartTime >= lastEndTime) {
+        selectedTasks.push(task);
+        lastEndTime = convertDecimalToMinutes(task.endTime);
+      }
+    });
+
+    optimizedSchedule[track] = selectedTasks;
+  }
+
+  return optimizedSchedule;
 }
 
-
+// Helper function to convert decimal time to minutes
+function convertDecimalToMinutes(decimalTime) {
+  const hours = Math.floor(decimalTime);
+  const minutes = Math.round((decimalTime - hours) * 60);
+  return hours * 60 + minutes;
+}

@@ -22,8 +22,7 @@ import {
 import { useParams, useLocation } from 'react-router-dom';
 import maintenanceData from '../DataFiles/maintenance_schedule.json';
 import { useNavigate } from 'react-router-dom';
-
- 
+import { Link } from 'react-router-dom';
 
 const MaintenanceScheduler = () => { 
   // State for PM Teams 
@@ -84,17 +83,18 @@ const MaintenanceScheduler = () => {
  
     setWarning(''); 
 
-    let totalPmMen = pmTeams.reduce((sum, team) => sum + parseInt(team.men, 10), 0);
+    let totalPmMen = pmTeams.reduce((sum, team) => sum + parseInt(team.men || 0, 10), 0);
     setTotalMen(totalPmMen);
-    setIsLoading(true); 
+    setIsLoading(true);
+    const date = new Date(selectedDate); // Convert string to Date object
+    let formattedDate = date.toLocaleDateString('en-CA'); // this is in yyyy-mm-dd 
  
     // Simulate a loading process 
     setTimeout(() => { 
       setIsLoading(false); 
-      //setScheduleLoaded(true); 
-      
-      navigate("/TaskAllocator, {state: {totalMen, date: selectedDate} }");
-
+      //setScheduleLoaded(true);
+      //console.log("Hellooooo Selected Date:", selectedDate);
+      navigate(`/TaskAllocator`, {state: {totalMen: totalPmMen, date: formattedDate}});
     }, 2000); 
   }; 
  

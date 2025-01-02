@@ -24,12 +24,15 @@ function TaskAllocator() {
 
 
   const allocateManpower = () => {
-    const startHeap = [...tasks].sort((a, b) => a.startTime - b.startTime);
+    let startHeap = [...tasks].sort((a, b) => a.startTime - b.startTime);
     const endHeap = [];
+    console.log("STARTTTT HEAP:", startHeap);
     let currentManpower = manpower;
     const allocations = [];
 
     while (startHeap.length > 0 || endHeap.length > 0) {
+      console.log("Start Heap: ", startHeap)
+      console.log("End heap: ", endHeap)
       // Move tasks from startHeap to endHeap based on startTime
       while (
         startHeap.length > 0 &&
@@ -46,6 +49,8 @@ function TaskAllocator() {
           // Allocate manpower
           allocations.push({
             trainNo: currentTask.trainNo,
+            track: currentTask.track,
+            maintenanceType: currentTask.maintenanceType,
             allocated: currentTask.maxPeople,
           });
           currentManpower -= currentTask.maxPeople;
@@ -93,6 +98,8 @@ function TaskAllocator() {
           <ListItem key={index}>
             <Flex justifyContent="space-between">
               <Text>Train {alloc.trainNo}:</Text>
+              <Text>Track {alloc.track}:</Text>
+              <Text>Maintenance Type {alloc.maintenanceType}:</Text>
               <Text>Allocated {alloc.allocated} people</Text>
             </Flex>
           </ListItem>
@@ -100,28 +107,7 @@ function TaskAllocator() {
       </List>
     </Box>
    
-    /*<div>
-      <h1>Task Allocator</h1>
-      <p>Available Manpower: {manpower}</p>
-      <button onClick={allocateManpower}>Allocate Manpower</button>
-      <h2>Tasks</h2>
-      <ul>
-        {tasks.map((task, index) => (
-          <li key={index}>
-            Train {task.trainNo}: {task.startTime} - {task.endTime}, Max People:{" "}
-            {task.maxPeople}
-          </li>
-        ))}
-      </ul>
-      <h2>Allocation</h2>
-      <ul>
-        {allocation.map((alloc, index) => (
-          <li key={index}>
-            Train {alloc.trainNo}: Allocated {alloc.allocated} people
-          </li>
-        ))}
-      </ul>
-    </div> */
+    
   );
 }
 
