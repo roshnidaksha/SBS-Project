@@ -10,6 +10,9 @@ import NavBar from "./NavBar";
 import Inventory from "./Features/Inventory";
 import Manpower from "./Features/Manpower";
 import FinancialManagement from "./Features/FinancialManagement";
+import PM from "./Components/PM";
+import Maintenance from "./Components/Maintenance";
+import TaskAllocator from "./Components/Allocation";
 const theme = extendTheme({
   config: {
     initialColorMode: "light", // Ensure this is properly set
@@ -23,16 +26,14 @@ function App() {
       <Router>
         <div>
           <Routes>
-            <Route path="/" element={<Navigate to="/home" />} />
+            <Route path="/" element={<Navigate to="/PM" />} />
             {/* Render other routes */}
             <Route path="/home" element={<HomePage />} />
             <Route path="/inventory" element={<Inventory />} />
-            <Route path="/manpower" element={<Manpower />} />
-            <Route path="/financialManagement" element={<FinancialManagement />} />
-            {/* <Route path="/career-voyage" element={<CareerVoyage />} />
-            <Route path="/gen-ex" element={<GenerationalEngagement />} />
-            <Route path="/learning" element={<LearningDashboard />} /> */}
-            
+            <Route path="/manpower" element={<Manpower />} /> 
+            <Route path="/maintenance/:date" element={<Maintenance />} />
+            <Route path="/PM" element={<PM />} /> 
+            <Route path="/TaskAllocator" element={<TaskAllocator />} /> 
           </Routes>
         </div>
       </Router>
