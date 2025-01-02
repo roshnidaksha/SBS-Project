@@ -113,7 +113,7 @@ const PM = () => {
               left="0"
               right="0"
               bottom="0"
-              bg="rgba(0, 0, 0, 0.7)" // Grey shadow behind the box
+              bg="rgba(0, 0, 0, 0.4)" // Grey shadow behind the box
               zIndex="999" // Ensures the backdrop appears behind the content
             />
 
@@ -136,22 +136,39 @@ const PM = () => {
                   <Box
                     key={index}
                     p={4}
-                    borderBottom="1px"
-                    borderColor="gray.200"
+                    borderRadius="lg"
+                    boxShadow="xl"
+                    mb={4}
+                    _hover={{ boxShadow: "2xl", transform: "scale(1.02)" }} // Hover effect for interactivity
+                    transition="all 0.3s ease-in-out"
+                    bg="gray.50"
                   >
-                    <VStack align="start" spacing={2}>
-                      <Text fontWeight="bold">Event ID: {event.eventId}</Text>
-                      <HStack spacing={2}>
-                        <Text fontWeight="medium">Train No:</Text>
-                        <Text>{event.trainNo}</Text>
+                    <VStack align="start" spacing={3}>
+                      <HStack spacing={3} align="center">
+                        <Text fontWeight="bold" fontSize="lg">
+                          Event ID:
+                        </Text>
+                        <Text fontWeight="semibold" color="gray.700">
+                          {event.eventId}
+                        </Text>
                       </HStack>
-                      <HStack spacing={2}>
-                        <Text fontWeight="medium">Event Name:</Text>
-                        <Text>{event.eventName}</Text>
+                      <HStack spacing={3} align="center">
+                        <Text fontWeight="bold" fontSize="lg">
+                          Train No:
+                        </Text>
+                        <Text color="gray.600">{event.trainNo}</Text>
                       </HStack>
-                      <HStack spacing={2}>
-                        <Text fontWeight="medium">Date:</Text>
-                        <Text>{event.date}</Text>
+                      <HStack spacing={3} align="center">
+                        <Text fontWeight="bold" fontSize="lg">
+                          Event Name:
+                        </Text>
+                        <Text color="gray.600">{event.eventName}</Text>
+                      </HStack>
+                      <HStack spacing={3} align="center">
+                        <Text fontWeight="bold" fontSize="lg">
+                          Date:
+                        </Text>
+                        <Text color="gray.600">{event.date}</Text>
                       </HStack>
                     </VStack>
                   </Box>
@@ -165,7 +182,9 @@ const PM = () => {
                 right="8px"
                 onClick={() => toast.closeAll()} // Close the toast or implement custom close logic
               />
-              <Text fontWeight="bold">Maintenance Options</Text>
+              <Text fontWeight="bold" mb={4} fontSize="lg">
+                Maintenance Options
+              </Text>
               <Button
                 bgGradient="linear(to-r, purple.400, purple.600)" // Purple gradient for Keep Schedule
                 color="white" // Ensures text color is white on gradient
