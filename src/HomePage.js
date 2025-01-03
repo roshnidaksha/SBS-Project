@@ -34,9 +34,9 @@ const features = [
   {
     title: "Preventify",
     description:
-      "View maintenance tasks forecasted for the entire year",
+      "View maintenance tasks forecasted for the entire year and allocate manpower across all tasks with ease",
     image: "schedule.webp", // Image path in the public folder
-    buttonLabel: "schedule",
+    buttonLabel: "View Schedule",
     buttonRoute: "/PM",
     icon: <FiBookOpen size={40} />,
   },
