@@ -20,7 +20,7 @@ ChartJS.register(
   BarElement,
   Title,
   Tooltip,
-  Legd
+  Legend
 );
 
 const Manpower = () => {

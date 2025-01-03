@@ -11,12 +11,13 @@ const NavBar = () => {
 
   return (
     <Box
+      width="100vw"
       backgroundImage="linear-gradient(90deg, #3f2182 0%, #ff0000 100%)" // Gradient background
       px={8}
       py={4}
       color="white"
     >
-      <Flex justifyContent="space-between" alignItems="center">
+      <Flex justifyContent="space-between" alignItems="center" flexWrap="wrap">
         {/* Main Title */}
         <Text fontSize="lg" fontWeight="bold" fontFamily="Poppins">
           SBS TransitHub

@@ -11,6 +11,9 @@ import Inventory from "./Features/Inventory";
 import PM from "./Features/PM";
 import Manpower from "./Features/Manpower";
 import FinancialManagement from "./Features/FinancialManagement";
+import MaintenanceScheduler from "./Features/Maintenance";
+import TaskAllocator from "./Features/Allocation";
+
 const theme = extendTheme({
   config: {
     initialColorMode: "light", // Ensure this is properly set
@@ -29,6 +32,8 @@ function App() {
             <Route path="/home" element={<HomePage />} />
             <Route path="/inventory" element={<Inventory />} />
             <Route path="/pm" element={<PM />} />
+            <Route path="/TaskAllocator" element={<TaskAllocator />} />
+            <Route path="/maintenance/:date" element={<MaintenanceScheduler />} />
             <Route path="/manpower" element={<Manpower />} />
             <Route path="/financialManagement" element={<FinancialManagement />} />
             {/* <Route path="/career-voyage" element={<CareerVoyage />} />
