@@ -101,7 +101,7 @@ const FinancialManagement = () => {
       setHistoricalDataChart({
         labels: sortedDates.map((date) => new Date(date).toLocaleDateString()),
         datasets: [{
-          label: 'Order Quantity',
+          label: 'Cost on past purchases',
           data: orderQuantities,
           backgroundColor: 'rgba(75,192,192,0.6)',
           borderColor: 'rgba(75,192,192,1)',
@@ -318,10 +318,17 @@ const FinancialManagement = () => {
     }
 
     const metrics = sparePartsData.map(part => {
-      const { cost, shortfall, total_quantity_needed, quantity_in_stock } = part;
+      const { cost, shortfall, total_quantity_needed, quantity_in_stock, historical_data } = part;
       const shortfallCost = shortfall > 0 ? shortfall * cost : 0;
       const stockValue = quantity_in_stock * cost;
       const projectedCost = total_quantity_needed * cost;
+      const transformData = (data, cost) => {
+        return Object.entries(data).reduce((result, [date, value]) => {
+          result[date] = value * cost;
+          return result;
+        }, {});
+      };
+      const last4QuartersCost = transformData(historical_data.last_4_quarters_order_quantity, cost);
 
       return {
         name: part.Component,
@@ -333,7 +340,8 @@ const FinancialManagement = () => {
         projectedCost: projectedCost.toFixed(2),
         cost: part.cost,
         leadTime: part.lead_time,
-        last_4_quarters_order_quantity: part.historical_data.last_4_quarters_order_quantity,
+        last_4_quarters_order_quantity: last4QuartersCost,
+        
       };
     });
     setBudgetMetrics(metrics);
