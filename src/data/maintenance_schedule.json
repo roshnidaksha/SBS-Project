@@ -2972,5 +2972,76 @@
               "peopleRequired": 3
           }
       ]
+  },
+  {
+      "date": "2025-12-24",
+      "tasks": [
+          {
+              "trainNo": "PV01",
+              "maintenanceType": "E1",
+              "track": "E1-E5_2",
+              "baseTimeRequired": 10,
+              "maxPeople": 5,
+              "timeRequired": 2.0,
+              "startTime": 8.0,
+              "endTime": 10.0,
+              "peopleRequired": 6
+          },
+          {
+              "trainNo": "PV02",
+              "maintenanceType": "E1",
+              "track": "E1-E5_2",
+              "baseTimeRequired": 10,
+              "maxPeople": 5,
+              "timeRequired": 5.0,
+              "startTime": 10.0,
+              "endTime": 15.0,
+              "peopleRequired": 3
+          },
+          {
+              "trainNo": "PV03",
+              "maintenanceType": "E1",
+              "track": "E1-E5_2",
+              "baseTimeRequired": 10,
+              "maxPeople": 5,
+              "timeRequired": 5.0,
+              "startTime": 11.0,
+              "endTime": 15.0,
+              "peopleRequired": 3
+          },
+          {
+              "trainNo": "PV04",
+              "maintenanceType": "E1",
+              "track": "E1-E5_2",
+              "baseTimeRequired": 10,
+              "maxPeople": 5,
+              "timeRequired": 5.0,
+              "startTime": 10.0,
+              "endTime": 15.0,
+              "peopleRequired": 3
+          },
+          {
+              "trainNo": "PV05",
+              "maintenanceType": "E1",
+              "track": "E1-E5_2",
+              "baseTimeRequired": 10,
+              "maxPeople": 5,
+              "timeRequired": 5.0,
+              "startTime": 10.0,
+              "endTime": 15.0,
+              "peopleRequired": 3
+          },
+          {
+              "trainNo": "PV06",
+              "maintenanceType": "E1",
+              "track": "E1-E5_2",
+              "baseTimeRequired": 10,
+              "maxPeople": 5,
+              "timeRequired": 5.0,
+              "startTime": 12.0,
+              "endTime": 15.0,
+              "peopleRequired": 3
+          }
+      ]
   }
 ]
