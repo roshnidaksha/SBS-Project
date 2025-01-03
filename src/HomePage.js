@@ -37,7 +37,7 @@ const features = [
       "View maintenance tasks forecasted for the entire year",
     image: "schedule.webp", // Image path in the public folder
     buttonLabel: "schedule",
-    buttonRoute: "/learning",
+    buttonRoute: "/PM",
     icon: <FiBookOpen size={40} />,
   },
   {
