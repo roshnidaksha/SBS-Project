@@ -14,7 +14,7 @@ function TaskAllocator() {
   const [manpower, setManpower] = useState(0);
   const [allocation, setAllocation] = useState([]);
   const specificDate = date; // this date will be passed by params later
-  
+  console.log(specificDate);
   useEffect(() => {
     const dataMap = new Map(scheduleData.map((item) => [item.date, item.tasks]));
     const tasks = dataMap.get(specificDate);
@@ -27,23 +27,17 @@ function TaskAllocator() {
   const allocateManpower = () => {
     
     let startHeap = [...tasks].sort((a, b) => a.startTime - b.startTime);
-    const endHeap = [];
+    let endHeap = [];
     let currentManpower = manpower;
-    const allocations = [];
+    let allocations = [];
 
     while (startHeap.length > 0 || endHeap.length > 0) {
-      console.log("Start Heap: ", startHeap);
-      //console.table(endHeap);
-      console.table(startHeap);
-
-      console.log("End heap: ", endHeap);
-      // Move tasks from startHeap to endHeap based on startTime
       while (
         startHeap.length > 0 &&
         (endHeap.length === 0 || startHeap[0].startTime < endHeap[0].endTime)
       ) {
         const task = startHeap.shift();
-        if (currentManpower >= task.maxPeople) {
+        if (currentManpower > task.maxPeople) {
           // Allocate manpower
           allocations.push({
             trainNo: task.trainNo,
@@ -54,6 +48,7 @@ function TaskAllocator() {
             allocated: task.maxPeople,
           });
           currentManpower -= task.maxPeople;
+          endHeap.push({...task, allocated: task.maxPeople});
         } else if (currentManpower > 0) {
           allocations.push({
             trainNo: task.trainNo,
@@ -63,6 +58,7 @@ function TaskAllocator() {
             date: date,
             allocated: currentManpower,
           });
+          endHeap.push({...task, allocated: currentManpower});
           currentManpower = 0;
         } else {
           allocations.push({
@@ -73,20 +69,17 @@ function TaskAllocator() {
             date: date,
             allocated: 0,
           });
+          endHeap.push({...task, allocated: 0});
           //break;
         }
-        endHeap.push(task);
         endHeap.sort((a, b) => a.endTime - b.endTime); // Keep endHeap sorted by endTime
-      }
-
-      if (endHeap.length > 0) {
+    }
+    if (endHeap.length > 0) {
         const currentTask = endHeap.shift();
         currentManpower += currentTask.allocated;
       }
     }
-
     setAllocation(allocations);
- 
   };
 
   function convertDecimalToRoundedTime(decimalTime) {
