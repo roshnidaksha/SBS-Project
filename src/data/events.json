@@ -1,0 +1,47 @@
+{
+    "events": [
+      {
+        "eventId": 1,
+        "eventName": "Routine Inspection",
+        "color": "#FFA07A",
+        "dates": ["2024-01-15", "2024-03-10", "2024-06-25", "2024-09-15"]
+      },
+      {
+        "eventId": 2,
+        "eventName": "Track Cleaning",
+        "color": "#20B2AA",
+        "dates": ["2024-02-05", "2024-04-18", "2024-07-12", "2024-10-20"]
+      },
+      {
+        "eventId": 3,
+        "eventName": "Signal Check",
+        "color": "#9370DB",
+        "dates": ["2024-03-01", "2024-05-15", "2024-08-10", "2024-11-05"]
+      },
+      {
+        "eventId": 4,
+        "eventName": "Engine Maintenance",
+        "color": "#FFD700",
+        "dates": ["2024-01-20", "2024-05-22", "2024-09-10", "2024-12-01"]
+      },
+      {
+        "eventId": 5,
+        "eventName": "Brake Check",
+        "color": "#FF4500",
+        "dates": ["2024-02-25", "2024-06-15", "2024-08-25", "2024-12-20"]
+      },
+      {
+        "eventId": 6,
+        "eventName": "Safety Drill",
+        "color": "#7CFC00",
+        "dates": ["2024-04-05", "2024-07-20", "2024-10-10", "2024-12-25"]
+      },
+      {
+        "eventId": 7,
+        "eventName": "Emergency Preparedness",
+        "color": "#4682B4",
+        "dates": ["2024-03-15", "2024-06-30", "2024-09-25", "2024-11-15"]
+      }
+    ]
+  }
+  
