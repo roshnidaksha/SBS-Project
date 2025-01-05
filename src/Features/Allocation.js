@@ -76,8 +76,8 @@ function TaskAllocator() {
     setTasks(tasks);
     setManpower(totalMen);
 
-    if (allocation != []) {
-      setTasks(allocation?.schedule?.tasks);
+    if (allocation && allocation.schedule && allocation.schedule.tasks) {
+      setTasks(allocation.schedule.tasks);
     }
   }, [totalMen, allocation]); //not sure if i need to remove totalMen
 
