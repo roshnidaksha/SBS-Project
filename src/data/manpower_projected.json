@@ -1,6 +1,6 @@
 {
     "2025-01-05": {
-        "required": 27,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -49,11 +49,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-01-06": {
-        "required": 31,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -101,12 +101,12 @@
             "T1": 5,
             "T2": 5,
             "T3": 5,
-            "T4": 5,
-            "OH": 20
+            "T4": 4,
+            "OH": 0
         }
     },
     "2025-01-07": {
-        "required": 30,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -152,14 +152,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
-            "T3": 5,
+            "T2": 4,
+            "T3": 4,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-01-08": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -208,11 +208,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-01-09": {
-        "required": 26,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -258,14 +258,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 4,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-01-10": {
-        "required": 21,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -314,11 +314,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-01-11": {
-        "required": 29,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -363,15 +363,15 @@
         ],
         "projected_absent": [],
         "team_details": {
-            "T1": 5,
+            "T1": 3,
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-01-12": {
-        "required": 27,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -420,11 +420,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-01-13": {
-        "required": 27,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -473,11 +473,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-01-14": {
-        "required": 22,
+        "required": 16,
         "projected_present": [
             "id_01",
             "id_02",
@@ -522,15 +522,15 @@
         ],
         "projected_absent": [],
         "team_details": {
-            "T1": 5,
-            "T2": 5,
-            "T3": 5,
-            "T4": 5,
-            "OH": 20
+            "T1": 4,
+            "T2": 4,
+            "T3": 4,
+            "T4": 4,
+            "OH": 0
         }
     },
     "2025-01-15": {
-        "required": 31,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -576,10 +576,10 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 4,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-01-16": {
@@ -632,11 +632,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-01-17": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -685,11 +685,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-01-18": {
-        "required": 23,
+        "required": 17,
         "projected_present": [
             "id_01",
             "id_02",
@@ -734,15 +734,15 @@
         ],
         "projected_absent": [],
         "team_details": {
-            "T1": 5,
+            "T1": 4,
             "T2": 5,
             "T3": 5,
-            "T4": 5,
-            "OH": 20
+            "T4": 3,
+            "OH": 0
         }
     },
     "2025-01-19": {
-        "required": 30,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -788,14 +788,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 3,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-01-20": {
-        "required": 21,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -844,11 +844,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-01-21": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -897,11 +897,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-01-22": {
-        "required": 26,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -947,14 +947,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 4,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-01-23": {
-        "required": 25,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -1002,13 +1002,13 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 3,
             "T4": 5,
-            "OH": 19
+            "OH": 0
         }
     },
     "2025-01-24": {
-        "required": 30,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -1053,15 +1053,15 @@
         ],
         "projected_absent": [],
         "team_details": {
-            "T1": 5,
+            "T1": 4,
             "T2": 5,
-            "T3": 5,
+            "T3": 4,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-01-25": {
-        "required": 29,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -1108,13 +1108,13 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 3,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-01-26": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -1162,8 +1162,8 @@
             "T1": 5,
             "T2": 5,
             "T3": 5,
-            "T4": 5,
-            "OH": 20
+            "T4": 6,
+            "OH": 0
         }
     },
     "2025-01-27": {
@@ -1216,11 +1216,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-01-28": {
-        "required": 22,
+        "required": 16,
         "projected_present": [
             "id_01",
             "id_02",
@@ -1265,15 +1265,15 @@
         ],
         "projected_absent": [],
         "team_details": {
-            "T1": 5,
-            "T2": 5,
+            "T1": 2,
+            "T2": 4,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-01-29": {
-        "required": 31,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -1320,13 +1320,13 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 4,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-01-30": {
-        "required": 23,
+        "required": 17,
         "projected_present": [
             "id_01",
             "id_02",
@@ -1372,14 +1372,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
-            "T3": 5,
+            "T2": 4,
+            "T3": 3,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-01-31": {
-        "required": 27,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -1428,11 +1428,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-02-01": {
-        "required": 31,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -1480,8 +1480,8 @@
             "T1": 5,
             "T2": 5,
             "T3": 5,
-            "T4": 5,
-            "OH": 20
+            "T4": 4,
+            "OH": 0
         }
     },
     "2025-02-02": {
@@ -1534,11 +1534,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-02-03": {
-        "required": 25,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -1584,14 +1584,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 3,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-02-04": {
-        "required": 22,
+        "required": 16,
         "projected_present": [
             "id_01",
             "id_02",
@@ -1638,14 +1638,14 @@
         ],
         "team_details": {
             "T1": 4,
-            "T2": 5,
+            "T2": 2,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-02-05": {
-        "required": 30,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -1694,12 +1694,12 @@
             "T1": 4,
             "T2": 5,
             "T3": 5,
-            "T4": 5,
-            "OH": 20
+            "T4": 4,
+            "OH": 0
         }
     },
     "2025-02-06": {
-        "required": 29,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -1745,14 +1745,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 3,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-02-07": {
-        "required": 23,
+        "required": 17,
         "projected_present": [
             "id_01",
             "id_02",
@@ -1798,14 +1798,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
-            "T3": 5,
+            "T2": 3,
+            "T3": 4,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-02-08": {
-        "required": 30,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -1853,8 +1853,8 @@
             "T1": 5,
             "T2": 5,
             "T3": 5,
-            "T4": 5,
-            "OH": 20
+            "T4": 3,
+            "OH": 0
         }
     },
     "2025-02-09": {
@@ -1907,11 +1907,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-02-10": {
-        "required": 25,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -1956,11 +1956,11 @@
         ],
         "projected_absent": [],
         "team_details": {
-            "T1": 5,
-            "T2": 5,
+            "T1": 4,
+            "T2": 4,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-02-11": {
@@ -2013,11 +2013,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-02-12": {
-        "required": 25,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -2064,13 +2064,13 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 3,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-02-13": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -2119,7 +2119,7 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-02-14": {
@@ -2172,11 +2172,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-02-15": {
-        "required": 26,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -2222,14 +2222,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 4,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-02-16": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -2278,11 +2278,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-02-17": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -2331,11 +2331,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-02-18": {
-        "required": 26,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -2382,14 +2382,14 @@
         ],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 4,
             "T3": 5,
             "T4": 5,
-            "OH": 19
+            "OH": 0
         }
     },
     "2025-02-19": {
-        "required": 27,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -2439,11 +2439,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 19
+            "OH": 0
         }
     },
     "2025-02-20": {
-        "required": 25,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -2490,14 +2490,14 @@
         ],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 3,
             "T3": 5,
             "T4": 5,
-            "OH": 19
+            "OH": 0
         }
     },
     "2025-02-21": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -2546,11 +2546,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-02-22": {
-        "required": 21,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -2599,11 +2599,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-02-23": {
-        "required": 31,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -2650,13 +2650,13 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 4,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-02-24": {
-        "required": 30,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -2704,12 +2704,12 @@
             "T1": 5,
             "T2": 5,
             "T3": 5,
-            "T4": 5,
-            "OH": 20
+            "T4": 3,
+            "OH": 0
         }
     },
     "2025-02-25": {
-        "required": 28,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -2754,15 +2754,15 @@
         ],
         "projected_absent": [],
         "team_details": {
-            "T1": 5,
+            "T1": 4,
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-02-26": {
-        "required": 23,
+        "required": 17,
         "projected_present": [
             "id_01",
             "id_02",
@@ -2807,15 +2807,15 @@
         ],
         "projected_absent": [],
         "team_details": {
-            "T1": 5,
-            "T2": 5,
-            "T3": 5,
+            "T1": 4,
+            "T2": 4,
+            "T3": 4,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-02-27": {
-        "required": 31,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -2863,12 +2863,12 @@
             "T1": 5,
             "T2": 5,
             "T3": 5,
-            "T4": 5,
-            "OH": 20
+            "T4": 4,
+            "OH": 0
         }
     },
     "2025-02-28": {
-        "required": 23,
+        "required": 17,
         "projected_present": [
             "id_01",
             "id_02",
@@ -2916,12 +2916,12 @@
             "T1": 5,
             "T2": 5,
             "T3": 5,
-            "T4": 5,
-            "OH": 20
+            "T4": 2,
+            "OH": 0
         }
     },
     "2025-03-01": {
-        "required": 21,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -2970,7 +2970,7 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-03-02": {
@@ -3023,11 +3023,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-03-03": {
-        "required": 29,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -3073,14 +3073,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 4,
             "T3": 5,
-            "T4": 5,
-            "OH": 20
+            "T4": 4,
+            "OH": 0
         }
     },
     "2025-03-04": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -3129,11 +3129,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-03-05": {
-        "required": 29,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -3178,15 +3178,15 @@
         ],
         "projected_absent": [],
         "team_details": {
-            "T1": 5,
+            "T1": 3,
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-03-06": {
-        "required": 26,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -3231,15 +3231,15 @@
         ],
         "projected_absent": [],
         "team_details": {
-            "T1": 5,
+            "T1": 4,
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-03-07": {
-        "required": 25,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -3287,12 +3287,12 @@
             "T1": 5,
             "T2": 5,
             "T3": 5,
-            "T4": 5,
-            "OH": 20
+            "T4": 3,
+            "OH": 0
         }
     },
     "2025-03-08": {
-        "required": 23,
+        "required": 17,
         "projected_present": [
             "id_01",
             "id_02",
@@ -3338,14 +3338,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
-            "T3": 5,
+            "T2": 3,
+            "T3": 4,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-03-09": {
-        "required": 22,
+        "required": 16,
         "projected_present": [
             "id_01",
             "id_02",
@@ -3393,12 +3393,12 @@
             "T1": 5,
             "T2": 5,
             "T3": 5,
-            "T4": 5,
-            "OH": 20
+            "T4": 1,
+            "OH": 0
         }
     },
     "2025-03-10": {
-        "required": 21,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -3447,11 +3447,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-03-11": {
-        "required": 26,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -3499,12 +3499,12 @@
             "T1": 5,
             "T2": 5,
             "T3": 5,
-            "T4": 5,
-            "OH": 20
+            "T4": 4,
+            "OH": 0
         }
     },
     "2025-03-12": {
-        "required": 30,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -3550,14 +3550,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 3,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-03-13": {
-        "required": 26,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -3603,14 +3603,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 4,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-03-14": {
-        "required": 31,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -3658,12 +3658,12 @@
             "T1": 5,
             "T2": 5,
             "T3": 5,
-            "T4": 5,
-            "OH": 20
+            "T4": 4,
+            "OH": 0
         }
     },
     "2025-03-15": {
-        "required": 25,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -3709,15 +3709,15 @@
             "id_31"
         ],
         "team_details": {
-            "T1": 5,
+            "T1": 3,
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 19
+            "OH": 0
         }
     },
     "2025-03-16": {
-        "required": 22,
+        "required": 16,
         "projected_present": [
             "id_01",
             "id_02",
@@ -3764,14 +3764,14 @@
         ],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 3,
             "T3": 5,
-            "T4": 5,
-            "OH": 19
+            "T4": 3,
+            "OH": 0
         }
     },
     "2025-03-17": {
-        "required": 26,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -3818,14 +3818,14 @@
         ],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 4,
             "T3": 5,
             "T4": 5,
-            "OH": 19
+            "OH": 0
         }
     },
     "2025-03-18": {
-        "required": 23,
+        "required": 17,
         "projected_present": [
             "id_01",
             "id_02",
@@ -3871,15 +3871,15 @@
             "id_31"
         ],
         "team_details": {
-            "T1": 5,
+            "T1": 2,
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 19
+            "OH": 0
         }
     },
     "2025-03-19": {
-        "required": 21,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -3929,11 +3929,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 19
+            "OH": 0
         }
     },
     "2025-03-20": {
-        "required": 21,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -3982,11 +3982,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-03-21": {
-        "required": 26,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -4036,7 +4036,7 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-03-22": {
@@ -4086,15 +4086,15 @@
             "id_05"
         ],
         "team_details": {
-            "T1": 4,
+            "T1": 5,
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-03-23": {
-        "required": 31,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -4144,11 +4144,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-03-24": {
-        "required": 25,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -4196,13 +4196,13 @@
         "team_details": {
             "T1": 4,
             "T2": 5,
-            "T3": 5,
+            "T3": 4,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-03-25": {
-        "required": 30,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -4248,11 +4248,11 @@
             "id_05"
         ],
         "team_details": {
-            "T1": 4,
+            "T1": 3,
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-03-26": {
@@ -4302,15 +4302,15 @@
             "id_05"
         ],
         "team_details": {
-            "T1": 4,
+            "T1": 5,
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-03-27": {
-        "required": 25,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -4357,14 +4357,14 @@
         ],
         "team_details": {
             "T1": 4,
-            "T2": 5,
+            "T2": 4,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-03-28": {
-        "required": 29,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -4410,15 +4410,15 @@
             "id_05"
         ],
         "team_details": {
-            "T1": 4,
+            "T1": 3,
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-03-29": {
-        "required": 27,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -4467,11 +4467,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-03-30": {
-        "required": 26,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -4518,13 +4518,13 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 4,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-03-31": {
-        "required": 26,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -4571,13 +4571,13 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 4,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-04-01": {
-        "required": 22,
+        "required": 16,
         "projected_present": [
             "id_01",
             "id_02",
@@ -4623,14 +4623,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
-            "T3": 5,
+            "T2": 3,
+            "T3": 3,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-04-02": {
-        "required": 28,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -4677,13 +4677,13 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 4,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-04-03": {
-        "required": 29,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -4731,12 +4731,12 @@
             "T1": 5,
             "T2": 5,
             "T3": 5,
-            "T4": 5,
-            "OH": 20
+            "T4": 3,
+            "OH": 0
         }
     },
     "2025-04-04": {
-        "required": 25,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -4782,14 +4782,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 3,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-04-05": {
-        "required": 28,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -4837,12 +4837,12 @@
             "T1": 5,
             "T2": 5,
             "T3": 5,
-            "T4": 5,
-            "OH": 20
+            "T4": 4,
+            "OH": 0
         }
     },
     "2025-04-06": {
-        "required": 28,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -4888,14 +4888,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 4,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-04-07": {
-        "required": 21,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -4944,11 +4944,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-04-08": {
-        "required": 23,
+        "required": 17,
         "projected_present": [
             "id_01",
             "id_02",
@@ -4996,13 +4996,13 @@
         "team_details": {
             "T1": 5,
             "T2": 4,
-            "T3": 5,
-            "T4": 5,
-            "OH": 20
+            "T3": 4,
+            "T4": 4,
+            "OH": 0
         }
     },
     "2025-04-09": {
-        "required": 27,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -5049,14 +5049,14 @@
         ],
         "team_details": {
             "T1": 5,
-            "T2": 4,
-            "T3": 4,
+            "T2": 5,
+            "T3": 5,
             "T4": 5,
-            "OH": 19
+            "OH": 0
         }
     },
     "2025-04-10": {
-        "required": 21,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -5103,14 +5103,14 @@
         ],
         "team_details": {
             "T1": 5,
-            "T2": 4,
-            "T3": 4,
+            "T2": 5,
+            "T3": 5,
             "T4": 5,
-            "OH": 19
+            "OH": 0
         }
     },
     "2025-04-11": {
-        "required": 29,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -5160,11 +5160,11 @@
             "T2": 4,
             "T3": 4,
             "T4": 5,
-            "OH": 19
+            "OH": 0
         }
     },
     "2025-04-12": {
-        "required": 26,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -5205,6 +5205,114 @@
             "id_39"
         ],
         "projected_absent": [
+            "id_09",
+            "id_15",
+            "id_40"
+        ],
+        "team_details": {
+            "T1": 5,
+            "T2": 4,
+            "T3": 5,
+            "T4": 5,
+            "OH": 0
+        }
+    },
+    "2025-04-13": {
+        "required": 16,
+        "projected_present": [
+            "id_01",
+            "id_02",
+            "id_03",
+            "id_04",
+            "id_05",
+            "id_06",
+            "id_07",
+            "id_08",
+            "id_10",
+            "id_11",
+            "id_12",
+            "id_13",
+            "id_16",
+            "id_17",
+            "id_18",
+            "id_19",
+            "id_20",
+            "id_21",
+            "id_22",
+            "id_23",
+            "id_24",
+            "id_25",
+            "id_26",
+            "id_27",
+            "id_28",
+            "id_29",
+            "id_30",
+            "id_31",
+            "id_32",
+            "id_33",
+            "id_34",
+            "id_35",
+            "id_36",
+            "id_37",
+            "id_38",
+            "id_39"
+        ],
+        "projected_absent": [
+            "id_14",
+            "id_09",
+            "id_15",
+            "id_40"
+        ],
+        "team_details": {
+            "T1": 5,
+            "T2": 4,
+            "T3": 3,
+            "T4": 4,
+            "OH": 0
+        }
+    },
+    "2025-04-14": {
+        "required": 18,
+        "projected_present": [
+            "id_01",
+            "id_02",
+            "id_03",
+            "id_04",
+            "id_05",
+            "id_06",
+            "id_07",
+            "id_08",
+            "id_10",
+            "id_11",
+            "id_12",
+            "id_13",
+            "id_16",
+            "id_17",
+            "id_18",
+            "id_19",
+            "id_20",
+            "id_21",
+            "id_22",
+            "id_23",
+            "id_24",
+            "id_25",
+            "id_26",
+            "id_27",
+            "id_28",
+            "id_29",
+            "id_30",
+            "id_31",
+            "id_32",
+            "id_33",
+            "id_34",
+            "id_35",
+            "id_36",
+            "id_37",
+            "id_38",
+            "id_39"
+        ],
+        "projected_absent": [
+            "id_14",
             "id_09",
             "id_15",
             "id_40"
@@ -5214,119 +5322,11 @@
             "T2": 4,
             "T3": 4,
             "T4": 5,
-            "OH": 19
-        }
-    },
-    "2025-04-13": {
-        "required": 22,
-        "projected_present": [
-            "id_01",
-            "id_02",
-            "id_03",
-            "id_04",
-            "id_05",
-            "id_06",
-            "id_07",
-            "id_08",
-            "id_10",
-            "id_11",
-            "id_12",
-            "id_13",
-            "id_16",
-            "id_17",
-            "id_18",
-            "id_19",
-            "id_20",
-            "id_21",
-            "id_22",
-            "id_23",
-            "id_24",
-            "id_25",
-            "id_26",
-            "id_27",
-            "id_28",
-            "id_29",
-            "id_30",
-            "id_31",
-            "id_32",
-            "id_33",
-            "id_34",
-            "id_35",
-            "id_36",
-            "id_37",
-            "id_38",
-            "id_39"
-        ],
-        "projected_absent": [
-            "id_14",
-            "id_09",
-            "id_15",
-            "id_40"
-        ],
-        "team_details": {
-            "T1": 5,
-            "T2": 4,
-            "T3": 3,
-            "T4": 5,
-            "OH": 19
-        }
-    },
-    "2025-04-14": {
-        "required": 30,
-        "projected_present": [
-            "id_01",
-            "id_02",
-            "id_03",
-            "id_04",
-            "id_05",
-            "id_06",
-            "id_07",
-            "id_08",
-            "id_10",
-            "id_11",
-            "id_12",
-            "id_13",
-            "id_16",
-            "id_17",
-            "id_18",
-            "id_19",
-            "id_20",
-            "id_21",
-            "id_22",
-            "id_23",
-            "id_24",
-            "id_25",
-            "id_26",
-            "id_27",
-            "id_28",
-            "id_29",
-            "id_30",
-            "id_31",
-            "id_32",
-            "id_33",
-            "id_34",
-            "id_35",
-            "id_36",
-            "id_37",
-            "id_38",
-            "id_39"
-        ],
-        "projected_absent": [
-            "id_14",
-            "id_09",
-            "id_15",
-            "id_40"
-        ],
-        "team_details": {
-            "T1": 5,
-            "T2": 4,
-            "T3": 3,
-            "T4": 5,
-            "OH": 19
+            "OH": 0
         }
     },
     "2025-04-15": {
-        "required": 21,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -5373,10 +5373,10 @@
         ],
         "team_details": {
             "T1": 5,
-            "T2": 4,
-            "T3": 3,
+            "T2": 5,
+            "T3": 5,
             "T4": 5,
-            "OH": 19
+            "OH": 0
         }
     },
     "2025-04-16": {
@@ -5386,7 +5386,7 @@
         "team_details": {}
     },
     "2025-04-17": {
-        "required": 31,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -5436,11 +5436,11 @@
             "T2": 4,
             "T3": 5,
             "T4": 5,
-            "OH": 19
+            "OH": 0
         }
     },
     "2025-04-18": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -5487,14 +5487,14 @@
         ],
         "team_details": {
             "T1": 5,
-            "T2": 4,
-            "T3": 4,
+            "T2": 5,
+            "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-04-19": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -5537,6 +5537,60 @@
         "projected_absent": [
             "id_38",
             "id_09",
+            "id_13"
+        ],
+        "team_details": {
+            "T1": 5,
+            "T2": 5,
+            "T3": 5,
+            "T4": 5,
+            "OH": 0
+        }
+    },
+    "2025-04-20": {
+        "required": 18,
+        "projected_present": [
+            "id_01",
+            "id_02",
+            "id_03",
+            "id_04",
+            "id_05",
+            "id_06",
+            "id_07",
+            "id_08",
+            "id_09",
+            "id_10",
+            "id_11",
+            "id_12",
+            "id_14",
+            "id_15",
+            "id_16",
+            "id_17",
+            "id_18",
+            "id_19",
+            "id_20",
+            "id_21",
+            "id_22",
+            "id_23",
+            "id_24",
+            "id_25",
+            "id_26",
+            "id_27",
+            "id_28",
+            "id_29",
+            "id_30",
+            "id_31",
+            "id_32",
+            "id_33",
+            "id_34",
+            "id_35",
+            "id_36",
+            "id_37",
+            "id_39",
+            "id_40"
+        ],
+        "projected_absent": [
+            "id_38",
             "id_13"
         ],
         "team_details": {
@@ -5544,65 +5598,11 @@
             "T2": 4,
             "T3": 4,
             "T4": 5,
-            "OH": 19
-        }
-    },
-    "2025-04-20": {
-        "required": 29,
-        "projected_present": [
-            "id_01",
-            "id_02",
-            "id_03",
-            "id_04",
-            "id_05",
-            "id_06",
-            "id_07",
-            "id_08",
-            "id_09",
-            "id_10",
-            "id_11",
-            "id_12",
-            "id_14",
-            "id_15",
-            "id_16",
-            "id_17",
-            "id_18",
-            "id_19",
-            "id_20",
-            "id_21",
-            "id_22",
-            "id_23",
-            "id_24",
-            "id_25",
-            "id_26",
-            "id_27",
-            "id_28",
-            "id_29",
-            "id_30",
-            "id_31",
-            "id_32",
-            "id_33",
-            "id_34",
-            "id_35",
-            "id_36",
-            "id_37",
-            "id_39",
-            "id_40"
-        ],
-        "projected_absent": [
-            "id_38",
-            "id_13"
-        ],
-        "team_details": {
-            "T1": 5,
-            "T2": 5,
-            "T3": 4,
-            "T4": 5,
-            "OH": 19
+            "OH": 0
         }
     },
     "2025-04-21": {
-        "required": 31,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -5652,11 +5652,11 @@
             "T2": 5,
             "T3": 4,
             "T4": 5,
-            "OH": 19
+            "OH": 0
         }
     },
     "2025-04-22": {
-        "required": 25,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -5702,15 +5702,15 @@
             "id_13"
         ],
         "team_details": {
-            "T1": 5,
+            "T1": 4,
             "T2": 5,
             "T3": 4,
             "T4": 5,
-            "OH": 19
+            "OH": 0
         }
     },
     "2025-04-23": {
-        "required": 30,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -5757,14 +5757,14 @@
         ],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 4,
             "T3": 4,
             "T4": 5,
-            "OH": 19
+            "OH": 0
         }
     },
     "2025-04-24": {
-        "required": 27,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -5812,13 +5812,13 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 4,
+            "T3": 5,
             "T4": 5,
-            "OH": 19
+            "OH": 0
         }
     },
     "2025-04-25": {
-        "required": 28,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -5868,7 +5868,7 @@
             "T2": 5,
             "T3": 4,
             "T4": 5,
-            "OH": 19
+            "OH": 0
         }
     },
     "2025-04-26": {
@@ -5920,13 +5920,13 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 4,
+            "T3": 5,
             "T4": 5,
-            "OH": 19
+            "OH": 0
         }
     },
     "2025-04-27": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -5972,15 +5972,15 @@
             "id_13"
         ],
         "team_details": {
-            "T1": 4,
+            "T1": 5,
             "T2": 5,
-            "T3": 4,
+            "T3": 5,
             "T4": 5,
-            "OH": 19
+            "OH": 0
         }
     },
     "2025-04-28": {
-        "required": 21,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -6026,11 +6026,11 @@
             "id_13"
         ],
         "team_details": {
-            "T1": 4,
+            "T1": 5,
             "T2": 5,
-            "T3": 4,
+            "T3": 5,
             "T4": 5,
-            "OH": 19
+            "OH": 0
         }
     },
     "2025-04-29": {
@@ -6080,15 +6080,15 @@
             "id_04"
         ],
         "team_details": {
-            "T1": 4,
+            "T1": 5,
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 19
+            "OH": 0
         }
     },
     "2025-04-30": {
-        "required": 27,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -6134,227 +6134,227 @@
             "id_04"
         ],
         "team_details": {
+            "T1": 5,
+            "T2": 5,
+            "T3": 5,
+            "T4": 5,
+            "OH": 0
+        }
+    },
+    "2025-05-01": {
+        "required": 20,
+        "projected_present": [
+            "id_01",
+            "id_02",
+            "id_03",
+            "id_04",
+            "id_05",
+            "id_06",
+            "id_07",
+            "id_08",
+            "id_09",
+            "id_10",
+            "id_11",
+            "id_12",
+            "id_13",
+            "id_14",
+            "id_15",
+            "id_16",
+            "id_17",
+            "id_18",
+            "id_19",
+            "id_20",
+            "id_21",
+            "id_22",
+            "id_23",
+            "id_24",
+            "id_25",
+            "id_26",
+            "id_27",
+            "id_28",
+            "id_29",
+            "id_30",
+            "id_31",
+            "id_32",
+            "id_33",
+            "id_34",
+            "id_35",
+            "id_36",
+            "id_37",
+            "id_38",
+            "id_39",
+            "id_40"
+        ],
+        "projected_absent": [],
+        "team_details": {
+            "T1": 5,
+            "T2": 5,
+            "T3": 5,
+            "T4": 5,
+            "OH": 0
+        }
+    },
+    "2025-05-02": {
+        "required": 20,
+        "projected_present": [
+            "id_01",
+            "id_02",
+            "id_03",
+            "id_04",
+            "id_05",
+            "id_06",
+            "id_07",
+            "id_08",
+            "id_09",
+            "id_10",
+            "id_11",
+            "id_12",
+            "id_13",
+            "id_14",
+            "id_15",
+            "id_16",
+            "id_17",
+            "id_18",
+            "id_19",
+            "id_20",
+            "id_21",
+            "id_22",
+            "id_23",
+            "id_24",
+            "id_25",
+            "id_26",
+            "id_27",
+            "id_28",
+            "id_29",
+            "id_30",
+            "id_31",
+            "id_32",
+            "id_33",
+            "id_34",
+            "id_35",
+            "id_36",
+            "id_37",
+            "id_38",
+            "id_39",
+            "id_40"
+        ],
+        "projected_absent": [],
+        "team_details": {
+            "T1": 5,
+            "T2": 5,
+            "T3": 5,
+            "T4": 5,
+            "OH": 0
+        }
+    },
+    "2025-05-03": {
+        "required": 17,
+        "projected_present": [
+            "id_01",
+            "id_02",
+            "id_03",
+            "id_04",
+            "id_05",
+            "id_06",
+            "id_07",
+            "id_08",
+            "id_09",
+            "id_10",
+            "id_11",
+            "id_12",
+            "id_13",
+            "id_14",
+            "id_15",
+            "id_16",
+            "id_17",
+            "id_18",
+            "id_19",
+            "id_20",
+            "id_21",
+            "id_22",
+            "id_23",
+            "id_24",
+            "id_25",
+            "id_26",
+            "id_27",
+            "id_28",
+            "id_29",
+            "id_30",
+            "id_31",
+            "id_32",
+            "id_33",
+            "id_34",
+            "id_35",
+            "id_36",
+            "id_37",
+            "id_38",
+            "id_39",
+            "id_40"
+        ],
+        "projected_absent": [],
+        "team_details": {
+            "T1": 4,
+            "T2": 5,
+            "T3": 3,
+            "T4": 5,
+            "OH": 0
+        }
+    },
+    "2025-05-04": {
+        "required": 19,
+        "projected_present": [
+            "id_01",
+            "id_02",
+            "id_03",
+            "id_04",
+            "id_05",
+            "id_06",
+            "id_07",
+            "id_08",
+            "id_09",
+            "id_10",
+            "id_11",
+            "id_12",
+            "id_13",
+            "id_14",
+            "id_15",
+            "id_16",
+            "id_17",
+            "id_18",
+            "id_19",
+            "id_20",
+            "id_21",
+            "id_22",
+            "id_23",
+            "id_24",
+            "id_25",
+            "id_26",
+            "id_27",
+            "id_28",
+            "id_29",
+            "id_30",
+            "id_31",
+            "id_32",
+            "id_33",
+            "id_34",
+            "id_35",
+            "id_36",
+            "id_37",
+            "id_38",
+            "id_39",
+            "id_40"
+        ],
+        "projected_absent": [],
+        "team_details": {
             "T1": 4,
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 19
-        }
-    },
-    "2025-05-01": {
-        "required": 27,
-        "projected_present": [
-            "id_01",
-            "id_02",
-            "id_03",
-            "id_04",
-            "id_05",
-            "id_06",
-            "id_07",
-            "id_08",
-            "id_09",
-            "id_10",
-            "id_11",
-            "id_12",
-            "id_13",
-            "id_14",
-            "id_15",
-            "id_16",
-            "id_17",
-            "id_18",
-            "id_19",
-            "id_20",
-            "id_21",
-            "id_22",
-            "id_23",
-            "id_24",
-            "id_25",
-            "id_26",
-            "id_27",
-            "id_28",
-            "id_29",
-            "id_30",
-            "id_31",
-            "id_32",
-            "id_33",
-            "id_34",
-            "id_35",
-            "id_36",
-            "id_37",
-            "id_38",
-            "id_39",
-            "id_40"
-        ],
-        "projected_absent": [],
-        "team_details": {
-            "T1": 5,
-            "T2": 5,
-            "T3": 5,
-            "T4": 5,
-            "OH": 20
-        }
-    },
-    "2025-05-02": {
-        "required": 24,
-        "projected_present": [
-            "id_01",
-            "id_02",
-            "id_03",
-            "id_04",
-            "id_05",
-            "id_06",
-            "id_07",
-            "id_08",
-            "id_09",
-            "id_10",
-            "id_11",
-            "id_12",
-            "id_13",
-            "id_14",
-            "id_15",
-            "id_16",
-            "id_17",
-            "id_18",
-            "id_19",
-            "id_20",
-            "id_21",
-            "id_22",
-            "id_23",
-            "id_24",
-            "id_25",
-            "id_26",
-            "id_27",
-            "id_28",
-            "id_29",
-            "id_30",
-            "id_31",
-            "id_32",
-            "id_33",
-            "id_34",
-            "id_35",
-            "id_36",
-            "id_37",
-            "id_38",
-            "id_39",
-            "id_40"
-        ],
-        "projected_absent": [],
-        "team_details": {
-            "T1": 5,
-            "T2": 5,
-            "T3": 5,
-            "T4": 5,
-            "OH": 20
-        }
-    },
-    "2025-05-03": {
-        "required": 23,
-        "projected_present": [
-            "id_01",
-            "id_02",
-            "id_03",
-            "id_04",
-            "id_05",
-            "id_06",
-            "id_07",
-            "id_08",
-            "id_09",
-            "id_10",
-            "id_11",
-            "id_12",
-            "id_13",
-            "id_14",
-            "id_15",
-            "id_16",
-            "id_17",
-            "id_18",
-            "id_19",
-            "id_20",
-            "id_21",
-            "id_22",
-            "id_23",
-            "id_24",
-            "id_25",
-            "id_26",
-            "id_27",
-            "id_28",
-            "id_29",
-            "id_30",
-            "id_31",
-            "id_32",
-            "id_33",
-            "id_34",
-            "id_35",
-            "id_36",
-            "id_37",
-            "id_38",
-            "id_39",
-            "id_40"
-        ],
-        "projected_absent": [],
-        "team_details": {
-            "T1": 5,
-            "T2": 5,
-            "T3": 5,
-            "T4": 5,
-            "OH": 20
-        }
-    },
-    "2025-05-04": {
-        "required": 31,
-        "projected_present": [
-            "id_01",
-            "id_02",
-            "id_03",
-            "id_04",
-            "id_05",
-            "id_06",
-            "id_07",
-            "id_08",
-            "id_09",
-            "id_10",
-            "id_11",
-            "id_12",
-            "id_13",
-            "id_14",
-            "id_15",
-            "id_16",
-            "id_17",
-            "id_18",
-            "id_19",
-            "id_20",
-            "id_21",
-            "id_22",
-            "id_23",
-            "id_24",
-            "id_25",
-            "id_26",
-            "id_27",
-            "id_28",
-            "id_29",
-            "id_30",
-            "id_31",
-            "id_32",
-            "id_33",
-            "id_34",
-            "id_35",
-            "id_36",
-            "id_37",
-            "id_38",
-            "id_39",
-            "id_40"
-        ],
-        "projected_absent": [],
-        "team_details": {
-            "T1": 5,
-            "T2": 5,
-            "T3": 5,
-            "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-05-05": {
-        "required": 29,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -6402,8 +6402,8 @@
             "T1": 5,
             "T2": 5,
             "T3": 5,
-            "T4": 5,
-            "OH": 20
+            "T4": 3,
+            "OH": 0
         }
     },
     "2025-05-06": {
@@ -6456,11 +6456,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-05-07": {
-        "required": 28,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -6505,15 +6505,15 @@
         ],
         "projected_absent": [],
         "team_details": {
-            "T1": 5,
+            "T1": 4,
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-05-08": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -6562,11 +6562,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-05-09": {
-        "required": 27,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -6615,11 +6615,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-05-10": {
-        "required": 28,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -6666,13 +6666,13 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 4,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-05-11": {
-        "required": 25,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -6720,12 +6720,12 @@
             "T1": 5,
             "T2": 5,
             "T3": 5,
-            "T4": 5,
-            "OH": 20
+            "T4": 3,
+            "OH": 0
         }
     },
     "2025-05-12": {
-        "required": 30,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -6770,15 +6770,15 @@
         ],
         "projected_absent": [],
         "team_details": {
-            "T1": 5,
+            "T1": 4,
             "T2": 5,
             "T3": 5,
-            "T4": 5,
-            "OH": 20
+            "T4": 4,
+            "OH": 0
         }
     },
     "2025-05-13": {
-        "required": 23,
+        "required": 17,
         "projected_present": [
             "id_01",
             "id_02",
@@ -6823,15 +6823,15 @@
         ],
         "projected_absent": [],
         "team_details": {
-            "T1": 5,
+            "T1": 4,
             "T2": 5,
-            "T3": 5,
+            "T3": 3,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-05-14": {
-        "required": 29,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -6878,13 +6878,13 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 3,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-05-15": {
-        "required": 23,
+        "required": 17,
         "projected_present": [
             "id_01",
             "id_02",
@@ -6930,14 +6930,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 4,
             "T3": 5,
-            "T4": 5,
-            "OH": 20
+            "T4": 3,
+            "OH": 0
         }
     },
     "2025-05-16": {
-        "required": 25,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -6984,13 +6984,13 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 3,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-05-17": {
-        "required": 23,
+        "required": 17,
         "projected_present": [
             "id_01",
             "id_02",
@@ -7035,15 +7035,15 @@
         ],
         "projected_absent": [],
         "team_details": {
-            "T1": 5,
+            "T1": 2,
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-05-18": {
-        "required": 25,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -7090,9 +7090,9 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 3,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-05-19": {
@@ -7145,11 +7145,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-05-20": {
-        "required": 30,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -7194,15 +7194,15 @@
         ],
         "projected_absent": [],
         "team_details": {
-            "T1": 5,
+            "T1": 3,
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-05-21": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -7251,11 +7251,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-05-22": {
-        "required": 26,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -7303,12 +7303,12 @@
             "T1": 5,
             "T2": 5,
             "T3": 5,
-            "T4": 5,
-            "OH": 20
+            "T4": 4,
+            "OH": 0
         }
     },
     "2025-05-23": {
-        "required": 26,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -7354,14 +7354,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 4,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-05-24": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -7410,11 +7410,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-05-25": {
-        "required": 26,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -7461,13 +7461,13 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 4,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-05-26": {
-        "required": 27,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -7516,7 +7516,7 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-05-27": {
@@ -7569,11 +7569,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-05-28": {
-        "required": 25,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -7619,14 +7619,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 3,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-05-29": {
-        "required": 30,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -7671,15 +7671,15 @@
         ],
         "projected_absent": [],
         "team_details": {
-            "T1": 5,
+            "T1": 3,
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-05-30": {
-        "required": 27,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -7728,11 +7728,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-05-31": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -7781,11 +7781,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-06-01": {
-        "required": 27,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -7834,11 +7834,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-06-02": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -7887,11 +7887,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-06-03": {
-        "required": 27,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -7940,11 +7940,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-06-04": {
-        "required": 22,
+        "required": 16,
         "projected_present": [
             "id_01",
             "id_02",
@@ -7990,14 +7990,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
-            "T3": 5,
+            "T2": 3,
+            "T3": 3,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-06-05": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -8046,11 +8046,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-06-06": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -8099,11 +8099,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-06-07": {
-        "required": 30,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -8149,14 +8149,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 3,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-06-08": {
-        "required": 29,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -8203,13 +8203,13 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 3,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-06-09": {
-        "required": 27,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -8258,11 +8258,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-06-10": {
-        "required": 31,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -8308,14 +8308,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 4,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-06-11": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -8364,11 +8364,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-06-12": {
-        "required": 27,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -8417,11 +8417,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-06-13": {
-        "required": 28,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -8467,14 +8467,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 4,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-06-14": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -8523,11 +8523,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-06-15": {
-        "required": 27,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -8576,11 +8576,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-06-16": {
-        "required": 22,
+        "required": 16,
         "projected_present": [
             "id_01",
             "id_02",
@@ -8627,13 +8627,13 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 1,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-06-17": {
-        "required": 30,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -8678,15 +8678,15 @@
         ],
         "projected_absent": [],
         "team_details": {
-            "T1": 5,
+            "T1": 4,
             "T2": 5,
-            "T3": 5,
+            "T3": 4,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-06-18": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -8735,11 +8735,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-06-19": {
-        "required": 23,
+        "required": 17,
         "projected_present": [
             "id_01",
             "id_02",
@@ -8784,15 +8784,15 @@
         ],
         "projected_absent": [],
         "team_details": {
-            "T1": 5,
+            "T1": 3,
             "T2": 5,
-            "T3": 5,
+            "T3": 4,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-06-20": {
-        "required": 25,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -8839,13 +8839,13 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 3,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-06-21": {
-        "required": 22,
+        "required": 16,
         "projected_present": [
             "id_01",
             "id_02",
@@ -8890,15 +8890,15 @@
         ],
         "projected_absent": [],
         "team_details": {
-            "T1": 5,
+            "T1": 3,
             "T2": 5,
-            "T3": 5,
+            "T3": 3,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-06-22": {
-        "required": 26,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -8944,14 +8944,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 4,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-06-23": {
-        "required": 25,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -8997,14 +8997,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
-            "T3": 5,
+            "T2": 4,
+            "T3": 4,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-06-24": {
-        "required": 25,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -9052,12 +9052,12 @@
             "T1": 5,
             "T2": 5,
             "T3": 5,
-            "T4": 5,
-            "OH": 20
+            "T4": 3,
+            "OH": 0
         }
     },
     "2025-06-25": {
-        "required": 25,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -9103,14 +9103,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 3,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-06-26": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -9159,11 +9159,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-06-27": {
-        "required": 27,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -9212,11 +9212,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-06-28": {
-        "required": 31,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -9261,11 +9261,11 @@
         ],
         "projected_absent": [],
         "team_details": {
-            "T1": 5,
+            "T1": 4,
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-06-29": {
@@ -9318,11 +9318,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-06-30": {
-        "required": 31,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -9369,13 +9369,13 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 4,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-07-01": {
-        "required": 21,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -9424,11 +9424,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-07-02": {
-        "required": 26,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -9475,13 +9475,13 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 4,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-07-03": {
-        "required": 30,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -9527,14 +9527,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 3,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-07-04": {
-        "required": 28,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -9582,12 +9582,12 @@
             "T1": 5,
             "T2": 5,
             "T3": 5,
-            "T4": 5,
-            "OH": 20
+            "T4": 4,
+            "OH": 0
         }
     },
     "2025-07-05": {
-        "required": 22,
+        "required": 16,
         "projected_present": [
             "id_01",
             "id_02",
@@ -9633,14 +9633,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 3,
             "T3": 5,
-            "T4": 5,
-            "OH": 20
+            "T4": 3,
+            "OH": 0
         }
     },
     "2025-07-06": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -9689,7 +9689,7 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-07-07": {
@@ -9742,11 +9742,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-07-08": {
-        "required": 25,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -9792,14 +9792,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
-            "T3": 5,
+            "T2": 4,
+            "T3": 4,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-07-09": {
-        "required": 22,
+        "required": 16,
         "projected_present": [
             "id_01",
             "id_02",
@@ -9844,11 +9844,11 @@
         ],
         "projected_absent": [],
         "team_details": {
-            "T1": 5,
-            "T2": 5,
-            "T3": 5,
+            "T1": 4,
+            "T2": 4,
+            "T3": 3,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-07-10": {
@@ -9901,11 +9901,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-07-11": {
-        "required": 29,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -9952,13 +9952,13 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 3,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-07-12": {
-        "required": 28,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -10005,13 +10005,13 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 4,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-07-13": {
-        "required": 22,
+        "required": 16,
         "projected_present": [
             "id_01",
             "id_02",
@@ -10057,14 +10057,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
-            "T3": 5,
+            "T2": 2,
+            "T3": 4,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-07-14": {
-        "required": 21,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -10113,11 +10113,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-07-15": {
-        "required": 22,
+        "required": 16,
         "projected_present": [
             "id_01",
             "id_02",
@@ -10162,15 +10162,15 @@
         ],
         "projected_absent": [],
         "team_details": {
-            "T1": 5,
+            "T1": 4,
             "T2": 5,
             "T3": 5,
-            "T4": 5,
-            "OH": 20
+            "T4": 2,
+            "OH": 0
         }
     },
     "2025-07-16": {
-        "required": 23,
+        "required": 17,
         "projected_present": [
             "id_01",
             "id_02",
@@ -10218,12 +10218,12 @@
             "T1": 5,
             "T2": 5,
             "T3": 5,
-            "T4": 5,
-            "OH": 20
+            "T4": 2,
+            "OH": 0
         }
     },
     "2025-07-17": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -10272,11 +10272,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-07-18": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -10325,11 +10325,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-07-19": {
-        "required": 31,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -10376,13 +10376,13 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 4,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-07-20": {
-        "required": 26,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -10429,13 +10429,13 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 4,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-07-21": {
-        "required": 30,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -10480,15 +10480,15 @@
         ],
         "projected_absent": [],
         "team_details": {
-            "T1": 5,
+            "T1": 4,
             "T2": 5,
-            "T3": 5,
+            "T3": 4,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-07-22": {
-        "required": 23,
+        "required": 17,
         "projected_present": [
             "id_01",
             "id_02",
@@ -10534,14 +10534,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 2,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-07-23": {
-        "required": 21,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -10590,11 +10590,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-07-24": {
-        "required": 29,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -10641,13 +10641,13 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 3,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-07-25": {
-        "required": 27,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -10696,11 +10696,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-07-26": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -10749,7 +10749,7 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-07-27": {
@@ -10759,7 +10759,7 @@
         "team_details": {}
     },
     "2025-07-28": {
-        "required": 26,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -10806,9 +10806,9 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 4,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-07-29": {
@@ -10861,11 +10861,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-07-30": {
-        "required": 26,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -10910,15 +10910,15 @@
         ],
         "projected_absent": [],
         "team_details": {
-            "T1": 5,
+            "T1": 4,
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-07-31": {
-        "required": 26,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -10966,12 +10966,12 @@
             "T1": 5,
             "T2": 5,
             "T3": 5,
-            "T4": 5,
-            "OH": 20
+            "T4": 4,
+            "OH": 0
         }
     },
     "2025-08-01": {
-        "required": 31,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -11019,12 +11019,12 @@
             "T1": 5,
             "T2": 5,
             "T3": 5,
-            "T4": 5,
-            "OH": 20
+            "T4": 4,
+            "OH": 0
         }
     },
     "2025-08-02": {
-        "required": 29,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -11070,14 +11070,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
-            "T3": 5,
+            "T2": 4,
+            "T3": 4,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-08-03": {
-        "required": 29,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -11122,15 +11122,15 @@
         ],
         "projected_absent": [],
         "team_details": {
-            "T1": 5,
+            "T1": 3,
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-08-04": {
-        "required": 23,
+        "required": 17,
         "projected_present": [
             "id_01",
             "id_02",
@@ -11178,12 +11178,12 @@
             "T1": 5,
             "T2": 5,
             "T3": 5,
-            "T4": 5,
-            "OH": 20
+            "T4": 2,
+            "OH": 0
         }
     },
     "2025-08-05": {
-        "required": 29,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -11229,14 +11229,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
-            "T3": 5,
+            "T2": 4,
+            "T3": 4,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-08-06": {
-        "required": 23,
+        "required": 17,
         "projected_present": [
             "id_01",
             "id_02",
@@ -11282,14 +11282,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
-            "T3": 5,
+            "T2": 4,
+            "T3": 3,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-08-07": {
-        "required": 31,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -11334,15 +11334,15 @@
         ],
         "projected_absent": [],
         "team_details": {
-            "T1": 5,
+            "T1": 4,
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-08-08": {
-        "required": 26,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -11387,11 +11387,11 @@
         ],
         "projected_absent": [],
         "team_details": {
-            "T1": 5,
+            "T1": 4,
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-08-09": {
@@ -11444,11 +11444,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-08-10": {
-        "required": 23,
+        "required": 17,
         "projected_present": [
             "id_01",
             "id_02",
@@ -11494,15 +11494,15 @@
             "id_35"
         ],
         "team_details": {
-            "T1": 5,
+            "T1": 2,
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 19
+            "OH": 0
         }
     },
     "2025-08-11": {
-        "required": 26,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -11550,13 +11550,13 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 4,
             "T4": 5,
-            "OH": 19
+            "OH": 0
         }
     },
     "2025-08-12": {
-        "required": 29,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -11603,10 +11603,10 @@
         ],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 4,
             "T3": 5,
-            "T4": 5,
-            "OH": 19
+            "T4": 4,
+            "OH": 0
         }
     },
     "2025-08-13": {
@@ -11660,11 +11660,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 19
+            "OH": 0
         }
     },
     "2025-08-14": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -11714,11 +11714,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 19
+            "OH": 0
         }
     },
     "2025-08-15": {
-        "required": 26,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -11767,8 +11767,8 @@
             "T1": 5,
             "T2": 5,
             "T3": 5,
-            "T4": 5,
-            "OH": 19
+            "T4": 4,
+            "OH": 0
         }
     },
     "2025-08-16": {
@@ -11822,7 +11822,7 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 19
+            "OH": 0
         }
     },
     "2025-08-17": {
@@ -11876,11 +11876,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 19
+            "OH": 0
         }
     },
     "2025-08-18": {
-        "required": 23,
+        "required": 17,
         "projected_present": [
             "id_01",
             "id_02",
@@ -11927,14 +11927,14 @@
         ],
         "team_details": {
             "T1": 5,
-            "T2": 5,
-            "T3": 5,
+            "T2": 4,
+            "T3": 3,
             "T4": 5,
-            "OH": 19
+            "OH": 0
         }
     },
     "2025-08-19": {
-        "required": 25,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -11983,12 +11983,12 @@
             "T1": 5,
             "T2": 5,
             "T3": 5,
-            "T4": 5,
-            "OH": 19
+            "T4": 3,
+            "OH": 0
         }
     },
     "2025-08-20": {
-        "required": 23,
+        "required": 17,
         "projected_present": [
             "id_01",
             "id_02",
@@ -12034,15 +12034,15 @@
             "id_35"
         ],
         "team_details": {
-            "T1": 5,
+            "T1": 2,
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 19
+            "OH": 0
         }
     },
     "2025-08-21": {
-        "required": 28,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -12089,13 +12089,13 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 4,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-08-22": {
-        "required": 28,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -12141,14 +12141,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 4,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-08-23": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -12197,11 +12197,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-08-24": {
-        "required": 26,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -12248,13 +12248,13 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 4,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-08-25": {
-        "required": 31,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -12300,14 +12300,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 4,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-08-26": {
-        "required": 30,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -12354,13 +12354,13 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 3,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-08-27": {
-        "required": 28,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -12406,14 +12406,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 4,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-08-28": {
-        "required": 23,
+        "required": 17,
         "projected_present": [
             "id_01",
             "id_02",
@@ -12460,13 +12460,13 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 2,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-08-29": {
-        "required": 29,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -12513,13 +12513,13 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 3,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-08-30": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -12568,11 +12568,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-08-31": {
-        "required": 28,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -12618,11 +12618,11 @@
             "id_29"
         ],
         "team_details": {
-            "T1": 5,
+            "T1": 4,
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 19
+            "OH": 0
         }
     },
     "2025-09-01": {
@@ -12676,11 +12676,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 19
+            "OH": 0
         }
     },
     "2025-09-02": {
-        "required": 22,
+        "required": 16,
         "projected_present": [
             "id_01",
             "id_02",
@@ -12728,13 +12728,13 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 1,
             "T4": 5,
-            "OH": 19
+            "OH": 0
         }
     },
     "2025-09-03": {
-        "required": 22,
+        "required": 16,
         "projected_present": [
             "id_01",
             "id_02",
@@ -12780,15 +12780,15 @@
             "id_29"
         ],
         "team_details": {
-            "T1": 5,
-            "T2": 5,
+            "T1": 2,
+            "T2": 4,
             "T3": 5,
             "T4": 5,
-            "OH": 19
+            "OH": 0
         }
     },
     "2025-09-04": {
-        "required": 22,
+        "required": 16,
         "projected_present": [
             "id_01",
             "id_02",
@@ -12837,12 +12837,12 @@
             "T1": 5,
             "T2": 5,
             "T3": 5,
-            "T4": 5,
-            "OH": 19
+            "T4": 1,
+            "OH": 0
         }
     },
     "2025-09-05": {
-        "required": 31,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -12889,14 +12889,14 @@
         ],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 4,
             "T3": 5,
             "T4": 5,
-            "OH": 19
+            "OH": 0
         }
     },
     "2025-09-06": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -12946,11 +12946,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 19
+            "OH": 0
         }
     },
     "2025-09-07": {
-        "required": 29,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -12997,14 +12997,14 @@
         ],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 3,
             "T3": 5,
             "T4": 5,
-            "OH": 19
+            "OH": 0
         }
     },
     "2025-09-08": {
-        "required": 29,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -13051,14 +13051,14 @@
         ],
         "team_details": {
             "T1": 5,
-            "T2": 5,
-            "T3": 5,
+            "T2": 4,
+            "T3": 4,
             "T4": 5,
-            "OH": 19
+            "OH": 0
         }
     },
     "2025-09-09": {
-        "required": 28,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -13106,12 +13106,12 @@
             "T1": 5,
             "T2": 5,
             "T3": 5,
-            "T4": 5,
-            "OH": 20
+            "T4": 4,
+            "OH": 0
         }
     },
     "2025-09-10": {
-        "required": 26,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -13159,12 +13159,12 @@
             "T1": 5,
             "T2": 5,
             "T3": 5,
-            "T4": 5,
-            "OH": 20
+            "T4": 4,
+            "OH": 0
         }
     },
     "2025-09-11": {
-        "required": 28,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -13210,14 +13210,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 4,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-09-12": {
-        "required": 23,
+        "required": 17,
         "projected_present": [
             "id_01",
             "id_02",
@@ -13263,14 +13263,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 2,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-09-13": {
-        "required": 21,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -13319,11 +13319,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-09-14": {
-        "required": 21,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -13372,7 +13372,7 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-09-15": {
@@ -13425,11 +13425,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-09-16": {
-        "required": 23,
+        "required": 17,
         "projected_present": [
             "id_01",
             "id_02",
@@ -13477,12 +13477,12 @@
             "T1": 5,
             "T2": 5,
             "T3": 5,
-            "T4": 5,
-            "OH": 20
+            "T4": 2,
+            "OH": 0
         }
     },
     "2025-09-17": {
-        "required": 22,
+        "required": 16,
         "projected_present": [
             "id_01",
             "id_02",
@@ -13529,13 +13529,13 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 1,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-09-18": {
-        "required": 21,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -13584,11 +13584,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-09-19": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -13637,7 +13637,7 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-09-20": {
@@ -13690,11 +13690,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-09-21": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -13743,11 +13743,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-09-22": {
-        "required": 31,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -13793,14 +13793,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 4,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-09-23": {
-        "required": 22,
+        "required": 16,
         "projected_present": [
             "id_01",
             "id_02",
@@ -13847,9 +13847,9 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
-            "T4": 5,
-            "OH": 20
+            "T3": 4,
+            "T4": 2,
+            "OH": 0
         }
     },
     "2025-09-24": {
@@ -13902,11 +13902,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-09-25": {
-        "required": 27,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -13955,11 +13955,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-09-26": {
-        "required": 25,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -14005,14 +14005,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 3,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-09-27": {
-        "required": 29,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -14057,15 +14057,15 @@
         ],
         "projected_absent": [],
         "team_details": {
-            "T1": 5,
+            "T1": 3,
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-09-28": {
-        "required": 31,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -14112,13 +14112,13 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 4,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-09-29": {
-        "required": 25,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -14163,15 +14163,15 @@
         ],
         "projected_absent": [],
         "team_details": {
-            "T1": 5,
-            "T2": 5,
+            "T1": 4,
+            "T2": 4,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-09-30": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -14220,11 +14220,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-10-01": {
-        "required": 27,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -14273,11 +14273,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-10-02": {
-        "required": 30,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -14322,15 +14322,15 @@
         ],
         "projected_absent": [],
         "team_details": {
-            "T1": 5,
+            "T1": 3,
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-10-03": {
-        "required": 22,
+        "required": 16,
         "projected_present": [
             "id_01",
             "id_02",
@@ -14378,12 +14378,12 @@
             "T1": 5,
             "T2": 5,
             "T3": 5,
-            "T4": 5,
-            "OH": 20
+            "T4": 1,
+            "OH": 0
         }
     },
     "2025-10-04": {
-        "required": 30,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -14429,15 +14429,15 @@
             "id_18"
         ],
         "team_details": {
-            "T1": 5,
+            "T1": 4,
             "T2": 5,
             "T3": 5,
             "T4": 4,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-10-05": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -14486,11 +14486,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-10-06": {
-        "required": 21,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -14539,11 +14539,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-10-07": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -14592,11 +14592,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-10-08": {
-        "required": 26,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -14644,12 +14644,12 @@
             "T1": 5,
             "T2": 5,
             "T3": 5,
-            "T4": 5,
-            "OH": 20
+            "T4": 4,
+            "OH": 0
         }
     },
     "2025-10-09": {
-        "required": 21,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -14698,11 +14698,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-10-10": {
-        "required": 21,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -14751,11 +14751,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-10-11": {
-        "required": 25,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -14801,14 +14801,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 3,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-10-12": {
-        "required": 22,
+        "required": 16,
         "projected_present": [
             "id_01",
             "id_02",
@@ -14853,15 +14853,15 @@
         ],
         "projected_absent": [],
         "team_details": {
-            "T1": 5,
+            "T1": 3,
             "T2": 5,
-            "T3": 5,
+            "T3": 3,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-10-13": {
-        "required": 27,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -14910,11 +14910,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-10-14": {
-        "required": 21,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -14963,11 +14963,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-10-15": {
-        "required": 29,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -15015,12 +15015,12 @@
             "T1": 5,
             "T2": 5,
             "T3": 5,
-            "T4": 5,
-            "OH": 20
+            "T4": 3,
+            "OH": 0
         }
     },
     "2025-10-16": {
-        "required": 30,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -15066,14 +15066,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 3,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-10-17": {
-        "required": 30,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -15118,15 +15118,15 @@
         ],
         "projected_absent": [],
         "team_details": {
-            "T1": 5,
+            "T1": 4,
             "T2": 5,
-            "T3": 5,
+            "T3": 4,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-10-18": {
-        "required": 26,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -15173,13 +15173,13 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 4,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-10-19": {
-        "required": 23,
+        "required": 17,
         "projected_present": [
             "id_01",
             "id_02",
@@ -15225,14 +15225,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 2,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-10-20": {
-        "required": 23,
+        "required": 17,
         "projected_present": [
             "id_01",
             "id_02",
@@ -15279,13 +15279,13 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 2,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-10-21": {
-        "required": 26,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -15331,14 +15331,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 4,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-10-22": {
-        "required": 25,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -15384,14 +15384,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
-            "T3": 5,
+            "T2": 4,
+            "T3": 4,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-10-23": {
-        "required": 30,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -15436,15 +15436,15 @@
         ],
         "projected_absent": [],
         "team_details": {
-            "T1": 5,
+            "T1": 3,
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-10-24": {
-        "required": 23,
+        "required": 17,
         "projected_present": [
             "id_01",
             "id_02",
@@ -15489,15 +15489,15 @@
         ],
         "projected_absent": [],
         "team_details": {
-            "T1": 5,
-            "T2": 5,
+            "T1": 3,
+            "T2": 4,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-10-25": {
-        "required": 21,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -15546,11 +15546,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-10-26": {
-        "required": 22,
+        "required": 16,
         "projected_present": [
             "id_01",
             "id_02",
@@ -15596,14 +15596,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 1,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-10-27": {
-        "required": 31,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -15650,13 +15650,13 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 4,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-10-28": {
-        "required": 23,
+        "required": 17,
         "projected_present": [
             "id_01",
             "id_02",
@@ -15703,13 +15703,13 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 2,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-10-29": {
-        "required": 26,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -15754,15 +15754,15 @@
         ],
         "projected_absent": [],
         "team_details": {
-            "T1": 5,
+            "T1": 4,
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-10-30": {
-        "required": 29,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -15807,15 +15807,15 @@
         ],
         "projected_absent": [],
         "team_details": {
-            "T1": 5,
+            "T1": 3,
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-10-31": {
-        "required": 23,
+        "required": 17,
         "projected_present": [
             "id_01",
             "id_02",
@@ -15861,14 +15861,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 2,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-11-01": {
-        "required": 28,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -15915,13 +15915,13 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 4,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-11-02": {
-        "required": 25,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -15967,14 +15967,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 3,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-11-03": {
-        "required": 27,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -16023,11 +16023,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-11-04": {
-        "required": 21,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -16076,11 +16076,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-11-05": {
-        "required": 27,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -16129,11 +16129,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-11-06": {
-        "required": 31,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -16183,11 +16183,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 4,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-11-07": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -16236,12 +16236,12 @@
             "T1": 5,
             "T2": 5,
             "T3": 5,
-            "T4": 4,
-            "OH": 20
+            "T4": 5,
+            "OH": 0
         }
     },
     "2025-11-08": {
-        "required": 31,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -16291,11 +16291,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 4,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-11-09": {
-        "required": 21,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -16345,7 +16345,7 @@
             "T2": 5,
             "T3": 5,
             "T4": 4,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-11-10": {
@@ -16398,12 +16398,12 @@
             "T1": 5,
             "T2": 5,
             "T3": 5,
-            "T4": 4,
-            "OH": 20
+            "T4": 5,
+            "OH": 0
         }
     },
     "2025-11-11": {
-        "required": 25,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -16451,9 +16451,9 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 4,
             "T4": 4,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-11-12": {
@@ -16506,12 +16506,12 @@
             "T1": 5,
             "T2": 5,
             "T3": 5,
-            "T4": 4,
-            "OH": 20
+            "T4": 5,
+            "OH": 0
         }
     },
     "2025-11-13": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -16560,12 +16560,12 @@
             "T1": 5,
             "T2": 5,
             "T3": 5,
-            "T4": 4,
-            "OH": 20
+            "T4": 5,
+            "OH": 0
         }
     },
     "2025-11-14": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -16614,12 +16614,12 @@
             "T1": 5,
             "T2": 5,
             "T3": 5,
-            "T4": 4,
-            "OH": 20
+            "T4": 5,
+            "OH": 0
         }
     },
     "2025-11-15": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -16668,12 +16668,12 @@
             "T1": 5,
             "T2": 5,
             "T3": 5,
-            "T4": 4,
-            "OH": 20
+            "T4": 5,
+            "OH": 0
         }
     },
     "2025-11-16": {
-        "required": 30,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -16720,13 +16720,13 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 3,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-11-17": {
-        "required": 27,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -16775,11 +16775,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-11-18": {
-        "required": 22,
+        "required": 16,
         "projected_present": [
             "id_01",
             "id_02",
@@ -16824,15 +16824,15 @@
         ],
         "projected_absent": [],
         "team_details": {
-            "T1": 5,
-            "T2": 5,
-            "T3": 5,
-            "T4": 5,
-            "OH": 20
+            "T1": 4,
+            "T2": 4,
+            "T3": 4,
+            "T4": 4,
+            "OH": 0
         }
     },
     "2025-11-19": {
-        "required": 29,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -16878,14 +16878,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 3,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-11-20": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -16935,11 +16935,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 19
+            "OH": 0
         }
     },
     "2025-11-21": {
-        "required": 30,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -16987,13 +16987,13 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 3,
             "T4": 5,
-            "OH": 19
+            "OH": 0
         }
     },
     "2025-11-22": {
-        "required": 25,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -17041,13 +17041,13 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 3,
             "T4": 5,
-            "OH": 19
+            "OH": 0
         }
     },
     "2025-11-23": {
-        "required": 30,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -17094,14 +17094,14 @@
         ],
         "team_details": {
             "T1": 5,
-            "T2": 5,
-            "T3": 5,
+            "T2": 4,
+            "T3": 4,
             "T4": 5,
-            "OH": 19
+            "OH": 0
         }
     },
     "2025-11-24": {
-        "required": 30,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -17149,12 +17149,12 @@
             "T1": 5,
             "T2": 5,
             "T3": 5,
-            "T4": 5,
-            "OH": 20
+            "T4": 3,
+            "OH": 0
         }
     },
     "2025-11-25": {
-        "required": 28,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -17199,15 +17199,15 @@
         ],
         "projected_absent": [],
         "team_details": {
-            "T1": 5,
+            "T1": 4,
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-11-26": {
-        "required": 31,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -17254,13 +17254,13 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 4,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-11-27": {
-        "required": 29,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -17307,13 +17307,13 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 3,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-11-28": {
-        "required": 29,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -17358,15 +17358,15 @@
         ],
         "projected_absent": [],
         "team_details": {
-            "T1": 5,
+            "T1": 3,
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-11-29": {
-        "required": 28,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -17411,15 +17411,15 @@
         ],
         "projected_absent": [],
         "team_details": {
-            "T1": 5,
+            "T1": 4,
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-11-30": {
-        "required": 28,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -17467,12 +17467,12 @@
             "T1": 5,
             "T2": 5,
             "T3": 5,
-            "T4": 5,
-            "OH": 20
+            "T4": 4,
+            "OH": 0
         }
     },
     "2025-12-01": {
-        "required": 27,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -17521,11 +17521,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-12-02": {
-        "required": 29,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -17571,14 +17571,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 3,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-12-03": {
-        "required": 27,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -17627,11 +17627,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-12-04": {
-        "required": 23,
+        "required": 17,
         "projected_present": [
             "id_01",
             "id_03",
@@ -17678,14 +17678,14 @@
         ],
         "team_details": {
             "T1": 4,
-            "T2": 5,
-            "T3": 5,
+            "T2": 4,
+            "T3": 4,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-12-05": {
-        "required": 28,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_03",
@@ -17735,11 +17735,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-12-06": {
-        "required": 22,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -17788,11 +17788,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-12-07": {
-        "required": 29,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -17839,9 +17839,9 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 3,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-12-08": {
@@ -17894,11 +17894,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-12-09": {
-        "required": 22,
+        "required": 16,
         "projected_present": [
             "id_01",
             "id_02",
@@ -17944,14 +17944,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
-            "T3": 5,
+            "T2": 3,
+            "T3": 3,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-12-10": {
-        "required": 30,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -17996,15 +17996,15 @@
         ],
         "projected_absent": [],
         "team_details": {
-            "T1": 5,
-            "T2": 5,
+            "T1": 4,
+            "T2": 4,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-12-11": {
-        "required": 27,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -18053,7 +18053,7 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-12-12": {
@@ -18106,11 +18106,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-12-13": {
-        "required": 29,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -18156,14 +18156,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 3,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-12-14": {
-        "required": 25,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -18208,15 +18208,15 @@
         ],
         "projected_absent": [],
         "team_details": {
-            "T1": 5,
+            "T1": 4,
             "T2": 5,
             "T3": 5,
-            "T4": 5,
-            "OH": 20
+            "T4": 4,
+            "OH": 0
         }
     },
     "2025-12-15": {
-        "required": 22,
+        "required": 16,
         "projected_present": [
             "id_01",
             "id_02",
@@ -18262,15 +18262,15 @@
             "id_20"
         ],
         "team_details": {
-            "T1": 5,
-            "T2": 5,
+            "T1": 3,
+            "T2": 4,
             "T3": 5,
             "T4": 4,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-12-16": {
-        "required": 31,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -18320,11 +18320,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 4,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-12-17": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -18373,12 +18373,12 @@
             "T1": 5,
             "T2": 5,
             "T3": 5,
-            "T4": 4,
-            "OH": 20
+            "T4": 5,
+            "OH": 0
         }
     },
     "2025-12-18": {
-        "required": 22,
+        "required": 16,
         "projected_present": [
             "id_01",
             "id_02",
@@ -18424,15 +18424,15 @@
             "id_20"
         ],
         "team_details": {
-            "T1": 5,
-            "T2": 5,
-            "T3": 5,
+            "T1": 4,
+            "T2": 4,
+            "T3": 4,
             "T4": 4,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-12-19": {
-        "required": 30,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -18479,14 +18479,14 @@
         ],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 4,
             "T3": 5,
             "T4": 4,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-12-20": {
-        "required": 21,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -18536,11 +18536,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 4,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-12-21": {
-        "required": 23,
+        "required": 17,
         "projected_present": [
             "id_01",
             "id_02",
@@ -18586,15 +18586,15 @@
             "id_20"
         ],
         "team_details": {
-            "T1": 5,
+            "T1": 3,
             "T2": 5,
             "T3": 5,
             "T4": 4,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-12-22": {
-        "required": 28,
+        "required": 19,
         "projected_present": [
             "id_01",
             "id_02",
@@ -18644,11 +18644,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 4,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-12-23": {
-        "required": 22,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -18694,15 +18694,15 @@
             "id_20"
         ],
         "team_details": {
-            "T1": 5,
+            "T1": 4,
             "T2": 5,
             "T3": 5,
             "T4": 4,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-12-24": {
-        "required": 27,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -18751,12 +18751,12 @@
             "T1": 5,
             "T2": 5,
             "T3": 5,
-            "T4": 4,
-            "OH": 20
+            "T4": 5,
+            "OH": 0
         }
     },
     "2025-12-25": {
-        "required": 22,
+        "required": 16,
         "projected_present": [
             "id_01",
             "id_02",
@@ -18802,14 +18802,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
-            "T3": 5,
+            "T2": 2,
+            "T3": 4,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-12-26": {
-        "required": 30,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -18856,13 +18856,13 @@
         "team_details": {
             "T1": 5,
             "T2": 5,
-            "T3": 5,
+            "T3": 3,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-12-27": {
-        "required": 21,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -18911,11 +18911,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-12-28": {
-        "required": 23,
+        "required": 17,
         "projected_present": [
             "id_01",
             "id_02",
@@ -18961,14 +18961,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 2,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-12-29": {
-        "required": 25,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -19014,14 +19014,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 4,
             "T3": 5,
-            "T4": 5,
-            "OH": 20
+            "T4": 4,
+            "OH": 0
         }
     },
     "2025-12-30": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -19070,11 +19070,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2025-12-31": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -19123,11 +19123,11 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2026-01-01": {
-        "required": 25,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -19173,14 +19173,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
+            "T2": 3,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2026-01-02": {
-        "required": 30,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -19225,15 +19225,15 @@
         ],
         "projected_absent": [],
         "team_details": {
-            "T1": 5,
-            "T2": 5,
+            "T1": 4,
+            "T2": 4,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2026-01-03": {
-        "required": 29,
+        "required": 18,
         "projected_present": [
             "id_01",
             "id_02",
@@ -19279,14 +19279,14 @@
         "projected_absent": [],
         "team_details": {
             "T1": 5,
-            "T2": 5,
-            "T3": 5,
+            "T2": 4,
+            "T3": 4,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2026-01-04": {
-        "required": 24,
+        "required": 20,
         "projected_present": [
             "id_01",
             "id_02",
@@ -19335,7 +19335,7 @@
             "T2": 5,
             "T3": 5,
             "T4": 5,
-            "OH": 20
+            "OH": 0
         }
     },
     "2026-01-05": {
