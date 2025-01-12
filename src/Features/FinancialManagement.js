@@ -25,12 +25,18 @@ import {
   Select,
   ChakraProvider,
 } from "@chakra-ui/react";
+import { Chart as ChartJS, LineElement, PointElement, LineController, CategoryScale, LinearScale } from 'chart.js';
 import { Bar, Line } from 'react-chartjs-2';
 import "./FinancialManagement.css"
+
+import { jsPDF } from "jspdf";
+import ReactDOMServer from "react-dom/server";
 
 import train_data_forecast from '../data/train_data_forecast.json'
 import detailed_schedule from '../data/detailed_schedule.json'
 import sparePartsData from '../data/spare_parts_data.json'
+
+ChartJS.register(LineElement, PointElement, LineController, CategoryScale, LinearScale);
 
 const maintenancePackages = [
   { name: 'E1', kilometers: 10800, manhours_required: 10 },
@@ -45,6 +51,11 @@ const maintenancePackages = [
 const FinancialManagement = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [data, setData] = useState(maintenancePackages);
+  const [manhourData, setManhourData] = useState({
+    manhourLabels: [],
+    manhourData: [],
+    actualManhourData: [],
+  });
   const [editIndex, setEditIndex] = useState(null);
   const [tempData, setTempData] = useState({});
   const [budgetMetrics, setBudgetMetrics] = useState([]);
@@ -93,6 +104,90 @@ const FinancialManagement = () => {
         }],
       });
     }
+  };
+
+  const generateReportHTML = () => {
+    return (
+      <div style={{
+        width: "620px",
+        margin: 1
+      }}>
+        <h1 style={{ textAlign: "center", color: "#2c3e50" }}>Financial Report</h1>
+        <h2 style={{ color: "#34495e", marginTop: "20px" }}>Summary of Manpower Information</h2>
+        <p>Total manhours required according to scheduled tasks: <strong>{Math.ceil(totalManHours)} hours</strong></p>
+        <p>Manhours that can be accomplished according to projected manpower: <strong>{Math.ceil(totalActualManHours)} hours</strong></p>
+
+        <h2 style={{ color: "#34495e", marginTop: "20px" }}>Manhour Report</h2>
+        <table style={{ width: "100%", borderCollapse: "collapse", marginTop: "10px" }}>
+          <thead>
+            <tr style={{ backgroundColor: "#ecf0f1" }}>
+              <th style={{ padding: "8px", border: "1px solid", color: "#2c3e50" }}>Date</th>
+              <th style={{ padding: "8px", border: "1px solid", color: "#2c3e50" }}>Forecasted</th>
+              <th style={{ padding: "8px", border: "1px solid", color: "#2c3e50" }}>Predicted</th>
+            </tr>
+          </thead>
+          <tbody>
+            {manhourData['manhourLabels'].map((label, index) => (
+              <tr key={index}>
+                <td style={{ padding: "8px", border: "1px solid", color: "#34495e" }}>{label}</td>
+                <td style={{ padding: "8px", border: "1px solid", color: "#34495e" }}>{manhourData['manhourData'][index].toFixed(2)}</td>
+                <td style={{ padding: "8px", border: "1px solid", color: "#34495e" }}>{manhourData['actualManhourData'][index].toFixed(2)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+
+        <h2 style={{ color: "#34495e", marginTop: "20px" }}>Spare Parts Information</h2>
+        <p>Total Cost Required for Spare Parts: <strong>${Math.ceil(totalCost)}</strong></p>
+
+        <h2 style={{ color: "#34495e", marginTop: "20px" }}>Details</h2>
+        <table style={{ width: "100%", borderCollapse: "collapse", marginTop: "10px" }}>
+          <thead>
+            <tr style={{ backgroundColor: "#ecf0f1" }}>
+              <th style={{ padding: "8px", border: "1px solid", color: "#2c3e50" }}>ID</th>
+              <th style={{ padding: "8px", border: "1px solid", color: "#2c3e50" }}>Name</th>
+              <th style={{ padding: "8px", border: "1px solid", color: "#2c3e50" }}>Cost</th>
+              <th style={{ padding: "8px", border: "1px solid", color: "#2c3e50" }}>Stock Quantity</th>
+              <th style={{ padding: "8px", border: "1px solid", color: "#2c3e50" }}>Stock Cost</th>
+            </tr>
+          </thead>
+          <tbody>
+            {budgetMetrics
+              .map((part) =>
+                <tr key={part.id}>
+                  <td style={{ padding: "8px", border: "1px solid", color: "#34495e" }}>{part.id}</td>
+                  <td style={{ padding: "8px", border: "1px solid", color: "#34495e" }}>{part.name}</td>
+                  <td style={{ padding: "8px", border: "1px solid", color: "#34495e" }}>${part.cost}</td>
+                  <td style={{ padding: "8px", border: "1px solid", color: "#34495e" }}>{part.quantity_in_stock}</td>
+                  <td style={{ padding: "8px", border: "1px solid", color: "#34495e" }}>{part.stockValue}</td>
+                </tr>
+              )}
+          </tbody>
+        </table>
+      </div>
+    )
+  };
+
+  const exportToPDF = async () => {
+    const content = ReactDOMServer.renderToStaticMarkup(generateReportHTML());
+    const pdf = new jsPDF({
+      orientation: "portrait",
+      unit: "px",
+      format: "a4",
+    });
+
+    const topMargin = 20;
+    let currentY = topMargin;
+
+    pdf.html(content, {
+      x: 10,
+      y: currentY,
+      width: 800, // Match the width of your container
+      windowWidth: 1200, // Simulate a larger screen width for rendering
+      callback: function (doc) {
+        doc.save("Financial_Report.pdf");
+      },
+    });
   };
 
   const handleEditClick = (type, index) => {
@@ -293,6 +388,8 @@ const FinancialManagement = () => {
       const manhourData = manhourLabels.map(label => manhourPeriodMap[label] || 0);
       const actualManhourData = manhourLabels.map(label => actualManhourMap[label] || 0);
 
+      setManhourData({ 'manhourLabels': manhourLabels, 'manhourData': manhourData, 'actualManhourData': actualManhourData });
+
       setChartData({
         labels: manhourLabels,
         datasets: [
@@ -342,6 +439,7 @@ const FinancialManagement = () => {
       const last4QuartersCost = transformData(historical_data.last_4_quarters_order_quantity, cost);
 
       return {
+        id: part["WBS No."],
         name: part.Component,
         shortfall: part.shortfall,
         shortfallCost: shortfallCost.toFixed(2),
@@ -363,7 +461,7 @@ const FinancialManagement = () => {
     <>
       <ChakraProvider>
         <NavBar />
-        <Box className="financial-management">
+        <Box className="financial-management" id="financial-management">
           <Heading className="financial-management-heading">
             Financial & Budget Management
           </Heading>
@@ -651,8 +749,14 @@ const FinancialManagement = () => {
             </Box>
           </Box>
 
-        </Box>
-      </ChakraProvider>
+          <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+            <Button colorScheme="blue" onClick={exportToPDF}>
+              Export as PDF
+            </Button>
+          </div>
+
+        </Box >
+      </ChakraProvider >
     </>
   );
 };
