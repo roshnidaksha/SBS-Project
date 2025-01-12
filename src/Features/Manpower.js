@@ -294,7 +294,7 @@ const Manpower = () => {
           </div>
         )}
         {teamAssignments && (
-          <div>
+          <div className="employee-dashboard">
             <div className="employee-dashboard">
               <h4>Team Assignments for {selectedDate}</h4>
             </div>
