@@ -493,6 +493,7 @@ const PM = () => {
                   minDate={new Date("2025-01-01")}
                   maxDate={new Date("2025-12-31")}
                   showNavigation={false}
+                  showNeighboringMonth={false}
                   tileClassName="custom-tile"
                 />
               </Box>
