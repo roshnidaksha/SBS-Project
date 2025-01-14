@@ -10,6 +10,7 @@ from allocate_manpower import allocate_manpower
 
 app = Flask(__name__)
 CORS(app)
+
 @app.route('/restock', methods=['POST'])
 def restock():
     try:
@@ -27,7 +28,7 @@ def restock():
             return jsonify({"error": "Invalid quantity ordered"}), 400
 
         # Load current inventory data
-        inventory = load_data('spare_parts_data.json')
+        inventory = load_data('src/data/spare_parts_data.json')
         if not inventory:
             return jsonify({"error": "Inventory data not found"}), 404
         
@@ -44,7 +45,7 @@ def restock():
         item['shortfall'] = new_shortfall
         
         # Save updated inventory data
-        save_data('spare_parts_data.json', inventory)
+        save_data('src/data/spare_parts_data.json', inventory)
         
         return jsonify({"message": "Inventory updated successfully", "item": item}), 200
     
