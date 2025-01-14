@@ -10,6 +10,47 @@ from allocate_manpower import allocate_manpower
 
 app = Flask(__name__)
 CORS(app)
+@app.route('/restock', methods=['POST'])
+def restock():
+    try:
+        # Parse the incoming JSON request body
+        data = request.get_json()
+        if not data:
+            return jsonify({"error": "No data provided"}), 400
+        
+        # Extract item_id and quantity_ordered
+        item_id = data.get("item_id")
+        quantity_ordered = data.get("quantity_ordered")
+        
+        # Check if quantity_ordered is a valid number
+        if not isinstance(quantity_ordered, int) or quantity_ordered <= 0:
+            return jsonify({"error": "Invalid quantity ordered"}), 400
+
+        # Load current inventory data
+        inventory = load_data('spare_parts_data.json')
+        if not inventory:
+            return jsonify({"error": "Inventory data not found"}), 404
+        
+        # Find the item in the inventory
+        item = next((item for item in inventory if item["WBS No."] == item_id), None)
+        if not item:
+            return jsonify({"error": "Item not found in inventory"}), 404
+        
+        # Update inventory data
+        item['quantity_in_stock'] += quantity_ordered
+        
+        # Update shortfall: Ensure shortfall doesn't go below 0 after the restock
+        new_shortfall = item['shortfall'] + quantity_ordered
+        item['shortfall'] = new_shortfall
+        
+        # Save updated inventory data
+        save_data('spare_parts_data.json', inventory)
+        
+        return jsonify({"message": "Inventory updated successfully", "item": item}), 200
+    
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
 
 @app.route('/upload', methods=['POST'])
 def upload_file():
@@ -36,20 +77,20 @@ def upload_file():
         return jsonify({"message": "Mileage updated successfully. Click on Forecast to update changes."}), 200
     except Exception as e:
         return jsonify({"error": str(e)}), 500
-      
+
 @app.route('/forecast', methods=['POST'])
 def forecast_endpoint():
     data = request.get_json()
     start_date_str = data.get("start_date")
     days = data.get("days", 365)
-    
+
     try:
         start_date = datetime.strptime(start_date_str, "%Y-%m-%d")
         schedule = forecast(start_date, days)
         return jsonify({"schedule": schedule}), 200
     except Exception as e:
-        return jsonify({"error": str(e)}), 400   
-      
+        return jsonify({"error": str(e)}), 400
+
 @app.route('/allocate_manpower', methods=['POST'])
 def allocate_manpower_endpoint():
     try:
@@ -63,8 +104,8 @@ def allocate_manpower_endpoint():
         result = allocate_manpower(start_date, pm_team, oh_team)
         return jsonify({"schedule": result}), 200
     except Exception as e:
-        return jsonify({"error": str(e)}), 500  
-      
+        return jsonify({"error": str(e)}), 500
+
 if __name__ == "__main__":
     os.makedirs("uploads", exist_ok=True)
     app.run(debug=True)

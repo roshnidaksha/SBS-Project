@@ -14,6 +14,7 @@ import {
   Tbody,
   Tr,
   Th,
+  Input,
   Td,
   Stat,
   StatArrow,
@@ -29,6 +30,13 @@ import {
   AccordionPanel,
   AccordionIcon,
   IconButton,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalCloseButton,
+  ModalBody,
+  ModalFooter,
   Select,
 } from "@chakra-ui/react";
 import {
@@ -62,7 +70,6 @@ const Inventory = () => {
   const [selectedDate, setSelectedDate] = useState(null);
 
   useEffect(() => {
-    // Load inventory data (simulate API call)
     setInventory(sparePartsData); // Assuming sparePartsData is the data you want to load
 
     // Filter shortfall items
@@ -74,9 +81,6 @@ const Inventory = () => {
     }
   }, []);
 
-  // Responsive chart height
-
-  // Aggregate data by category
   const aggregateByCategory = () => {
     const aggregatedData = inventory.reduce((acc, item) => {
       const category = item.category;
@@ -92,7 +96,6 @@ const Inventory = () => {
       return acc;
     }, {});
 
-    // Convert the aggregated data into an array
     return Object.values(aggregatedData);
   };
 
@@ -102,7 +105,6 @@ const Inventory = () => {
       selectedCategories.length === 0 || selectedCategories.includes(item.name)
   );
 
-  // Handle category selection
   const handleCategoryChange = (category) => {
     setSelectedCategories((prev) => {
       if (prev.includes(category)) {
@@ -150,10 +152,14 @@ const Inventory = () => {
 
   const tileClassName = ({ date, view }) => {
     if (view === "month") {
-      const tileDate = date.toISOString().split("T")[0]; // Convert to YYYY-MM-DD format
+      // Format the tile date as YYYY-MM-DD without timezone issues
+      const tileDate = date.toLocaleDateString("en-CA"); // en-CA ensures YYYY-MM-DD format
+
+      // Check if the tile date matches any reorder date
       const isReorderDate = inventory.some(
-        (item) => item.recommended_reorder_date === tileDate // Check if the tile date matches any reorder date
+        (item) => item.recommended_reorder_date === tileDate
       );
+
       return isReorderDate ? "highlight-reorder" : "";
     }
     return "";
@@ -185,7 +191,7 @@ const Inventory = () => {
     const selectedItem = inventory.find(
       (item) => item["WBS No."] === e.target.value
     );
-    setSelectedItem(selectedItem); // Update the selected item
+    setSelectedItem(selectedItem);
   };
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -193,7 +199,6 @@ const Inventory = () => {
   const displayedInventory = isExpanded
     ? inventory.filter((item) => item.shortfall < 0)
     : inventory.filter((item) => item.shortfall < 0).slice(0, 12);
-  // State to track visibility of each line
   const [visibleLines, setVisibleLines] = useState({});
 
   useEffect(() => {
@@ -202,19 +207,19 @@ const Inventory = () => {
       .flat()
       .filter((item) => item.category === selectedCategory)
       .reduce((acc, item) => {
-        acc[item.Component] = true; // Set all components in selected category to visible
+        acc[item.Component] = true;
         return acc;
       }, {});
 
     setVisibleLines(initialVisibility);
-  }, [inventory, selectedCategory]); // Re-run effect when inventory or selectedCategory changes
+  }, [inventory, selectedCategory]);
 
   // Handle legend item click
   const handleLegendClick = (data) => {
     const componentName = data.value;
     setVisibleLines((prev) => ({
       ...prev,
-      [componentName]: !prev[componentName], // Toggle visibility
+      [componentName]: !prev[componentName],
     }));
   };
 
@@ -225,8 +230,61 @@ const Inventory = () => {
     .map((item) => ({
       value: item.Component,
       type: "line",
-      color: visibleLines[item.Component] ? "#8884d8" : "#ccc", // Dim color if hidden
+      color: visibleLines[item.Component] ? "#8884d8" : "#ccc",
     }));
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedItemRestock, setSelectedItemRestock] = useState(null);
+  const [quantityOrdered, setQuantityOrdered] = useState("");
+
+  const handleOpenModal = () => setIsModalOpen(true);
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedItemRestock(null);
+    setQuantityOrdered("");
+  };
+
+  const handleRestockItemChange = (event) => {
+    const selectedItemRestock = inventory.find(
+      (item) => item["WBS No."] === event.target.value
+    );
+    setSelectedItemRestock(selectedItemRestock);
+    //setItemOrdered(selectedItemRestock["WBS No."]);
+  };
+  const handleUpdate = async () => {
+    if (selectedItemRestock && quantityOrdered) {
+      try {
+        console.log("Selected Item:", selectedItemRestock["WBS No."]);
+        console.log("Quantity Ordered:", quantityOrdered);
+
+        const requestData = {
+          item_id: selectedItemRestock["WBS No."],
+          quantity_ordered: parseInt(quantityOrdered, 10),
+        };
+
+        // Send POST request to the backend
+        const response = await fetch("http://127.0.0.1:5000/restock", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(requestData),
+        });
+
+        const result = await response.json();
+
+        if (response.ok) {
+          console.log(result.message); // Success
+        } else {
+          console.log(`Error: ${result.error}`); // Error
+        }
+
+        handleCloseModal(); // Close modal after processing
+      } catch (error) {
+        console.log("Error: " + error.message); // Handle any error that occurs
+        handleCloseModal(); // Close the modal even in case of error
+      }
+    }
+  };
 
   return (
     <>
@@ -279,20 +337,34 @@ const Inventory = () => {
                 </Thead>
                 <Tbody>
                   <Tr>
-                    <Td>Total Stock</Td>
+                    <Td>Total Inventory Value</Td>
                     <Td>
-                      {inventory.reduce(
-                        (acc, item) => acc + item.quantity_in_stock,
-                        0
+                      {new Intl.NumberFormat("en-US", {
+                        style: "currency",
+                        currency: "SGD",
+                      }).format(
+                        inventory.reduce(
+                          (acc, item) =>
+                            acc + item.quantity_in_stock * item.cost,
+                          0
+                        )
                       )}
                     </Td>
                   </Tr>
                   <Tr>
-                    <Td>Total Shortfall</Td>
+                    <Td>Total Shortfall Value</Td>
                     <Td>
-                      {inventory
-                        .filter((item) => item.shortfall < 0) // Filter for items with a shortfall less than 0
-                        .reduce((acc, item) => acc + item.shortfall, 0)}
+                      {new Intl.NumberFormat("en-US", {
+                        style: "currency",
+                        currency: "SGD",
+                      }).format(
+                        inventory
+                          .filter((item) => item.shortfall < 0) // Filter for items with a shortfall less than 0
+                          .reduce(
+                            (acc, item) => acc + item.shortfall * item.cost,
+                            0
+                          )
+                      )}
                     </Td>
                   </Tr>
                   <Tr>
@@ -512,6 +584,80 @@ const Inventory = () => {
             )}
           </Flex>
         </Box>
+        <>
+          {/* Button to open modal */}
+          <Button onClick={handleOpenModal}>
+            Update Items After Reordering
+          </Button>
+
+          {/* Modal */}
+          <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
+            <ModalOverlay />
+            <ModalContent>
+              <ModalHeader>Update Inventory</ModalHeader>
+              <ModalCloseButton />
+              <ModalBody>
+                <Box mb={6}>
+                  <Text fontSize="lg" fontWeight="bold" mb={2}>
+                    Select an Item
+                  </Text>
+                  <Select
+                    onChange={handleRestockItemChange}
+                    placeholder="Select Inventory Item"
+                  >
+                    {inventory
+                      .filter((item) => item.shortfall < 0) // Filter items with shortfall less than 0
+                      .map((item) => (
+                        <option key={item["WBS No."]} value={item["WBS No."]}>
+                          {item.Component}
+                        </option>
+                      ))}
+                  </Select>
+                  {/* <Select
+                    onChange={handleRestockItemChange}
+                    placeholder="Select Inventory Item"
+                  >
+                    {inventory.map((item) => (
+                      <option key={item["WBS No."]} value={item["WBS No."]}>
+                        {item.Component}
+                      </option>
+                    ))}
+                  </Select> */}
+                </Box>
+
+                {selectedItemRestock && (
+                  <Box>
+                    <Text fontSize="md" fontWeight="bold">
+                      Quantity in Stock: {selectedItemRestock.quantity_in_stock}
+                    </Text>
+                    <Text fontSize="md" fontWeight="bold" mb={4}>
+                      Quantity Needed:{" "}
+                      {selectedItemRestock.total_quantity_needed}
+                    </Text>
+                    <Input
+                      placeholder="Enter Quantity Ordered"
+                      type="number"
+                      value={quantityOrdered}
+                      onChange={(e) => setQuantityOrdered(e.target.value)}
+                    />
+                  </Box>
+                )}
+              </ModalBody>
+              <ModalFooter>
+                <Button
+                  colorScheme="blue"
+                  onClick={handleUpdate}
+                  isDisabled={!selectedItemRestock || !quantityOrdered}
+                >
+                  Update
+                </Button>
+                <Button onClick={handleCloseModal} ml={3}>
+                  Cancel
+                </Button>
+              </ModalFooter>
+            </ModalContent>
+          </Modal>
+        </>
 
         {/* Stock Purchasing Trend */}
         <Box p={5} borderWidth={1} borderRadius="lg" width="full">
