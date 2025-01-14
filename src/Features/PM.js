@@ -8,6 +8,7 @@ import {
   Text,
   VStack,
   HStack,
+  Spinner,
   useToast,
   CloseButton,
 } from "@chakra-ui/react";
@@ -24,6 +25,7 @@ const PM = () => {
 
   const [events, setEvents] = useState([]); // Stores list of maintenance events for selected train
   const [selectedDate, setSelectedDate] = useState(null); // Stores the currently clicked date
+  const [isLoading, setIsLoading] = useState(false); // Store the state of spinner
   const navigate = useNavigate();
   const toast = useToast();
 
@@ -134,7 +136,15 @@ const PM = () => {
     const startDate = "2025-01-01";
     const currentDate = new Date().toISOString().split('T')[0];
     const days = 365;
-    getForecast(currentDate, days);
+
+    setIsLoading(true);
+    try {
+      await getForecast(currentDate, days);
+    } catch (error) {
+      console.error("Error fetching forecast:", error);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   useEffect(() => {
@@ -437,6 +447,21 @@ const PM = () => {
             >
               Forecast
             </Button>
+            {isLoading && (
+              <Box
+                position="absolute"
+                top="0"
+                left="0"
+                width="100%"
+                height="100%"
+                display="flex"
+                justifyContent="center"
+                alignItems="center"
+                bg="rgba(255, 255, 255, 0.7)"
+              >
+                <Spinner size="lg" />
+              </Box>
+            )}
           </Box>
           <Heading as="h3" size="md" textAlign="left" mb={4}>
 
@@ -468,6 +493,7 @@ const PM = () => {
                   minDate={new Date("2025-01-01")}
                   maxDate={new Date("2025-12-31")}
                   showNavigation={false}
+                  showNeighboringMonth={false}
                   tileClassName="custom-tile"
                 />
               </Box>
