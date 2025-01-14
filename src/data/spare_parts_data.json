@@ -92,7 +92,7 @@
         "Quantity": 2,
         "category": "Carbody Fittings",
         "subcategory": "Coupler",
-        "shortfall": -161,
+        "shortfall": -158,
         "quantity_needed": 0,
         "lead_time": 14,
         "cost": 76.62,
@@ -107,7 +107,7 @@
             }
         },
         "total_quantity_needed": 186,
-        "quantity_in_stock": 25,
+        "quantity_in_stock": 28,
         "recommended_reorder_date": "2024-12-12"
     },
     {
@@ -174,7 +174,7 @@
         "Quantity": 4,
         "category": "Carbody Fittings",
         "subcategory": "Coupler",
-        "shortfall": -1,
+        "shortfall": 1,
         "quantity_needed": 0,
         "lead_time": 28,
         "cost": 684.25,
@@ -189,7 +189,7 @@
             }
         },
         "total_quantity_needed": 8,
-        "quantity_in_stock": 7,
+        "quantity_in_stock": 9,
         "recommended_reorder_date": "2024-11-28"
     },
     {

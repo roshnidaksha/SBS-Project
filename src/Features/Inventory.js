@@ -253,15 +253,11 @@ const Inventory = () => {
   const handleUpdate = async () => {
     if (selectedItemRestock && quantityOrdered) {
       try {
-        console.log("Selected Item:", selectedItemRestock["WBS No."]);
-        console.log("Quantity Ordered:", quantityOrdered);
-
         const requestData = {
           item_id: selectedItemRestock["WBS No."],
           quantity_ordered: parseInt(quantityOrdered, 10),
         };
 
-        // Send POST request to the backend
         const response = await fetch("http://127.0.0.1:5000/restock", {
           method: "POST",
           headers: {
@@ -270,18 +266,16 @@ const Inventory = () => {
           body: JSON.stringify(requestData),
         });
 
-        const result = await response.json();
-
-        if (response.ok) {
-          console.log(result.message); // Success
-        } else {
-          console.log(`Error: ${result.error}`); // Error
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
         }
 
-        handleCloseModal(); // Close modal after processing
+        const result = await response.json();
+        console.log(result.message); // Success message from server
+        handleCloseModal();
       } catch (error) {
-        console.log("Error: " + error.message); // Handle any error that occurs
-        handleCloseModal(); // Close the modal even in case of error
+        console.error("Error during fetch:", error);
+        alert("There was an issue with the request. Please try again.");
       }
     }
   };
